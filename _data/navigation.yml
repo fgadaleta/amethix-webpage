@@ -2,38 +2,41 @@
 main:
 - name: Home
   url: /
-  submenu:
-  - name: Home 2
-    url: /index-2
-  - name: Home 3
-    url: /index-3
-  - name: Home 4
-    url: /index-4
+  # submenu:
+  # - name: Home 2
+  #   url: /index-2
+  # - name: Home 3
+  #   url: /index-3
+  # - name: Home 4
+  #   url: /index-4
 - name: About
-  url: "#"
-  submenu:
-    - name: About
-      url: /about
-    - name: About Me
-      url: /about-me
+  url: "/about"
+  # submenu:
+  #   - name: About
+  #     url: /about
+  #   - name: About Me
+  #     url: /about-me
 - name: Blog
   url: /blog-1
-  submenu:
-  - name: Blog One
-    url: /blog-1
-  - name: Blog Two
-    url: /blog-2
-- name: Pages
-  url: /
-  submenu:
-  - name: Services
-    url: /services
-  - name: Portfolio One
-    url: /portfolio-1   
-  - name: Portfolio Two
-    url: /portfolio-2   
-  - name: 404
-    url: /404
+  # submenu:
+  # - name: Blog One
+  #   url: /blog-1
+  # - name: Blog Two
+  #   url: /blog-2
+- name: Services
+  url: /services
+
+# - name: Pages
+#   url: /
+#   submenu:
+#   - name: Services
+#     url: /services
+#   - name: Portfolio One
+#     url: /portfolio-1
+#   - name: Portfolio Two
+#     url: /portfolio-2
+#   - name: 404
+#     url: /404
 - name: Contact
   url: /contact
 
@@ -44,9 +47,9 @@ footer:
 - name: Services
   url: /services
 - name: Portfolio One
-  url: /portfolio-1   
+  url: /portfolio-1
 - name: Portfolio Two
-  url: /portfolio-2   
+  url: /portfolio-2
 - name: Single Portfolio
   url: /portfolio-single
 - name: Contact
