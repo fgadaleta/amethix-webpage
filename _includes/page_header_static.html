@@ -1,0 +1,23 @@
+<section class="page-title header-padding overlay-staticXX" style="
+
+/* background: linear-gradient(0deg, rgba(43, 19, 66, 0.5),  rgba(0, 0, 0, 0.7)),
+url({% if page.header_image %}{{page.header_image}} {% else %} {{site.cover_image}} {% endif %}) 0 0 no-repeat fixed; */
+
+background: radial-gradient(circle, rgb(206, 206, 206, 0.3) 0%,  rgba(95, 94, 94, 0.3) 30%, rgb(25, 25, 26) 100% ),
+url({% if page.header_image %}{{page.header_image}} {% else %} {{site.cover_image}} {% endif %}) 0 0 no-repeat fixed;
+
+background-size: cover;
+background-repeat: no-repeat;
+overflow: hidden;
+opacity: 0.9;
+">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+          <h1 class="text-uppercase mb-2 text-lg text-white">{{page.title}}</h1>
+           <h4 class="text-white text-uppercase">{{page.description}}</h4>
+      </div>
+    </div>
+  </div>
+</section>

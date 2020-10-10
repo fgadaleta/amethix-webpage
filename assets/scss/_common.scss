@@ -70,3 +70,49 @@ a:focus {
 		display: inline-block;
 	}
 }
+
+.overlay-effect {
+    overflow: hidden;
+	// background:  #C33764;
+	// top: 0;
+	// bottom: 0;
+	// left: 0;
+	// right: 0;
+	opacity: 0.7;
+	// transition: .8s ease;
+	// background: black;
+	// background: url('assets/images/bg/network-bg.mp4') center center / cover no-repeat;
+}
+
+.overlay-static {
+	outline: 100% solid rgba(255, 0, 0, 0.5) !important;
+    // outline-offset: -100px;
+    overflow: hidden;
+    position: relative;
+	height: 100%;
+    width: 100%;
+}
+
+.fullscreen-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 100px;
+	left: 0;
+	// margin: auto;
+	width: 100%;
+	// max-height: 700px;
+	max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+	// z-index: -100;
+	// background-clip: padding-box;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+	left: 0;
+	// background-size: 100% auto;
+	width: 100%;
+}
