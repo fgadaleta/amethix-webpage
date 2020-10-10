@@ -12,11 +12,13 @@ Get in touch."
 	<div class="container">
 		<div class="row justify-content-center align-items-center bg-gray">
 			<div class="col-lg-10">
-				<div class="contact-content pl-lg-5 mb-5 mb-lg-0">
-					<h3 class="mb-4 font-weight-bold">Contact Information</h3>
+				<div class="contact-content pl-lg-5 mb-5 mb-lg-0 text-center text-uppercase">
+
+					<h3 class="mb-4 font-weight-bold">How to find us</h3>
+					<!--
 					<p>Interested in hiring us?
 						Describe what your project is about and we will follow up shortly.
-						You can email hello@amethix.com</p>
+						You can email hello@amethix.com</p> -->
 
 					<div class="row mt-5">
 						<div class="col-lg-4">
@@ -66,9 +68,20 @@ Get in touch."
 		<!-- Map ENd -->
 
 		<div class="row justify-content-center">
-			<div class="col-lg-10 mt-4">
-				<div class="contact-form">
-					<h3 class="mb-4 font-weight-bold">Get In Touch</h3>
+			<!-- <div class="col-lg-10 mt-4"> -->
+				<div class="col-lg-9 col-md-9 col-sm-9">
+
+				<div class="contact-form text-center">
+					<h3 class="mb-4 font-weight-bold text-uppercase">Contact</h3>
+
+					<ul class="list-inline socials-links">
+						{% for social in site.social %}
+						<li class="list-inline-item mb-2">
+							<a target="_blank" href="{{social.link}}" class="active"><i class="{{social.icon}}"></i></a>
+						</li>
+						{% endfor %}
+					</ul>
+
 					<form class="contact__form" method="post" action="{{site.contact_form_action}}">
 						<!-- form message -->
 						<div class="row">
@@ -95,4 +108,4 @@ Get in touch."
 	</div>
 </section>
 
-{% include call_to_action.html %}
+<!-- {% include call_to_action.html %} -->

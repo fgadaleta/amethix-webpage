@@ -85,12 +85,13 @@ a:focus {
 }
 
 .overlay-static {
-	outline: 100% solid rgba(255, 0, 0, 0.5) !important;
-    // outline-offset: -100px;
+	// outline: 100% solid rgba(255, 0, 0, 0.5) !important;
+    outline-offset: -100px;
     overflow: hidden;
     position: relative;
 	height: 100%;
-    width: 100%;
+	width: 100%;
+	z-index: -100;
 }
 
 .fullscreen-bg {
@@ -106,7 +107,8 @@ a:focus {
     max-height: 100%;
     overflow: hidden;
 	// z-index: -100;
-	// background-clip: padding-box;
+	background: radial-gradient(circle, rgba(248,0,255,0) 1%, rgba(3,3,41,0.9808123933167017) 100%);
+	z-index: -100;
 }
 
 .fullscreen-bg__video {
@@ -115,4 +117,6 @@ a:focus {
 	left: 0;
 	// background-size: 100% auto;
 	width: 100%;
+	background: radial-gradient(circle, rgba(248,0,255,0) 1%, rgba(3,3,41,0.9808123933167017) 100%);
+	z-index: -100;
 }
