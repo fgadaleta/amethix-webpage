@@ -50,11 +50,11 @@
 
 
 //  Portfolio-2
-//  
+//
 
 
 // Portfolio
-// 
+//
 .portfolio-2,
 .portfolio-5 {
 
@@ -96,7 +96,7 @@
 }
 
 // Portfolio SIngle
-// 
+//
 .portfolio-single {
   padding: 180px 0px 100px;
 }
@@ -142,6 +142,10 @@
 /* portfolio item */
 
 .overlay-box {
+  // this is first
+  background: $secondary-color;
+  opacity: 0.5;
+  color: $white;
   position: absolute;
   text-align: center;
   left: 0;
@@ -153,24 +157,33 @@
     content: "";
     height: 100%;
     width: 100%;
-    background: $secondary-color;
+    // background: $secondary-color;
+    background: $primary-color;
+    opacity: 0.9;
     left: 0;
     top: 0;
     transform: scaleX(0);
     transform-origin: left;
     transition: .2s ease-in;
+    // opacity: 0.7;
+    transition: opacity .25s ease-in-out;
+    // z-index: -100;
   }
-  
+
   &::after{
     position: absolute;
     content: "";
     height: 100%;
     width: 100%;
-    background: $primary-color;
+    background: $secondary-color;
+    opacity: 0.9;
+
+    // background: $primary-color;
     left: 0;
     top: 0;
     transform: scaleX(0);
-    transform-origin: left;
+    // transform-origin: left;
+    transition: opacity .25s ease-in-out;
     transition: .2s ease-in;
   }
 
@@ -184,13 +197,15 @@
     h5{
       transform: translateX(-40px);
       opacity: 0;
-      transition: .2s ease;
+      // transition: .2s ease;
+      transition: opacity .25s ease-in-out;
       transition-delay: .0s;
     }
     p{
       color: $white;
       transform: translateX(-16px);
       opacity: 0;
+      transition: opacity .25s ease-in-out;
       transition: .2s ease;
       transition-delay: .0s;
     }
@@ -201,20 +216,23 @@
   .overlay-box{
     &::before{
       transform: scaleX(1);
+      opacity: 0.6;
     }
     &::after{
-      transform: scaleX(1);
+      // transform: scaleX(1);
       transition-delay: .3s;
     }
   }
   .overlay-inner{
+    opacity: 0.7;
+
     h5{
-      transform: translateX(0);
+      // transform: translateX(0);
       opacity: 1;
       transition-delay: .4s;
     }
     p{
-      transform: translateX(0);
+      // transform: translateX(0);
       opacity: 1;
       transition-delay: .5s;
     }

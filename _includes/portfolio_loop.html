@@ -6,7 +6,7 @@
       <div class="overlay-box">
         <div class="overlay-inner">
           <a class="overlay-content text-center" href="{{portfolio.url | relative_url }}">
-            <h5 class="mb-0 text-white">{{portfolio.title}}</h5>
+            <h4 class="mb-0 text-white">{{portfolio.title}}</h4>
             <p>{% for category in portfolio.categories %} {{category}}{% unless forloop.last %} , {% endunless %} {% endfor %}</p>
           </a>
         </div>

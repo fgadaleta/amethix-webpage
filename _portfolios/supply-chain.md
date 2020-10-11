@@ -2,7 +2,7 @@
 layout: portfolio
 title: "Supply Chain Analytics"
 categories: ["supply-chain"]
-thumbnail: "/assets/images/portfolio/p-3.jpg"
+thumbnail: "/assets/images/portfolio/supply-portfolio.jpg"
 description: "Sales and supply chain analytics for medical products in new markets"
 ---
 <div class="col-lg-8 text-center">

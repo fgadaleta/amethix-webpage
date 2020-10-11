@@ -2,11 +2,11 @@
 layout: portfolio
 title: "Natural Language Processing"
 categories: ["NLP"]
-thumbnail: "/assets/images/portfolio/p-3.jpg"
+thumbnail: "/assets/images/portfolio/nlp-portfolio.jpg"
 description: "Conversational engine for financial applications"
 ---
 <div class="col-lg-8 text-center">
-	<h3 class="mb-5 mt-2">{{page.title}}</h3>
+	<h2 class="mb-5 mt-2 text-uppercase">{{page.title}}</h2>
 	<p>{{page.description}}</p>
 
 <hr class="my-5">

@@ -2,7 +2,7 @@
 layout: portfolio
 title: "Smart Grid Analytics"
 categories: ["smart grid"]
-thumbnail: "/assets/images/portfolio/p-3.jpg"
+thumbnail: "/assets/images/portfolio/energy-portfolio.jpg"
 description: "Predictive analytics for renewable energy providers and dynamic grids"
 ---
 <div class="col-lg-8 text-center">
