@@ -1,12 +1,11 @@
 ######################### Hero Area ##############################
 hero_area:
-  background_image : "/assets/images/bg/banner-2.png"
+  background_image : "/assets/images/bg/net-bg.jpg"
   subtitle: "Amethix Technologies"
   title : "Making sense of your data."
-  content : "Amethix works to create and maximize the impact of the world’s
-  leading corporations, startups, and nonprofits, so they can create a better
-  future for everyone they serve."
-  image : "/assets/images/banner/banner-img-2.pngREM"
+  content : "We maximize the impact of the world’s
+  leading organizations"
+  # image : "/assets/images/banner/banner-img-2.png"
   button:
     enable : false
     label : "Services"

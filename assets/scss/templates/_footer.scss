@@ -2,7 +2,7 @@
 
 	color: rgba(255,255,255,.7);
 	.lh-38{
-		line-height: 38px;
+		line-height: 32px;
 	}
 	ul {
 		li{
@@ -10,34 +10,35 @@
 			color: rgba(255,255,255,.7);
 			a{
 				color: rgba(255,255,255,.7);
-				text-transform: capitalize;
+				text-transform: uppercase;
+				font-size: 14px;
 			}
 		}
 	}
-	
+
 }
 .socials-links{
 	margin-top: 20px;
 	li a {
-		width: 50px;
-		height: 50px;
-		border-radius: 100%;
+		width: 42px;
+		height: 42px;
+		border-radius: 10%;
 		text-align: center;
 		display: inline-block;
-		padding-top: 12px;
+		padding-top: 10px;
 		color: $white;
 		border: 1px solid rgba(255,255,255,.7);
-		
+
 		&:hover{
 			background: $primary-color;
 			border-color: $primary-color;
-			color: $white!important;
+			color: $grey-light; // $white!important;
 		}
 	}
 	li a.active{
-		background: $primary-color;
-		border-color: $primary-color;
-		color: $white!important;
+		background: $transparent; // $primary-color;
+		border-color: $grey-light; // $primary-color;
+		color:  $grey-light; // $primary-color;  // $white!important;
 	}
 }
 
@@ -65,8 +66,8 @@
 
 
 
-/// 
-/// 
+///
+///
 
 .footer-2{
 	background: url("../images/bg/footer-bg.jpg")no-repeat;

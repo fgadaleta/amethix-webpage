@@ -1,31 +1,31 @@
 ---
 layout: portfolio
-title: "Paintaining"
-categories: ["Design"]
-thumbnail: "/assets/images/portfolio/p-6.jpg"
-description: "incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae cat cupidatat"
+title: "Smart Grid Analytics"
+categories: ["smart grid"]
+thumbnail: "/assets/images/portfolio/p-3.jpg"
+description: "Predictive analytics for renewable energy providers and dynamic grids"
 ---
 <div class="col-lg-8 text-center">
 	<h3 class="mb-5 mt-2">{{page.title}}</h3>
 	<p>{{page.description}}</p>
 
 <hr class="my-5">
-	
+
 <div class="row">
 		<div class="col-lg-4 text-center">
 			<p class="text-color font-weight-bold mb-2">Clients</p>
-			<p>Christopher Ronald</p>
+			<p>Centrica Inc.</p>
 		</div>
 		<div class="col-lg-4 text-center">
 			<p class="text-color font-weight-bold mb-2">Category</p>
-			<p>Design, Branding, Mobile</p>
+			<p>Algorithm design, Predictive models, Implementation</p>
 		</div>
 		<div class="col-lg-4 text-center">
 			<p class="text-color font-weight-bold mb-2">Location</p>
-			<p>780 Lynnway, Lynn MA 1905</p>
+			<p>Belgium, USA</p>
 		</div>
 	</div>
-
+<!--
 <div class="post-single-share py-4 mt-4 mb-5">
 		<h6 class="text-white">Share This on</h6>
 		<ul class="list-inline socials-links mb-0">
@@ -44,6 +44,7 @@ description: "incididunt labore et dolore magna aliqua enim minim veniam quis no
 		</ul>
 	</div>
 </div>
+-->
 
 <div class="col-lg-12 mt-5">
 	<div class="carousel slide" id="single-slide">
@@ -68,6 +69,7 @@ description: "incididunt labore et dolore magna aliqua enim minim veniam quis no
 		 </div>
 	</div>
 </div>
-<div class="col-lg-8 text-center mt-5">
+
+<div class="col-lg-12 mt-5">
 	<p>Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae cat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed perspiciatis unde omnis iste natus error sit voluptatem.</p>
-</div>													
+</div>

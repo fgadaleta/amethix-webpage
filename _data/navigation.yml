@@ -44,14 +44,14 @@ main:
 
 ########## footer menu ###############
 footer:
+- name: Home
+  url: /
 - name: Services
   url: /services
-- name: Portfolio One
-  url: /portfolio-1
-- name: Portfolio Two
-  url: /portfolio-2
-- name: Single Portfolio
-  url: /portfolio-single
+- name: About Us
+  url: /about
+- name: Blog
+  url: /blog
 - name: Contact
   url: /contact
 

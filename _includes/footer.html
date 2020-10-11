@@ -20,28 +20,28 @@
 
 			<div class="col-lg-3 ml-lg-auto mb-5 mb-lg-0 col-md-6">
 				<div class="footer-widget">
-					<h4 class="text-white mb-3">Navigation</h4>
+					<h4 class="text-white mb-3 text-md">Navigation</h4>
 
 					<ul class="list-unstyled lh-38">
 						{% for menu in site.data.navigation.footer %}
-						<li><a href="{{menu.link | relative_url }}">{{menu.name}}</a></li>
+						<li class="text-sm"><a href="{{menu.link | relative_url }}">{{menu.name}}</a></li>
 						{% endfor %}
 					</ul>
 				</div>
 			</div>
 			<div class="col-lg-2 col-md-6">
-				<div class="footer-widget  mb-5 mb-lg-0">
-					<h4 class="text-white mb-3">Services</h4>
+				<div class="footer-widget mb-5 mb-lg-0">
+					<h4 class="text-white mb-3 text-md">Services</h4>
 					<ul class="list-unstyled lh-38">
 						<li><a href="#">Custom AI solutions</a></li>
-						<li><a href="#">World-class ML expertise</a></li>
+						<li><a href="#">World-class expertise</a></li>
 						<li><a href="#">Algorithm design</a></li>
 					</ul>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6">
 				<div class="footer-widget">
-					<h4 class="text-white mb-3">Contact Info</h4>
+					<h4 class="text-white mb-3 text-md">Contact Info</h4>
 					<ul class="list-unstyled lh-38">
 						<li>{{site.address}}</li>
 						<li><a href="tel:{{site.phone}}">{{site.phone}}</a></li>
