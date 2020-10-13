@@ -2,7 +2,34 @@
 layout: default
 ---
 
-{% include header.html %}
+<!-- {% include header_2.html %} -->
+
+
+<!-- Slider Start -->
+{% assign header_image = page.thumbnail %}
+
+<section class="page-title header-padding overlay-static" style="
+	background: radial-gradient(circle, rgba(235, 235, 235, 0) 1%, rgba(0, 0, 0, 0.981) 100%),
+	url({% if header_image %}{{header_image}} {% else %} {{site.cover_image}} {% endif %}) 0 0 no-repeat fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	opacity: 0.9;
+	">
+
+	<div class="container">
+		<div class="row">
+		  <div class="col-lg-12">
+			<span class="h5 text-uppercase text-yello">{{banner.subtitle}}</span>
+			  <h1 class="text-white mt-2 text-uppercase text-xl">{{ page.title }}</h1>
+			  <h4 class="text-white text-uppercase">{{ page.description }}</h4>
+		  </div>
+		</div>
+	  </div>
+</section>
+<!-- Slider End -->
+
+
 <section class="portfolio-single">
 	<div class="container">
 		<div class="row justify-content-center">
@@ -11,12 +38,11 @@ layout: default
 	</div>
 </section>
 
-
 <section class="section related-project">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 text-center">
-				<h3 class="mb-5">Related Projects</h3>
+				<h4 class="mb-5 text-uppercase">Other Projects</h4>
 			</div>
 		</div>
 		<div class="row">
