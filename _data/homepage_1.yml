@@ -15,15 +15,15 @@ hero_area:
 services:
 - title : "Research"
   icon : "ti-ruler-pencil"
-  content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
+  content : "We analyse your request and study potential solutions"
 
 - title : "Design"
   icon : "ti-announcement"
-  content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
+  content : "Our researchers and engineers develop a prototype and validate feasibility"
 
 - title : "Deploy"
   icon : "ti-palette"
-  content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
+  content : "We integrate our solution with your business workflow"
 
 
 ########################### Testimonial ###########################
@@ -49,23 +49,44 @@ testimonial:
     content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim veniam.quis nos trud exercittion ullam laboris nisi ut aliquip excepteur. sint occaecat cuida tat nonproident sunt in culpa qui officia deserunt mollit anim est laborum. sed ut perspiciatis."
 
 
-######################## Fun facts ########################
+######################## count down  ########################
 funfacts:
   enable : true
-  bg_image : "/assets/images/bg/cta-bg.png"
+  bg_image : "/assets/images/bg/cta-bg2.png"
   item:
   - name : "work completed"
-    icon : "ti-briefcase"
-    value : "370"
+    icon : "/assets/images/icons/browser-light.png"
+    value : "LANGUAGE PROCESSING"
 
   - name : "new projects"
-    icon : "ti-paint-bucket"
-    value : "450"
+    icon : "/assets/images/icons/web-light.png"
+    value : "ARTIFICIAL INTELLIGENCE"
 
   - name : "Happy customers"
-    icon : "ti-heart"
-    value : "5000"
+    icon : "/assets/images/icons/document-light.png"
+    value : "MACHINE LEARNING"
 
   - name : "awards win"
-    icon : "ti-cup"
-    value : "37"
+    icon : "/assets/images/icons/customer-light.png"
+    value : "CUSTOM SOLUTIONS"
+
+
+overview:
+  enable : true
+  bg_image : "/assets/images/bg/cta-bg2.png"
+  item:
+    - name : "work completed"
+      icon : "/assets/images/icons/browser.png"
+      value : "LANGUAGE PROCESSING"
+
+    - name : "new projects"
+      icon : "/assets/images/icons/web.png"
+      value : "ARTIFICIAL INTELLIGENCE"
+
+    - name : "Happy customers"
+      icon : "/assets/images/icons/document.png"
+      value : "MACHINE LEARNING"
+
+    - name : "awards win"
+      icon : "/assets/images/icons/customer.png"
+      value : "CUSTOM SOLUTIONS"

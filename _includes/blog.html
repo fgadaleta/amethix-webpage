@@ -11,7 +11,7 @@
 		</div>
 		<div class="row justify-content-center">
 			{% for post in site.posts limit: "3" %}
-			<div class="col-lg-4 col-md-6  mb-4 mb-lg-0">
+			<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
 				{% if post.post_image %}
 				<div class="blog-img position-relative">
 					<a href="{{post.url}}"><img src="{{post.post_image}}" alt="{{post.title}}" class="img-fluid w-100"></a>

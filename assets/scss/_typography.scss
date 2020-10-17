@@ -37,9 +37,10 @@ h1 ,.h1{
 
 h2,.h2 {
   font-size: 42px;
-  line-height: 52px;
-  text-transform: capitalize;
+  // line-height: 52px;
+  line-height: 20px;
 
+  text-transform: capitalize;
 }
 
 h3,.h3 {
@@ -51,7 +52,6 @@ h3,.h3 {
 h4,.h4 {
   font-size: 28px;
   line-height: 30px;
-
   // font-size: 18px;
   // line-height: 30px;
   text-transform: uppercase;
@@ -59,8 +59,11 @@ h4,.h4 {
 }
 
 h5,.h5 {
-  font-size: 20px;
-  line-height: 34px;
+  // font-size: 20px;
+  // line-height: 34px;
+  font-size: 25px;
+  line-height: 25px;
+  text-transform: uppercase;
 }
 
 h6,.h6 {

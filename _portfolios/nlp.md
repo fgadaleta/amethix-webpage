@@ -1,20 +1,10 @@
 ---
 layout: portfolio
-title: "Natural Language <br />Processing"
+title: "Natural <br />Language <br />Processing"
 categories: ["NLP"]
 thumbnail: "/assets/images/portfolio/nlp-portfolio.jpg"
-description: "Conversational engine for personal finance"
+description: "Conversational engine <br />for personal finance"
 ---
-
-<div class="col-lg-8 text-center">
-
-	<!-- <h2 class="mb-5 mt-2 text-uppercase">{{page.title}}</h2>
-	<p>{{page.description}}</p> -->
-
-	<p>
-	Something about ABE and the project sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae cat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed perspiciatis unde omnis iste natus error sit voluptatem.</p>
-
-<hr class="my-5">
 
 <div class="row">
 		<div class="col-lg-4 text-center">
@@ -31,13 +21,31 @@ description: "Conversational engine for personal finance"
 		</div>
 </div>
 
+<div class="col-lg-8 text-center">
+
+	<!-- <h2 class="mb-5 mt-2 text-uppercase">{{page.title}}</h2>
+	<p>{{page.description}}</p> -->
+
+	<p>
+	Abe.ai gives financial institutions a fully featured product with the Virtual Financial Assistant, but it's critical that financial institutions own their roadmap and the data underlying machine learning models.
+
+	The Conversational AI Platform empowers financial institutions to leverage AI in finance for better customer experiences and increased operational efficiency.
+	</p>
+	<p>Abe.ai technology was built specifically for technology in banks, credit unions, and wealth managers.</p>
+
+<hr class="my-5">
+
 <div class="row">
 	<div class="col-lg-12 mt-5" style="text-align: justify;">
 			<div class="col-lg-12 text-center">
 				<h4 class="mb-5 text-uppercase">Project summary </h4>
 			</div>
 
-		<p>Something about ABE and the project sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae cat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed perspiciatis unde omnis iste natus error sit voluptatem.</p>
+		<p>
+		Personal finance has always been a challenge for people who struggle with their money.
+		Abe AI conversational engine - chatbot - is an advanced AI-based solution that helps people
+		manage their money in the most natural way.
+		</p>
 
 		<div class="col-lg-12 text-center">
 				<h4 class="mb-5 text-uppercase">objectives</h4>

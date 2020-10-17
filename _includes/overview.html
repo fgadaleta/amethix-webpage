@@ -1,0 +1,62 @@
+{% assign count = site.data.homepage_1.overview %}
+
+
+<section class="pt200 section portfolio-2">
+	<div class="container">
+
+		<!-- Start overview band with icons  -->
+		<div class="row" style="margin-bottom: 84px;">
+			{% for item in count.item %}
+			<div class="col-lg-3 col-md-6">
+				<div class="counter-content d-flex mb-5 mb-lg-0">
+					<img src="{{ item.icon }}" style="margin: 8px; max-height: 64px;" >
+					<div>
+						<h2 class="mb-0" style="color: black;"><span class="counter">{{item.value}}</span></h2>
+						<!-- <p class="text-capitalize mb-0">{{item.name}}</p> -->
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+		<!-- End overview band with icons  -->
+
+
+	  <div class="row shuffle-wrapper portfolio-gallery">
+		<div class="col-lg-6 col-6 mb-4 shuffle-item">
+		<div class="position-relative inner-box text-center">
+			<h1 class="text-lg">AI for your business</h1>
+		</div>
+		</div>
+
+		<div class="col-lg-6 col-6 mb-4 shuffle-item">
+			<div class="position-relative inner-box text-center medium-size">
+				<p>
+					The most powerful strategy relies on the right combination of human and machine intelligence.
+				</p>
+				<hr />
+				<p style="font-style: normal;">
+					We deliver AI-driven solutions to our clients by providing world-class AI expertise and tooling for computer vision, natural language processing and machine learning.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Start overview band with icons  -->
+	<div class="row" style="margin-top: 42px;">
+		{% for item in count.item %}
+		<div class="col-lg-3 col-md-6">
+			<div class="counter-content d-flex mb-5 mb-lg-0">
+				<img src="{{ item.icon }}" style="margin: 8px; max-height: 64px;" >
+				<div>
+					<h2 class="mb-0" style="color: black;"><span class="counter">{{item.value}}</span></h2>
+					<!-- <p class="text-capitalize mb-0">{{item.name}}</p> -->
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+	<!-- End overview band with icons  -->
+
+	</div>
+  </section>
+  <!-- Portfolio End -->
