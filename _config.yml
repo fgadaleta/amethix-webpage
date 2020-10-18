@@ -50,7 +50,6 @@ social:
 #   link: "#"
 
 
-
 # Build settings
 permalink: "/:title"
 markdown: kramdown
@@ -65,8 +64,6 @@ plugins:
 sass:
   sass_dir: assets/scss
   style: compressed
-
-
 
 #collections
 collections:

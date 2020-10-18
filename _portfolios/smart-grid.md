@@ -5,26 +5,58 @@ categories: ["smart grid"]
 thumbnail: "/assets/images/portfolio/energy-portfolio.jpg"
 description: "Predictive analytics for renewable energy providers and dynamic grids"
 ---
+
+<div class="row">
+		<div class="col-lg-4 text-center">
+			<h4 class="text-color font-weight-bold mb-2">Client</h4>
+			<p>Centrica Inc.</p>
+		</div>
+		<div class="col-lg-4 text-center">
+			<h4 class="text-color font-weight-bold mb-2">Category</h4>
+			<p>Algorithm design, Production</p>
+		</div>
+		<div class="col-lg-4 text-center">
+			<h4 class="text-color font-weight-bold mb-2">Location</h4>
+			<p>Belgium, Canada</p>
+		</div>
+</div>
+
 <div class="col-lg-8 text-center">
-	<h3 class="mb-5 mt-2">{{page.title}}</h3>
-	<p>{{page.description}}</p>
+
+	<!-- <h2 class="mb-5 mt-2 text-uppercase">{{page.title}}</h2>
+	<p>{{page.description}}</p> -->
+
+	<p>
+	Abe.ai gives financial institutions a fully featured product with the Virtual Financial Assistant, but it's critical that financial institutions own their roadmap and the data underlying machine learning models.
+
+	The Conversational AI Platform empowers financial institutions to leverage AI in finance for better customer experiences and increased operational efficiency.
+	</p>
+	<p>Abe.ai technology was built specifically for technology in banks, credit unions, and wealth managers.</p>
 
 <hr class="my-5">
 
 <div class="row">
-		<div class="col-lg-4 text-center">
-			<p class="text-color font-weight-bold mb-2">Clients</p>
-			<p>Centrica Inc.</p>
+	<div class="col-lg-12 mt-5" style="text-align: justify;">
+			<div class="col-lg-12 text-center">
+				<h4 class="mb-5 text-uppercase">Project summary </h4>
+			</div>
+
+		<p>
+		Personal finance has always been a challenge for people who struggle with their money.
+		Abe AI conversational engine - chatbot - is an advanced AI-based solution that helps people
+		manage their money in the most natural way.
+		</p>
+
+		<div class="col-lg-12 text-center">
+				<h4 class="mb-5 text-uppercase">objectives</h4>
 		</div>
-		<div class="col-lg-4 text-center">
-			<p class="text-color font-weight-bold mb-2">Category</p>
-			<p>Algorithm design, Predictive models, Implementation</p>
-		</div>
-		<div class="col-lg-4 text-center">
-			<p class="text-color font-weight-bold mb-2">Location</p>
-			<p>Belgium, USA</p>
-		</div>
+
+		<p>Something about ABE and the project sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae cat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed perspiciatis unde omnis iste natus error sit voluptatem.</p>
+
+		<p>Something about ABE and the project sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae cat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed perspiciatis unde omnis iste natus error sit voluptatem.</p>
 	</div>
+</div>
+
 <!--
 <div class="post-single-share py-4 mt-4 mb-5">
 		<h6 class="text-white">Share This on</h6>
@@ -49,9 +81,13 @@ description: "Predictive analytics for renewable energy providers and dynamic gr
 <div class="col-lg-12 mt-5">
 	<div class="carousel slide" id="single-slide">
 		<div class="carousel-inner">
+
+			<!--
 			<div class="carousel-item active">
 				<img src="/assets/images/portfolio/portfolio-single.jpg" alt="" class="img-fluid">
 			</div>
+			-->
+
 			<div class="carousel-item">
 				<img src="/assets/images/blog/blog-single.jpg" alt="" class="img-fluid">
 			</div>
@@ -70,6 +106,4 @@ description: "Predictive analytics for renewable energy providers and dynamic gr
 	</div>
 </div>
 
-<div class="col-lg-12 mt-5">
-	<p>Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae cat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed perspiciatis unde omnis iste natus error sit voluptatem.</p>
-</div>
+

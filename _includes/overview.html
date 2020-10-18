@@ -1,4 +1,5 @@
-{% assign count = site.data.homepage_1.overview %}
+{% assign count_top = site.data.homepage_1.overview_top %}
+{% assign count_bottom = site.data.homepage_1.overview_bottom %}
 
 
 <section class="pt200 section portfolio-2">
@@ -6,7 +7,7 @@
 
 		<!-- Start overview band with icons  -->
 		<div class="row" style="margin-bottom: 84px;">
-			{% for item in count.item %}
+			{% for item in count_top.item %}
 			<div class="col-lg-3 col-md-6">
 				<div class="counter-content d-flex mb-5 mb-lg-0">
 					<img src="{{ item.icon }}" style="margin: 8px; max-height: 64px;" >
@@ -43,7 +44,7 @@
 
 	<!-- Start overview band with icons  -->
 	<div class="row" style="margin-top: 42px;">
-		{% for item in count.item %}
+		{% for item in count_bottom.item %}
 		<div class="col-lg-3 col-md-6">
 			<div class="counter-content d-flex mb-5 mb-lg-0">
 				<img src="{{ item.icon }}" style="margin: 8px; max-height: 64px;" >

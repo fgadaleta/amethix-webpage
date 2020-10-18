@@ -23,8 +23,20 @@ main:
   #   url: /blog-1
   # - name: Blog Two
   #   url: /blog-2
-- name: Services
-  url: /services
+- name: Solutions
+  url: /solutions
+  submenu:
+  - name: NLP
+    url: /portfolios/nlp
+  - name: Energy
+    url: /portfolios/smart-grid
+  - name: Supply-Chain
+    url: /portfolios/supply-chain
+  - name: Fintech
+    url: /portfolios/finance-analytics
+  - name: Healthcare&Pharma
+    url: /portfolios/healthcare-pharma
+
 
 # - name: Pages
 #   url: /

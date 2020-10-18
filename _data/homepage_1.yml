@@ -71,7 +71,27 @@ funfacts:
     value : "CUSTOM SOLUTIONS"
 
 
-overview:
+overview_top:
+  enable : true
+  bg_image : "/assets/images/bg/cta-bg2.png"
+  item:
+    - name : "work completed"
+      icon : "/assets/images/icons/degree.png"
+      value : "PHD LEVEL"
+
+    - name : "new projects"
+      icon : "/assets/images/icons/production.png"
+      value : "APPLIED RESEARCH"
+
+    - name : "Happy customers"
+      icon : "/assets/images/icons/wisdom.png"
+      value : "INTERNATIONAL NETWORK"
+
+    - name : "awards win"
+      icon : "/assets/images/icons/rocket-launch.png"
+      value : "PRODUCTION READY"
+
+overview_bottom:
   enable : true
   bg_image : "/assets/images/bg/cta-bg2.png"
   item:

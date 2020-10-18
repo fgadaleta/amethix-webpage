@@ -13,7 +13,7 @@
 	{% endif %}
 
 	<li class="nav-item {% if link.submenu %} dropdown {% endif %}">
-		<a class="nav-link" href="{{link.url | relative_url }}" {% if link.submenu %}
+		<a class="nav-link frankie" href="{{link.url | relative_url }}" {% if link.submenu %}
 			data-toggle="dropdown" {% endif %}>{{link.name}}{% if link.submenu %}<i
 				class="ti-angle-down ml-2"></i>{% endif %}</a>
 		{% if link.submenu %}

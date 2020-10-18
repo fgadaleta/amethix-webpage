@@ -12,8 +12,8 @@
   {% assign active = 'active' %}
   {% endif %}
 
-  <li class="nav-item {% if link.submenu %} dropdown {% endif %}">
-    <a class="nav-link" {% if link.submenu %} data-toggle="dropdown"
+  <li class="nav-item dropdown{% if link.submenu %} dropdown {% endif %}">
+    <a class="nav-link" {% if link.submenu %} data-toggle="dropdown-item"
       {% endif %} href="{{link.url |relative_url}}">{{link.name}}{% if link.submenu %}<i
         class="ti-angle-down ml-2"></i>{% endif %}</a>
     {% if link.submenu %}
