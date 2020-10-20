@@ -24,7 +24,7 @@
 
 					<ul class="list-unstyled lh-38">
 						{% for menu in site.data.navigation.footer %}
-						<li class="text-sm"><a href="{{menu.link | relative_url }}">{{menu.name}}</a></li>
+						<li class="text-sm"><a href="{{menu.url | relative_url }}">{{menu.name}}</a></li>
 						{% endfor %}
 					</ul>
 				</div>
