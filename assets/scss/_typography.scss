@@ -37,9 +37,7 @@ h1 ,.h1{
 
 h2,.h2 {
   font-size: 42px;
-  // line-height: 52px;
   line-height: 20px;
-
   text-transform: capitalize;
 }
 
@@ -85,4 +83,15 @@ h6,.h6 {
 
 .text-justify {
   text-align: justify;
+}
+
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px) {
+
+  h2,.h2 {
+    line-height: 50px;
+  }
+
 }
