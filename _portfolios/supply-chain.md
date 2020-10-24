@@ -1,9 +1,9 @@
 ---
 layout: portfolio
-title: "Supply Chain Analytics"
+title: "Supply Chain"
 categories: ["supply-chain"]
 thumbnail: "/assets/images/portfolio/supply-portfolio.jpg"
-description: "Sales and supply chain analytics for medical products in new markets"
+description: "Sales and supply chain analytics for <br />medical products in new markets"
 ---
 
 <div class="row">
@@ -13,7 +13,7 @@ description: "Sales and supply chain analytics for medical products in new marke
 		</div>
 		<div class="col-lg-4 text-center">
 			<h4 class="text-color font-weight-bold mb-2">Category</h4>
-			<p>Algorithm design, Supply Chain, System Design</p>
+			<p>Algorithm design, Supply Chain, System Design, Software Development</p>
 		</div>
 		<div class="col-lg-4 text-center">
 			<h4 class="text-color font-weight-bold mb-2">Location</h4>
@@ -27,11 +27,10 @@ description: "Sales and supply chain analytics for medical products in new marke
 	<p>{{page.description}}</p> -->
 
 	<p>
-	Abe.ai gives financial institutions a fully featured product with the Virtual Financial Assistant, but it's critical that financial institutions own their roadmap and the data underlying machine learning models.
-
-	The Conversational AI Platform empowers financial institutions to leverage AI in finance for better customer experiences and increased operational efficiency.
+	Boehringer Ingelheim is one of the world's 20 leading pharmaceutical companies. </p>
+	<p>
+	Some of their most recent problems are effectively data problems.
 	</p>
-	<p>Abe.ai technology was built specifically for technology in banks, credit unions, and wealth managers.</p>
 
 <hr class="my-5">
 
@@ -40,20 +39,25 @@ description: "Sales and supply chain analytics for medical products in new marke
 			<div class="col-lg-12 text-center">
 				<h4 class="mb-5 text-uppercase">Project summary </h4>
 			</div>
-
 		<p>
-		Personal finance has always been a challenge for people who struggle with their money.
-		Abe AI conversational engine - chatbot - is an advanced AI-based solution that helps people
-		manage their money in the most natural way.
+			In the process of innovation, from the lab to bringing new products to the market, the pharmaceutical group required to investigate the conditions of their new market and define pricing strategies while taking into account production and distribution costs along the entire supply chain.
 		</p>
+
+
+
 
 		<div class="col-lg-12 text-center">
 				<h4 class="mb-5 text-uppercase">objectives</h4>
 		</div>
 
-		<p>Something about ABE and the project sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae cat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed perspiciatis unde omnis iste natus error sit voluptatem.</p>
+		<p>
+			Amethix has been involved in a critical supply chain project related to the introduction of new medications in the Asian market. We designed and implemented custom statistical models for demand forecasting and pricing analysis.
+		</p>
 
-		<p>Something about ABE and the project sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae cat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed perspiciatis unde omnis iste natus error sit voluptatem.</p>
+		<p>
+		Our findings have helped the Company deploy optimal strategies for supply chain and pricing models, taking into account a number of external factors not always under control of the Company.
+		</p>
+
 	</div>
 </div>
 

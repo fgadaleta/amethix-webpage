@@ -3,7 +3,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com or
 title: "Amethix Technologies"
 email: "hello@amethix.com"
 phone: "+32 478 99 89 36"
-address: "1 Stadsvest 3012 Leuven (Belgium)"
+address: "Leuven, Belgium"
 author: amethix
 description: >- # this means to ignore newlines
  Amethix works to create and maximize the impact of the world's leading corporations, startups, and nonprofits, so they can create a better future for everyone they serve.
@@ -13,7 +13,7 @@ logo_icon: "/assets/images/logo-b.png"
 contact_form_action: "https://formspree.io/f/xpvralvx" # works with https://fomrspree.io
 mailchimp_list: "https://themeix.us16.list-manage.com/subscribe/post?u=307862c135e4548eecf86f389&amp;id=342411fb35"
 footer_content: "Making sense of your data."
-copyright : "Amethix Technologies &copy; 2020 All Right Reserved"
+copyright : "Amethix Technologies &copy; 2020 All Rights Reserved"
 # page header default image
 cover_image: "/assets/images/bg/about-bg.jpg"
 google_map_api: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDnh74UN6BKgq9U5fMNGhdZOSpmM_QnZqs"
@@ -44,10 +44,6 @@ social:
 - name: facebook
   icon: "ti-facebook"
   link: "https://www.facebook.com/amethixtech"
-
-# - name: pinterest
-#   icon: "ti-pinterest"
-#   link: "#"
 
 
 # Build settings

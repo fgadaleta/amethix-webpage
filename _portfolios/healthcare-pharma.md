@@ -1,36 +1,32 @@
 ---
 layout: portfolio
-title: "Energy <br /> Smart Grid"
-categories: ["smart grid"]
-thumbnail: "/assets/images/portfolio/energy-portfolio.jpg"
-description: "Predictive analytics for renewable energy <br />providers and dynamic grids"
+title: "healthcare <br />& <br />pharma"
+categories: ["NLP"]
+thumbnail: "/assets/images/portfolio/nlp-portfolio.jpg"
+description: "Advanced analytics for healthcare "
 ---
 
 <div class="row">
 		<div class="col-lg-4 text-center">
 			<h4 class="text-color font-weight-bold mb-2">Client</h4>
-			<p>Centrica Inc.</p>
+			<p>Johnson & Johnson</p>
 		</div>
 		<div class="col-lg-4 text-center">
 			<h4 class="text-color font-weight-bold mb-2">Category</h4>
-			<p>Algorithm design, Production, Software Development</p>
+			<p>Algorithm design, implementation, Software Development</p>
 		</div>
 		<div class="col-lg-4 text-center">
 			<h4 class="text-color font-weight-bold mb-2">Location</h4>
-			<p>Belgium, Canada</p>
+			<p>Belgium, USA</p>
 		</div>
 </div>
 
 <div class="col-lg-8 text-center">
-
-	<!-- <h2 class="mb-5 mt-2 text-uppercase">{{page.title}}</h2>
-	<p>{{page.description}}</p> -->
-
-		<p>
-		Centrica REstore is a leading European energy technology company specialising in demand side management solutions,
-		maximising value for large businesses through ancillary services including frequency response and capacity markets.
-		</p>
-
+	<p>
+	Janssen Pharmaceutica is a pharmaceutical company headquartered in Beerse, Belgium and owned by Johnson & Johnson.
+	The disease interception unit advances a growing venture portfolio focused on intercepting diseases prior to onset
+	</p>
+	<p>Amethix Technologies has played a role in the interception of Ischaemic stroke from Real World Evidence data</p>
 
 <hr class="my-5">
 
@@ -39,12 +35,9 @@ description: "Predictive analytics for renewable energy <br />providers and dyna
 			<div class="col-lg-12 text-center">
 				<h4 class="mb-5 text-uppercase">Project summary </h4>
 			</div>
+
 		<p>
-		Amethix has been involved in two major projects related to the forecast of electricity prices for smart-grid optimization,
-		in the European and US market.
-		</p>
-		<p>
-		Both models are considered critical for the business of thousands of industrial clients, as they directly affect the yearly costs of their electricity bill.
+		Involved in commercial projects that range from big data analytics to measuring the effectiveness of drugs outside of clinical trials to social network analysis of clinicians and medical practitioners to predicting risk of specific diseases.
 		</p>
 
 		<div class="col-lg-12 text-center">
@@ -52,15 +45,25 @@ description: "Predictive analytics for renewable energy <br />providers and dyna
 		</div>
 
 		<p>
-		Amethix developed predictive models of electricity price for multiple European countries (Belgium, France, Germany).
+		Amethix designed and implemented powerful predictive models for disease interception, improving overall accuracy by +25% with respect to existing models.
 		</p>
+
 		<p>
-		We designed and implemented the best predictive models for peak energy consumption in the North America market and
-		advised best practices in designing machine learning pipelines for reproducibility and scalability
-		within the organisation.
+		More specifically we have
+		<ul>
+		<li>implemented the most accurate predictive model for drug recommendation</li>
+		<li>proposed and facilitated adoption of Big Data technologies and Advanced analytics solutions with Deep Learning and AI</li>
+		<li>designed strategies to improve reproducibility in machine learning and production pipelines</li>
+		</ul>
+
 		</p>
+
+
+
+
 	</div>
 </div>
+
 
 <!--
 <div class="post-single-share py-4 mt-4 mb-5">
@@ -110,5 +113,3 @@ description: "Predictive analytics for renewable energy <br />providers and dyna
 		 </div>
 	</div>
 </div>
-
-

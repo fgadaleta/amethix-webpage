@@ -9,11 +9,11 @@ description: "Conversational engine <br />for personal finance"
 <div class="row">
 		<div class="col-lg-4 text-center">
 			<h4 class="text-color font-weight-bold mb-2">Client</h4>
-			<p>ABE.ai Inc.</p>
+			<p>ABE.AI Inc.</p>
 		</div>
 		<div class="col-lg-4 text-center">
 			<h4 class="text-color font-weight-bold mb-2">Category</h4>
-			<p>Algorithm design, Governance</p>
+			<p>Algorithm design, Governance, Software Development</p>
 		</div>
 		<div class="col-lg-4 text-center">
 			<h4 class="text-color font-weight-bold mb-2">Location</h4>
@@ -22,13 +22,8 @@ description: "Conversational engine <br />for personal finance"
 </div>
 
 <div class="col-lg-8 text-center">
-
-	<!-- <h2 class="mb-5 mt-2 text-uppercase">{{page.title}}</h2>
-	<p>{{page.description}}</p> -->
-
 	<p>
-	Abe.ai gives financial institutions a fully featured product with the Virtual Financial Assistant, but it's critical that financial institutions own their roadmap and the data underlying machine learning models.
-
+	Abe.AI gives financial institutions a fully featured product with the Virtual Financial Assistant, but it's critical that financial institutions own their roadmap and the data underlying machine learning models.
 	The Conversational AI Platform empowers financial institutions to leverage AI in finance for better customer experiences and increased operational efficiency.
 	</p>
 	<p>Abe.ai technology was built specifically for technology in banks, credit unions, and wealth managers.</p>
@@ -51,11 +46,19 @@ description: "Conversational engine <br />for personal finance"
 				<h4 class="mb-5 text-uppercase">objectives</h4>
 		</div>
 
-		<p>Something about ABE and the project sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae cat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed perspiciatis unde omnis iste natus error sit voluptatem.</p>
+		<p>
+		Amethix has played an essential role since the very early stage of the product.
+		We have supported ABE.AI in creating solutions for financial services for medium-sized credit unions and financial aggregators in the USA.
+		</p>
+		<p>
+		The entire conversation engine has been designed and integrated with advanced NLP techniques, from off-the-shelf machine learning methods to more advanced deep learning techniques.
+		Amethix implemented the most accurate Named Entity Recognition and Intent classification models, provided algorithms in the space of domain-specific language modeling, sentiment analysis and short-text queries.
+		</p>
 
-		<p>Something about ABE and the project sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat.duis aute irure sint occae cat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed perspiciatis unde omnis iste natus error sit voluptatem.</p>
+
 	</div>
 </div>
+
 
 <!--
 <div class="post-single-share py-4 mt-4 mb-5">

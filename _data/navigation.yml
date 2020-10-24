@@ -16,8 +16,6 @@ main:
   #     url: /about
   #   - name: About Me
   #     url: /about-me
-- name: Blog
-  url: /blog-1
   # submenu:
   # - name: Blog One
   #   url: /blog-1
@@ -32,8 +30,6 @@ main:
     url: /portfolios/smart-grid
   - name: Supply-Chain
     url: /portfolios/supply-chain
-  - name: Fintech
-    url: /portfolios/finance-analytics
   - name: Healthcare&Pharma
     url: /portfolios/healthcare-pharma
 
@@ -52,8 +48,6 @@ main:
 - name: Contact
   url: /contact
 
-
-
 ########## footer menu ###############
 footer:
 - name: Home
@@ -62,14 +56,10 @@ footer:
   url: /solutions
 - name: About Us
   url: /about
-- name: Blog
-  url: /blog
 - name: Contact
   url: /contact
 
 ############## Bottom menu ###############
 bottom:
-- name: Terms of Service
-  link: "#"
 - name: Privacy Policy
-  link: "#"
+  link: "/privacy"

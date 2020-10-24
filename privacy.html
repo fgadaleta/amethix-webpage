@@ -1,7 +1,6 @@
-<!-- Slider Start -->
-<!-- {% assign banner = site.data.homepage_1.hero_area %} -->
-{% assign header_image = site.data.homepage_1.hero_area.background_image %}
-
+---
+layout: default
+---
 
 <section class="page-title header-padding overlay-static" style="
 	background: radial-gradient(circle, rgba(235, 235, 235, 0) 1%, rgba(0, 0, 0, 0.981) 100%),
@@ -9,19 +8,24 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	overflow: hidden;
-	opacity: 0.9;
+    opacity: 0.9;
+    max-height: 200px;
 	">
 
 
 	<div class="container" style="vertical-align: middle;">
 		<div class="row">
 		  <div class="col-lg-12">
-			<span class="h5 text-uppercase text-yello">{{banner.subtitle}}</span>
-			  <h1 class="text-white mt-2 text-uppercase text-xl">{{ banner.title | strip_html}}</h1>
-			  <h4 class="text-white text-uppercase">{{ banner.content }}</h4>
+
+			<!-- <span class="h5 text-uppercase text-yello">Privacy Policy </span> -->
+			  <h4 class="text-white mt-2 text-uppercase text-lg text-center">Privacy Policy & Terms</h4>
+              <!-- <h4 class="text-white text-uppercase">Privacy Policy & Terms</h4> -->
+
 		  </div>
 		</div>
 	  </div>
 
 
 </section>
+
+{% include privacy.html %}
