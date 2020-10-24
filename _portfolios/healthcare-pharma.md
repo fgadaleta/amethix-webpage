@@ -2,7 +2,7 @@
 layout: portfolio
 title: "healthcare <br />& <br />pharma"
 categories: ["NLP"]
-thumbnail: "/assets/images/portfolio/nlp-portfolio.jpg"
+thumbnail: "/assets/images/portfolio/healthcare-bg.jpg"
 description: "Advanced analytics for healthcare "
 ---
 
@@ -26,7 +26,8 @@ description: "Advanced analytics for healthcare "
 	Janssen Pharmaceutica is a pharmaceutical company headquartered in Beerse, Belgium and owned by Johnson & Johnson.
 	The disease interception unit advances a growing venture portfolio focused on intercepting diseases prior to onset
 	</p>
-	<p>Amethix Technologies has played a role in the interception of Ischaemic stroke from Real World Evidence data</p>
+	<p>Amethix Technologies has played a fundamental role in the interception of several diseases among which Ischaemic stroke,
+	using Real World Evidence (RWE) data</p>
 
 <hr class="my-5">
 
@@ -58,9 +59,6 @@ description: "Advanced analytics for healthcare "
 
 		</p>
 
-
-
-
 	</div>
 </div>
 
@@ -90,19 +88,15 @@ description: "Advanced analytics for healthcare "
 	<div class="carousel slide" id="single-slide">
 		<div class="carousel-inner">
 
-			<!--
-			<div class="carousel-item active">
-				<img src="/assets/images/portfolio/portfolio-single.jpg" alt="" class="img-fluid">
-			</div>
-			-->
-
 			<div class="carousel-item">
 				<img src="/assets/images/blog/blog-single.jpg" alt="" class="img-fluid">
 			</div>
+
 			<div class="carousel-item">
 				<img src="/assets/images/portfolio/portfolio-single.jpg" alt="" class="img-fluid">
 			</div>
 		</div>
+
 		 <div class="text-center mt-4">
 		 	<a class="control-prev" href="#single-slide" role="button" data-slide="prev">
 			    <span class="fa fa-long-arrow-alt-left" aria-hidden="true"></span>

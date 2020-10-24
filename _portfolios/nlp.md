@@ -85,12 +85,6 @@ description: "Conversational engine <br />for personal finance"
 	<div class="carousel slide" id="single-slide">
 		<div class="carousel-inner">
 
-			<!--
-			<div class="carousel-item active">
-				<img src="/assets/images/portfolio/portfolio-single.jpg" alt="" class="img-fluid">
-			</div>
-			-->
-
 			<div class="carousel-item">
 				<img src="/assets/images/blog/blog-single.jpg" alt="" class="img-fluid">
 			</div>

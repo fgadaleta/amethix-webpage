@@ -3,8 +3,7 @@ hero_area:
   background_image : "/assets/images/bg/net-bg.jpg"
   subtitle: "Amethix Technologies"
   title : "Making sense of your data."
-  content : "We maximize the impact of the world’s
-  leading organizations"
+  content : "We maximize the impact of the world’s leading organizations"
   # image : "/assets/images/banner/banner-img-2.png"
   button:
     enable : false
