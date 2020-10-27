@@ -35,7 +35,7 @@ description: "Predictive analytics for renewable energy <br />providers and dyna
 <hr class="my-5">
 
 <div class="row">
-	<div class="col-lg-12 mt-5" style="text-align: justify;">
+	<div class="col-lg-12 mt-5" style="text-align: justify; margin-bottom: -42px; margin-top: 20px;">
 			<div class="col-lg-12 text-center">
 				<h4 class="mb-5 text-uppercase">Project summary </h4>
 			</div>
@@ -47,7 +47,7 @@ description: "Predictive analytics for renewable energy <br />providers and dyna
 		Both models are considered critical for the business of thousands of industrial clients, as they directly affect the yearly costs of their electricity bill.
 		</p>
 
-		<div class="col-lg-12 text-center">
+		<div class="col-lg-12 text-center" style="text-align: justify; margin-bottom: -42px; margin-top: 20px;">
 				<h4 class="mb-5 text-uppercase">objectives</h4>
 		</div>
 

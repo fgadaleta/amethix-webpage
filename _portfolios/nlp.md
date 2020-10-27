@@ -31,7 +31,7 @@ description: "Conversational engine <br />for personal finance"
 <hr class="my-5">
 
 <div class="row">
-	<div class="col-lg-12 mt-5" style="text-align: justify;">
+	<div class="col-lg-12 mt-5" style="text-align: justify; margin-bottom: -42px; margin-top: 20px;">
 			<div class="col-lg-12 text-center">
 				<h4 class="mb-5 text-uppercase">Project summary </h4>
 			</div>
@@ -42,7 +42,7 @@ description: "Conversational engine <br />for personal finance"
 		manage their money in the most natural way.
 		</p>
 
-		<div class="col-lg-12 text-center">
+		<div class="col-lg-12 text-center" style="text-align: justify; margin-bottom: -42px; margin-top: 20px;">
 				<h4 class="mb-5 text-uppercase">objectives</h4>
 		</div>
 

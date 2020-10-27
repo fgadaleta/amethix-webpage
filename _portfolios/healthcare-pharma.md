@@ -32,7 +32,7 @@ description: "Advanced analytics for healthcare "
 <hr class="my-5">
 
 <div class="row">
-	<div class="col-lg-12 mt-5" style="text-align: justify;">
+	<div class="col-lg-12 mt-5" style="text-align: justify; margin-bottom: -42px; margin-top: 20px;">
 			<div class="col-lg-12 text-center">
 				<h4 class="mb-5 text-uppercase">Project summary </h4>
 			</div>
@@ -41,7 +41,7 @@ description: "Advanced analytics for healthcare "
 		Involved in commercial projects that range from big data analytics to measuring the effectiveness of drugs outside of clinical trials to social network analysis of clinicians and medical practitioners to predicting risk of specific diseases.
 		</p>
 
-		<div class="col-lg-12 text-center">
+		<div class="col-lg-12 text-center" style="text-align: justify; margin-bottom: -42px; margin-top: 20px;">
 				<h4 class="mb-5 text-uppercase">objectives</h4>
 		</div>
 
