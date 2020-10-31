@@ -30,6 +30,10 @@
 	padding: 80px 0px 65px 0px;
 }
 
+.section-sm-short {
+	padding-top: 25px;
+}
+
 .content.text-white *{
 	color: $white;
 }
@@ -168,3 +172,15 @@ and (max-device-width : 812px) {
 }
 
 
+.container-fluid-short {
+    width: 70%;
+    // padding-right: 15px;
+    // padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.padding-top {
+	padding-top: 42px;
+}

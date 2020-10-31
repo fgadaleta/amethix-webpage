@@ -1,9 +1,8 @@
 ---
 layout: default
 header_image: "/assets/images/bg/blog-bg.jpg"
-title: "Our Blog"
-description: "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim ad
-minim veniam quis."
+title: "Amethix Blog"
+description: "Stay update with the latest insights <br />in machine learning and artificial intelligence"
 pagination:
 enabled: true
 ---
@@ -13,7 +12,7 @@ enabled: true
 <section class="section">
 	<div class="container">
 		<div class="row justify-content-center">
-			{% for post in paginator.posts %}
+			{% for post in site.posts %}
 			<div class="col-lg-4 col-md-6">
 				<div class="blog-item mb-5">
 					{% if post.post_image %}

@@ -3,7 +3,7 @@ layout: post
 title: "Premium Jekyll And Ghost Themes"
 date: 2020-01-02 20:37:13 +0600
 tags: development
-categories: [development]
+categories: [AI - ML]
 post_image: "/assets/images/blog/blog-1.jpg"
 author: "Themefisher"
 ---
