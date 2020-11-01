@@ -1,6 +1,6 @@
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com or  https://Dizerjk.netlify.com
-title: "Amethix Technologies"
+title: "Machine Learning and Artificial Intelligence | Amethix"
 email: "hello@amethix.com"
 phone: "+32 478 99 89 36"
 address: "Leuven, Belgium"
@@ -16,6 +16,7 @@ copyright : "Amethix Technologies &copy; 2020 All Rights Reserved"
 # page header default image
 cover_image: "/assets/images/bg/about-bg.jpg"
 google_map_api: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDnh74UN6BKgq9U5fMNGhdZOSpmM_QnZqs"
+google_analytics: "UA-37903879-7"
 
 ############### Call to Action ###############
 cta:

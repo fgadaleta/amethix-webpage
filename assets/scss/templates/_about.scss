@@ -102,6 +102,18 @@
 	padding: 220px 0px 140px 0px;
 }
 
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px) {
+	.header-padding{
+		padding: 120px 0px 140px 10px;
+	}
+
+	.no-gutters {
+		padding: 0px;
+	}
+}
+
 .text-lg{
 	font-size: 3.5em;
 	line-height: 1em;
