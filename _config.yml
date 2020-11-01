@@ -1,5 +1,5 @@
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com or  https://Dizerjk.netlify.com
+url: "amethix.com" # the base hostname & protocol for your site, e.g. http://example.com or  https://Dizerjk.netlify.com
 title: "Machine Learning and Artificial Intelligence | Amethix"
 email: "hello@amethix.com"
 phone: "+32 478 99 89 36"

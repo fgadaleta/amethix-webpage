@@ -82,7 +82,6 @@ Get in touch."
 						</li>
 						{% endfor %}
 					</ul>
-
 					<form class="contact__form" method="post" action="{{site.contact_form_action}}">
 						<!-- form message -->
 						<div class="row">
@@ -93,16 +92,17 @@ Get in touch."
 							</div>
 							<div class="col-lg-6">
 								<div class="form-group">
-									<input class="form-control" type="text" name="email" id="email" placeholder="Email*">
+									<input class="form-control" type="text" name="_replyto" id="email" placeholder="Email*">
 								</div>
 							</div>
 							<div class="col-12">
 								<textarea class="form-control mt-3 mb-4" name="message" id="message" cols="30" rows="6"
 									placeholder="Message"></textarea>
-								<button type="submit" class="btn btn-primary" value="Submit Message"> Send </button>
+								<button type="submit" class="btn btn-primary" value="Submit Message"> Send</button>
 							</div>
 						</div>
 					</form>
+
 				</div>
 
 				<div class="contact-form text-center" style="margin-top:52px;">
