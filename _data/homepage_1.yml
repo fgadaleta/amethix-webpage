@@ -51,7 +51,7 @@ testimonial:
 ######################## count down  ########################
 funfacts:
   enable : true
-  bg_image : "/assets/images/bg/cta-bg2.png"
+  bg_image : "/assets/images/bg/cta-bg-2.png"
   item:
   - name : "work completed"
     icon : "/assets/images/icons/browser-light.png"

@@ -1,19 +1,76 @@
-.home-contact{
-	background: url("../images/bg/bg-6.jpg")center center no-repeat;
-	background-size: cover;
+.footer-top-design-0407 {
+	background: $stripe_white;
+	height: 15rem;
+	transform: skewY(-6deg) translateY(8rem);
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	justify-content: space-between;
+	column-gap: 1.5rem;
 
-	.form-control {
-	    background-color: transparent;
-	    border-radius: 0px;
-	    border: 0px;
-	    border-bottom: 1px solid #e6c5c5;
-	    padding-left: 0px;
-	    box-shadow: 0px;
-	    color: $black!important;
-	    font-size: 14px;
+	:first-child :first-child {
+		@include design($stripe_sky_blue, 63%);
 	}
 
-	.form-control:focus{
+	:first-child :last-child {
+		@include design($stripe_light_blue, 100%, -5rem);
+		opacity: 0.7;
+	}
+
+	:last-child {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	:last-child :first-child {
+		@include design($stripe_sky_blue, 100%);
+	}
+
+	:last-child :last-child {
+		@include design($stripe_light_blue, 63%, -5rem);
+		opacity: 0.7;
+	}
+
+	@media (min-width:560px) {
+		display: flex;
+
+		:first-child :first-child {
+			@include design($stripe_sky_blue);
+		}
+
+		:first-child :last-child {
+			@include design($stripe_light_blue, 15rem, -5rem);
+			opacity: 0.7;
+		}
+
+		:last-child :first-child {
+			@include design($stripe_sky_blue, 15rem);
+		}
+
+		:last-child :last-child {
+			@include design($stripe_light_blue, 10rem, -5rem);
+			opacity: 0.7;
+		}
+	}
+}
+
+.home-contact {
+	// background: url("../images/bg/bg-6.jpg")center center no-repeat;
+	// background-size: cover;
+	background: $stripe_white;
+
+	.form-control {
+		background-color: transparent;
+		border-radius: 0px;
+		border: 0px;
+		border-bottom: 1px solid #e6c5c5;
+		padding-left: 0px;
+		box-shadow: 0px;
+		color: $black !important;
+		font-size: 14px;
+	}
+
+	.form-control:focus {
 		box-shadow: none;
 	}
 }
@@ -23,23 +80,23 @@
 //
 
 
-.contact-info{
+.contact-info {
 	position: relative;
 
-	i{
+	i {
 		position: absolute;
-		content:"";
+		content: "";
 		left: 0px;
 		top: 3px;
-		font-size:35px;
+		font-size: 35px;
 	}
 
-	.info{
+	.info {
 		margin-left: 50px;
 	}
 }
 
 .google-map #map {
-    width: 100%;
-    height: 450px;
+	width: 100%;
+	height: 450px;
 }

@@ -10,7 +10,7 @@
 	background: $extra-color;
 }
 
-.bg-blue{
+.bg-blue {
 	background: $blue !important;
 }
 
@@ -34,13 +34,13 @@
 	padding-top: 25px;
 }
 
-.content.text-white *{
+.content.text-white * {
 	color: $white;
 }
 
 .img-fluid {
-    max-width: 100%;
-    // height: 25px;
+	max-width: 100%;
+	// height: 25px;
 }
 
 a {
@@ -81,7 +81,7 @@ a:focus {
 }
 
 .overlay-effect {
-    overflow: hidden;
+	overflow: hidden;
 	// background:  #C33764;
 	// top: 0;
 	// bottom: 0;
@@ -93,47 +93,108 @@ a:focus {
 	// background: url('assets/images/bg/network-bg.mp4') center center / cover no-repeat;
 }
 
+.hero-0607 {
+	#home-hero {
+		transform: skewY(-12deg) translateY(-25vh);
+		// opacity: 0.9;
+		width: 100%;
+		height: 80vh;
+		overflow: hidden;
+	}
+
+	div {
+		max-width: 60rem;
+		margin: 0 auto;
+		position: absolute;
+		top: 10rem;
+		left: 0;
+		right: 0;
+		padding: 0.7rem;
+
+
+
+		h1 {
+			margin-bottom: 2.5rem;
+			font-size: 5rem;
+			line-height: 5.1rem;
+
+			@include text-animation;
+		
+			@include mobile-xs {
+				font-size: 3rem;
+				line-height: 3.4rem;
+			}
+
+			@include mobile {
+				font-size: 3.5rem;
+				line-height: 3.7rem;
+			}
+
+		}
+
+		h2 {
+			font-size: 1.7rem;
+			line-height: 2rem;
+			font-weight: 500;
+			color: white;
+			
+			
+			@include mobile-xs {
+				font-size: 1rem;
+				line-height: 1.2rem;
+			}
+			
+			@include mobile {
+				font-size: 1.3rem;
+				line-height: 1.7rem;
+			}
+			
+			@include tablet {
+				color: $secondary-color;
+			}
+		}
+	}
+}
+
 .overlay-static {
 	// outline: 100% solid rgba(255, 0, 0, 0.5) !important;
-    outline-offset: -100px;
-    overflow: hidden;
-    position: relative;
+	outline-offset: -100px;
+	overflow: hidden;
+	position: relative;
 	height: 100%;
 	width: 100%;
 	z-index: -100;
 }
 
 .fullscreen-bg {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 100px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 100px;
 	left: 0;
 	// margin: auto;
 	width: 100%;
 	// max-height: 700px;
 	max-width: 100%;
-    max-height: 100%;
-    overflow: hidden;
+	max-height: 100%;
+	overflow: hidden;
 	// z-index: -100;
-	background: radial-gradient(circle, rgba(248,0,255,0) 1%, rgba(3,3,41,0.9808123933167017) 100%);
+	background: radial-gradient(circle, rgba(248, 0, 255, 0) 1%, rgba(3, 3, 41, 0.9808123933167017) 100%);
 	z-index: -100;
 }
 
 .fullscreen-bg__video {
-    position: absolute;
-    top: 0;
+	position: absolute;
+	top: 0;
 	left: 0;
 	// background-size: 100% auto;
 	width: 100%;
-	background: radial-gradient(circle, rgba(248,0,255,0) 1%, rgba(3,3,41,0.9808123933167017) 100%);
+	background: radial-gradient(circle, rgba(248, 0, 255, 0) 1%, rgba(3, 3, 41, 0.9808123933167017) 100%);
 	z-index: -100;
 }
 
 
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 812px) {
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) {
 
 	.navbar-nav {
 		top: 42px;
@@ -141,7 +202,7 @@ and (max-device-width : 812px) {
 		margin-top: 20px;
 		// display: block;
 		width: 100%;
-		background-color: rgba(44,44,44,0.6);
+		background-color: rgba(44, 44, 44, 0.6);
 		padding: 42px;
 		// flex-direction: column;
 		// position: fixed;
@@ -173,11 +234,11 @@ and (max-device-width : 812px) {
 
 
 .container-fluid-short {
-    width: 60%;
-    // padding-right: 15px;
-    // padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+	width: 60%;
+	// padding-right: 15px;
+	// padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 

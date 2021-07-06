@@ -27,3 +27,43 @@
 @mixin size($size){
   width: $size; height: $size;
 }
+
+@mixin design ($color, $width:false, $translate:false) {
+	height: 2.5rem;
+	width: 10rem;
+  background: $color;
+
+	@if $width {
+		width: $width;
+	}
+
+	transform: translateY(-4.1rem);
+
+	@if $translate {
+		transform: translateY($translate);
+	}
+}
+
+@mixin text-animation {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
