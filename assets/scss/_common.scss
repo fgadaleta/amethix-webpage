@@ -119,7 +119,7 @@ a:focus {
 			line-height: 5.1rem;
 
 			@include text-animation;
-		
+
 			@include mobile-xs {
 				font-size: 3rem;
 				line-height: 3.4rem;
@@ -137,18 +137,18 @@ a:focus {
 			line-height: 2rem;
 			font-weight: 500;
 			color: white;
-			
-			
+
+
 			@include mobile-xs {
 				font-size: 1rem;
 				line-height: 1.2rem;
 			}
-			
+
 			@include mobile {
 				font-size: 1.3rem;
 				line-height: 1.7rem;
 			}
-			
+
 			@include tablet {
 				color: $secondary-color;
 			}
@@ -244,4 +244,240 @@ a:focus {
 
 .padding-top {
 	padding-top: 42px;
+}
+
+@mixin small-box($background:false, $width:false) {
+	height: 3.2rem;
+	width: 20rem;
+
+	@if $background {
+		background: $background;
+	}
+
+	@if $width {
+		width: $width;
+	}
+}
+
+@keyframes slidein {
+	0% {
+		margin-left: 0%;
+		opacity: 0;
+	}
+
+	20% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	70% {
+		opacity: 1;
+	}
+
+	100% {
+		margin-left: 100%;
+	}
+}
+
+@keyframes slidein2 {
+	0% {
+		margin-left: 0%;
+		opacity: 0;
+	}
+
+	20% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	70% {
+		opacity: 1;
+	}
+
+	100% {
+		margin-left: 100%;
+	}
+}
+
+@keyframes slidein3 {
+	0% {
+		margin-left: 0%;
+		opacity: 0;
+	}
+
+	10% {
+		opacity: 0.3;
+	}
+
+	20% {
+		opacity: 0.65;
+	}
+
+	30% {
+		opacity: 0.3;
+	}
+
+	40% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0.3;
+	}
+
+	60% {
+		opacity: 0.65;
+	}
+
+	70% {
+		opacity: 0.3;
+	}
+
+	80% {
+		opacity: 0;
+	}
+
+	90% {
+		opacity: 0.3;
+	}
+
+	100% {
+		margin-left: 100%;
+		opacity: 0.65;
+	}
+}
+
+.contact-hero-container-0706 {
+	position: relative;
+	min-height: 80vh;
+}
+
+.contact-hero-0706 {
+	transform: skewY(-12deg) translateY(-25vh);
+	overflow: hidden;
+	width: 100%;
+	height: 80vh;
+	overflow: hidden;
+	background-image: linear-gradient(-81deg, #6fa7f8 1%, #777bf8);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+
+	:nth-child(1) {
+		:first-child {
+
+			@include small-box(linear-gradient(-90deg, #000, #000 97%));
+			animation: slidein3 14s ease-in infinite;
+			mix-blend-mode: soft-light;
+		}
+	}
+
+	:nth-child(2) {
+		:first-child {
+
+			@include small-box(linear-gradient(-90deg, transparent, rgba(0, 0, 0, .3), transparent));
+			animation: slidein2 5s infinite;
+			mix-blend-mode: soft-light;
+		}
+	}
+
+	:nth-child(3) {
+		:first-child {
+
+			@include small-box(linear-gradient(-90deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, .4), hsla(0, 0%, 100%, 0)));
+			animation: slidein 8s infinite;
+			mix-blend-mode: soft-light;
+		}
+	}
+
+	:last-child {
+		display: flex;
+		justify-content: space-between;
+
+		:first-child {
+			@include small-box(#6772e5);
+		}
+
+		:last-child {
+			@include small-box(#9cdbff, 30rem);
+		}
+	}
+}
+
+.contact-hero-main-0706 {
+	padding-top: 9rem;
+	position: relative;
+	color: white;
+	text-align: center;
+
+	h1,
+	p {
+		color: inherit;
+	}
+
+	h1 {
+		margin-bottom: 2rem;
+		font-weight: 500;
+		font-size: 3.2rem;
+	}
+
+	p {
+		font-size: large;
+		line-height: 1.5;
+		margin-bottom: 0;
+	}
+
+	.row {
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin-top: 4rem;
+	}
+
+	.card {
+		margin: 2rem 0.8rem;
+		padding-bottom: 1.5rem;
+		min-width: 20rem;
+		max-width: 25rem;
+		min-height: 15rem;
+		outline: none;
+		border: none;
+		box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+		i {
+			color: $stripe_light_blue;
+			font-size: 3.1rem;
+			background: white;
+			width: 6rem;
+			height: 6rem;
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+			box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+			margin: 0 auto;
+			transform: translateY(-2rem);
+		}
+
+		h2 {
+			font-size: xx-large;
+			color: $secondary-color;
+			margin-bottom: 2rem;
+		}
+
+		p,
+		a {
+			color: $black-light;
+		}
+	}
 }

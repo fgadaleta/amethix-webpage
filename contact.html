@@ -4,59 +4,74 @@ header_image: "/assets/images/bg/contact-bg.jpg"
 title: "Contact Us"
 description: "We build smart technologies for your business. <br />
 Get in touch."
+
+hero:
+  title: Contact us
+  description: >
+    We build smart technologies for your business.
+
+
+    Get in touch
+  contacts:
+    - icon: ti-location-pin
+      title: Our Address
+      description: >
+        1 Stadsvest 3012 Leuven,    
+
+
+        Belgium
+    - icon: ti-mobile
+      title: Call Us
+      description: >
+        [(+32) 478 99 89 36](tel:+32478998936)
+    - icon: ti-email
+      title: Email Us
+      description: >
+        [hello@amethix.com](mailto:hello@amethix.com)
 ---
 
-{% include page_header_static.html %}
+
+<section class="contact-hero-container-0706">
+	<div class="contact-hero-0706">
+		<div>
+			<div>
+			</div>
+		</div>
+		<div>
+			<div>
+			</div>
+		</div>
+		<div>
+			<div>
+			</div>
+		</div>
+		<div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+	<div class="contact-hero-main-0706">
+		<h1>{{ page.hero.title }}</h1>
+		<div>{{ page.hero.description | markdownify }}</div>
+		<div class="container mt-5">
+			<div class="row">
+				{% for contact in page.hero.contacts %}
+				<div class="col card">
+					<i class="{{ contact.icon }}"></i>
+					<h2>{{ contact.title }}</h2>
+					<div>
+						{{ contact.description | markdownify }}
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
 
 <section class="contact-form-wrap section">
 	<div class="container">
-		<div class="row justify-content-center align-items-center bg-gray">
-			<div class="col-lg-10">
-				<div class="contact-content pl-lg-5 mb-5 mb-lg-0 text-center text-uppercase">
-
-					<h3 class="mb-4 font-weight-bold">How to find us</h3>
-					<!--
-					<p>Interested in hiring us?
-						Describe what your project is about and we will follow up shortly.
-						You can email hello@amethix.com</p>
-					-->
-
-					<div class="row mt-5">
-						<div class="col-lg-4">
-							<div class="contact-info mt-3">
-								<i class="ti-location-pin text-color"></i>
-								<div class="info">
-									<h4>Our Address</h4>
-									<p>1 Stadsvest 3012 Leuven, Belgium</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="contact-info mt-3">
-								<i class="ti-mobile text-color"></i>
-								<div class="info">
-									<h4>Call Us</h4>
-									<p>(+32) 478 99 89 36 </p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="contact-info mt-3">
-								<i class="ti-email text-color"></i>
-								<div class="info">
-									<h4>Email Us</h4>
-									<p>hello@amethix.com</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-
-
+		<h3 class="text-center">Get in touch with us</h3>
 		<!-- Map Start -->
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12">
@@ -73,7 +88,7 @@ Get in touch."
 				<div class="col-lg-9 col-md-9 col-sm-9">
 
 				<div class="contact-form text-center">
-					<h3 class="mb-4 font-weight-bold text-uppercase">Contact</h3>
+					<h3 class="mb-4 text-uppercase mt-5 pt-5">Contact</h3>
 
 					<ul class="list-inline socials-links">
 						{% for social in site.social %}
@@ -106,7 +121,7 @@ Get in touch."
 				</div>
 
 				<div class="contact-form text-center" style="margin-top:52px;">
-					<h3 class="mb-4 font-weight-bold text-uppercase">Schedule a call</h3>
+					<h3 class="mb-4 text-uppercase pt-5 mt-5">Schedule a call</h3>
 					<iframe src="https://harmonizely.amethix.com?view=compact" style="width:100%; height:350px;" frameborder="0" scrolling="yes"></iframe>
 				</div>
 			</div>
