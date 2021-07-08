@@ -30,7 +30,7 @@
 
 @mixin design ($color, $width:false, $translate:false) {
 	height: 2.5rem;
-	width: 10rem;
+	width: 20rem;
   background: $color;
 
 	@if $width {

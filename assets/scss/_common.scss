@@ -96,10 +96,12 @@ a:focus {
 .hero-0607 {
 	#home-hero {
 		transform: skewY(-12deg) translateY(-25vh);
-		// opacity: 0.9;
+		opacity: 0.95;
 		width: 100%;
 		height: 80vh;
 		overflow: hidden;
+		filter: blur(0.0625rem);
+		-webkit-filter: blur(0.0625rem); 
 	}
 
 	div {
