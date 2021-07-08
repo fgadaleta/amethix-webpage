@@ -483,3 +483,44 @@ a:focus {
 		}
 	}
 }
+
+.home-footer-contact-section-top-0607 {
+	height: 15rem;
+	transform: skewY(-6deg) translateY(8rem);
+	background-color: $secondary-color;
+	margin-top: 5rem;
+
+	:first-child :first-child {
+		@include design($stripe_sky_blue);
+	}
+
+	:first-child :last-child {
+		@include design($stripe_light_blue, 15rem, -5rem);
+		opacity: 0.7;
+	}
+}
+
+.home-footer-contact-section-bottom-0607 {
+	height: 17rem;
+	transform: skewY(174deg) translateY(-8rem);
+	background-color: $secondary-color;
+	display: flex;
+	justify-content: flex-end;
+
+	:last-child {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: flex-end;
+	}
+
+	:last-child :first-child {
+		@include design($stripe_sky_blue, 15rem, 5rem);
+	}
+
+	:last-child :last-child {
+		@include design($stripe_light_blue, 10rem, 4rem);
+		opacity: 0.7;
+	}
+
+}
