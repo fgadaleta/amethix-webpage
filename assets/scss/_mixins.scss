@@ -49,9 +49,9 @@
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
   background-clip: text;
-  color: transparent;
+  color: #fff; // transparent;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  // -webkit-text-fill-color: transparent;
 }
 
 @keyframes gradient {
