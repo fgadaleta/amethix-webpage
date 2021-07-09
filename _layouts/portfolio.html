@@ -13,18 +13,21 @@ layout: default
 	background-repeat: no-repeat;
 	overflow: hidden;
 	opacity: 0.9;
-	max-height: 976px;
+	height: 100vh;
+	position: relative;
+	z-index: 1;
 	">
 
-	<div class="container">
+	<div class="container relative z-10">
 		<div class="row">
-		  <div class="col-lg-12">
-			<span class="h5 text-uppercase text-yello">{{banner.subtitle}}</span>
-			  <h1 class="text-white mt-2 text-uppercase text-xl  padding-top">{{ page.title }}</h1>
-			  <h4 class="text-white text-uppercase">{{ page.description }}</h4>
-		  </div>
+			<div class="col-lg-12">
+				<span class="h5 text-uppercase text-yello">{{banner.subtitle}}</span>
+				<h1 class="text-white mt-2 mb-4 text-uppercase text-xl  padding-top">{{ page.title }}</h1>
+				<h4 class="text-white text-uppercase">{{ page.description }}</h4>
+			</div>
 		</div>
-	  </div>
+	</div>
+	<div class="skew-bottom-6"></div>
 </section>
 <!-- Slider End -->
 
@@ -32,7 +35,7 @@ layout: default
 <section class="portfolio-single">
 	<div class="container">
 		<div class="row justify-content-center">
-          {{page.content}}
+			{{page.content}}
 		</div>
 	</div>
 </section>
@@ -45,17 +48,17 @@ layout: default
 			</div>
 		</div>
 		<div class="row">
-            {% for portfolio in site.portfolios limit:"4" %}
+			{% for portfolio in site.portfolios limit:"4" %}
 			<div class="col-lg-6">
 				<div class="portfolio-block text-center border-0 ">
-				    <img src="{{portfolio.thumbnail}}" class="img-fluid" alt="{{portfolio.title}}"/>
-				    <a class="card-img-overlay" href="{{portfolio.url}}">
-				      <h5 class="card-title text-white mb-0">{{portfolio.title}}</h5>
-				      <p class="card-text text-white text-uppercase text-sm">{{portfolio.category}}</p>
-				    </a>
+					<img src="{{portfolio.thumbnail}}" class="img-fluid" alt="{{portfolio.title}}" />
+					<a class="card-img-overlay" href="{{portfolio.url}}">
+						<h5 class="card-title text-white mb-0">{{portfolio.title}}</h5>
+						<p class="card-text text-white text-uppercase text-sm">{{portfolio.category}}</p>
+					</a>
 				</div>
 			</div>
-            {% endfor %}
+			{% endfor %}
 		</div>
 	</div>
 </section>

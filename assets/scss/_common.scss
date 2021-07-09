@@ -94,6 +94,7 @@ a:focus {
 }
 
 .hero-0607 {
+	position: relative;
 	#home-hero {
 		transform: skewY(-12deg) translateY(-25vh);
 		opacity: 0.95;
@@ -522,4 +523,39 @@ a:focus {
 		opacity: 0.7;
 	}
 
+}
+
+.skew-bottom-6 {
+	background-color: transparent;
+	height: 45vh;
+	position: relative;
+	z-index: 2;
+	margin-left: -1rem;
+	width: 102vw;
+}
+
+.skew-bottom-6::before {
+	height: 150%;
+	transform: skewY(-12deg) translateY(10vh);
+	background: white;
+	z-index: -1;
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+}
+
+.relative {
+	position: relative;
+}
+
+.z-10 {
+	z-index: 10;
+}
+
+.overflow-x-hidden{
+	overflow-x: hidden;
 }
