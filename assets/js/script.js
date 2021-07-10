@@ -5,15 +5,21 @@
 
   var win = $(window);
 
-  // navigation fixed top
-  win.on('scroll', function () {
+  function navBar () {
     if ($(window).scrollTop() > 70) {
       // $('.main-nav').addClass('nav-top');
-       $('.main-nav').hide();
-      } else {
-        // $('.main-nav').removeClass('nav-top');
-        $('.main-nav').show();
+      $('.main-nav').hide();
+    } else {
+      // $('.main-nav').removeClass('nav-top');
+      $('.main-nav').show();
     }
+  }
+
+  navBar();
+  
+  // navigation fixed top
+  win.on('scroll', function () {
+    navBar();
   });
 
 
@@ -34,33 +40,33 @@
     padding: 20,
     autoplaySpeed: 6000,
     responsive: [{
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 4,
-          infinite: true
-        }
-      },
-      {
-        breakpoint: 900,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3
-        }
-      }, {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        infinite: true
       }
+    },
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3
+      }
+    }, {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    }
 
     ]
   });

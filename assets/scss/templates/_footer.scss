@@ -1,6 +1,5 @@
 .footer-blue-section-0806 {
 	margin-top: 6rem;
-	background: $secondary-color;
 	height: 20rem;
 	transform: skewY(-8deg) translateY(9rem);
 	display: grid;
@@ -55,18 +54,43 @@
 	}
 }
 
-.footer-widget{
+footer {
+	a {
+		&:hover {
+			color: white !important;
+			border-color: white !important;
+		}
+	}
 
-	color: rgba(255,255,255,.7);
-	.lh-38{
+	a:not([target="_blank"]) {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.footer-widget {
+	p {
+		color: white;
+	}
+
+	color: rgba(255, 255, 255, .8);
+
+	a[target="_blank"] {
+		color: rgba(255, 255, 255, .8) !important;
+	}
+
+	.lh-38 {
 		line-height: 24px;
 	}
+
 	ul {
-		li{
+		li {
 			// padding: 6px 0px;
-			color: rgba(255,255,255,.7);
-			a{
-				color: rgba(255,255,255,.7);
+			color: rgba(255, 255, 255, .8);
+
+			a {
+				color: rgba(255, 255, 255, .8);
 				text-transform: uppercase;
 				font-size: 14px;
 			}
@@ -74,8 +98,10 @@
 	}
 
 }
-.socials-links{
+
+.socials-links {
 	margin-top: 20px;
+
 	li a {
 		width: 42px;
 		height: 42px;
@@ -84,35 +110,38 @@
 		display: inline-block;
 		padding-top: 10px;
 		color: $white;
-		border: 1px solid rgba(255,255,255,.7);
+		border: 1px solid rgba(255, 255, 255, .7);
 
-		&:hover{
+		&:hover {
 			background: $primary-color;
 			border-color: $primary-color;
 			color: $grey-light; // $white!important;
 		}
 	}
-	li a.active{
+
+	li a.active {
 		background: $transparent; // $primary-color;
 		border-color: $grey-light; // $primary-color;
-		color:  $grey-light; // $primary-color;  // $white!important;
+		color: $grey-light; // $primary-color;  // $white!important;
 	}
 }
 
-.footer-btm{
-	.border-top{
-		border-top: 1px solid rgba(255, 255, 255, 0.2)!important;
+.footer-btm {
+	.border-top {
+		border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
 	}
 
-	span,p{
-		color: rgba(255,255,255,.7);
+	span,
+	p {
+		color: rgba(255, 255, 255, .7);
 	}
-	a{
-		color: rgba(255,255,255,.7);
+
+	a {
+		color: rgba(255, 255, 255, .7);
 	}
 }
 
-.dot{
+.dot {
 	width: 7px;
 	height: 7px;
 	border-radius: 100%;
@@ -126,12 +155,12 @@
 ///
 ///
 
-.footer-2{
+.footer-2 {
 	background: url("../images/bg/footer-bg.jpg")no-repeat;
 	background-size: cover;
-	color: rgba(255,255,255,.7);
+	color: rgba(255, 255, 255, .7);
 
-	a{
-		color: rgba(255,255,255,.7);
+	a {
+		color: rgba(255, 255, 255, .7);
 	}
 }

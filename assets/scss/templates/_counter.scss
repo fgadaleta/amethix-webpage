@@ -1,7 +1,6 @@
 .counter-section-top-0607 {
 	height: 15rem;
 	transform: skewY(-6deg) translateY(8rem);
-	background-color: $secondary-color;
 	margin-top: 5rem;
 
 	:first-child :first-child {
@@ -17,7 +16,6 @@
 .counter-section-bottom-0607 {
 	height: 17rem;
 	transform: skewY(174deg) translateY(-8rem);
-	background-color: $secondary-color;
 	display: flex;
 	justify-content: flex-end;
 

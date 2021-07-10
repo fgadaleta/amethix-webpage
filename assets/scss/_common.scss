@@ -95,6 +95,7 @@ a:focus {
 
 .hero-0607 {
 	position: relative;
+
 	#home-hero {
 		transform: skewY(-12deg) translateY(-25vh);
 		opacity: 0.95;
@@ -360,6 +361,10 @@ a:focus {
 	min-height: 80vh;
 }
 
+.contact-hero-bg {
+	background-image: linear-gradient(-81deg, #6fa7f8 1%, #777bf8);
+}
+
 .contact-hero-0706 {
 	transform: skewY(-12deg) translateY(-25vh);
 	overflow: hidden;
@@ -556,6 +561,175 @@ a:focus {
 	z-index: 10;
 }
 
-.overflow-x-hidden{
+.overflow-x-hidden {
 	overflow-x: hidden;
+}
+
+.mtrp {
+	margin-top: -25vh;
+	z-index: 30;
+	position: relative;
+}
+
+.underline-center {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	position: relative;
+	overflow: hidden;
+
+	padding: 0.2rem 0.3rem !important;
+	margin: 0 0.7rem;
+}
+
+.underline-center:hover {
+	color: white !important;
+	font-weight: bold !important;
+}
+
+.underline-center:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 51%;
+	right: 51%;
+	top: 0;
+	background: white;
+	height: 0.125rem;
+	-webkit-transition-property: left, right;
+	transition-property: left, right;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+
+.underline-center:hover:before,
+.underline-center:focus:before,
+.underline-center:active:before {
+	left: 0;
+	right: 0;
+}
+
+
+#main-nav>div>button {
+	background-color: rgba(0, 0, 0, .3);
+	border-radius: 2rem;
+	padding: 0.2rem 0.8rem;
+}
+
+
+@media (max-width: 991.98px) {
+	.navbar {
+		background: transparent !important;
+	}
+
+	#navigation>ul {
+		background: white !important;
+		columns: $secondary-color;
+	}
+
+	#navigation>ul>li ul {
+		box-shadow: none !important;
+
+		a {
+			color: $secondary-color !important;
+			font-family: "Poppins", sans-serif;
+			font-size: 0.875rem;
+			font-weight: 500;
+		}
+	}
+
+	#main-nav .underline-center {
+		color: $secondary-color !important;
+		width: 100% !important;
+	}
+}
+
+.twisted-hero-bars {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	transform: skewY(-12deg) translateY(-28vh);
+	background: transparent;
+	z-index: 2;
+
+	.grid {
+		--content-column-width: minmax(0, calc(1040px / var(--content-columns)));
+		--gutter-column-width: 1fr;
+		--content-columns: 12;
+		--gutter-columns: 4;
+		height: 100%;
+		width: 100%;
+		display: grid;
+		grid-template-rows: repeat(auto-fill, 3rem);
+		grid-template-columns: [viewport-start] 1fr [left-gutter-start] repeat(var(--gutter-columns), var(--gutter-column-width)) [left-gutter-end content-start] repeat(var(--content-columns), var(--content-column-width)) [content-end right-gutter-start] repeat(var(--gutter-columns), var(--gutter-column-width)) [right-gutter-end] 1fr [viewport-end];
+
+		.stripe:first-child {
+			grid-row: -10;
+			grid-column: left-gutter-start/span 3;
+			box-shadow: inset 0 0 0 1.5px #e6ebf1;
+		}
+
+		.stripe:nth-child(2) {
+			grid-row: -9;
+			grid-column: 4/span 2;
+			background-color: #c4f0ff;
+			margin-top: -2px;
+		}
+
+		.stripe:nth-child(3) {
+			grid-row: -8;
+			grid-row: -6;
+			grid-column: span 2/right-gutter-end;
+			background-color: #87bbfd;
+		}
+
+		.stripe:nth-child(4) {
+			grid-row: -5;
+			grid-column: right-gutter-start/span 2;
+			box-shadow: inset 0 0 0 1.5px #e6ebf1;
+		}
+
+		.stripe:nth-child(5) {
+			grid-row: -4;
+			grid-column: left-gutter-start/span 3;
+			background-color: #87bbfd;
+		}
+
+		.stripe:nth-child(6) {
+			grid-row: -3;
+			grid-column: viewport-start/span 6;
+			background-color: #424770;
+		}
+
+		.stripe:nth-child(7) {
+			grid-row: -2;
+			grid-column: 3/span 3;
+			background-color: #c4f0ff;
+		}
+
+		.stripe:nth-child(8) {
+			grid-row: -2;
+			grid-column: 6/span 3;
+			background-color: #6772e5;
+		}
+
+		.stripe:nth-child(9) {
+			grid-row: -2;
+			grid-column: span 3/right-gutter-end;
+			background-color: #6772e5;
+		}
+	}
+}
+
+.hover-bg-sky-blue:hover {
+	background: $stripe_sky_blue !important;
+	color: $secondary-color !important;
+	font-weight: 600 !important;
+	transition-duration: 0.15s;
 }
