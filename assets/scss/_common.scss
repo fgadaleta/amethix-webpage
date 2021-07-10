@@ -630,9 +630,10 @@ a:focus {
 		background: white !important;
 		columns: $secondary-color;
 	}
-
+	
 	#navigation>ul>li ul {
 		box-shadow: none !important;
+		display: block;
 
 		a {
 			color: $secondary-color !important;

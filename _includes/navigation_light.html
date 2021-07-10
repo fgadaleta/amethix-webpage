@@ -13,11 +13,11 @@
   {% endif %}
 
   <li class="dark nav-item dropdown{% if link.submenu %} dropdown {% endif %}">
-    <a class="nav-link underline-center" {% if link.submenu %} data-toggle="dropdown-item"
+    <a class="nav-link underline-center text-dark font-weight-bold" {% if link.submenu %} data-toggle="dropdown-item"
       {% endif %} href="{{link.url |relative_url}}">{{link.name}}{% if link.submenu %}<i
         class="ti-angle-down ml-2"></i>{% endif %}</a>
     {% if link.submenu %}
-    <ul class="sub-menu dropdown-menu">
+    <ul class="sub-menu dropdown-menu light">
       {% for sublink in link.submenu %}
       <li><a class="dropdown-item" href="{{sublink.url |relative_url}}">{{sublink.name}}</a></li>
       {% endfor %}
