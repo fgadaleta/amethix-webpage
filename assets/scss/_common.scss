@@ -630,7 +630,7 @@ a:focus {
 		background: white !important;
 		columns: $secondary-color;
 	}
-	
+
 	#navigation>ul>li ul {
 		box-shadow: none !important;
 		display: block;
@@ -734,3 +734,33 @@ a:focus {
 	font-weight: 600 !important;
 	transition-duration: 0.15s;
 }
+
+.cover {
+    // position: relative;
+    height: 180px;
+	// transform: rotate(-12deg);
+    background-color: #fa9a91;
+    background-image: url(/assets/images/about/about.jpg);
+    // background-size: 120%;
+    background-position: top;
+    margin: -30px -30px 60px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    overflow: hidden;
+}
+
+.rounded-box {
+	border-radius: 25px;
+	// background: #73AD21;
+	padding: 30px;
+	// width: 200px;
+	// height: 150px;
+	width:400px;
+	height:550px;
+	// border: solid 1px #555;
+	// background-color: #eed;
+	box-shadow:  0 0 20px  rgba(70, 70, 70, 0.6);
+	-moz-box-shadow: 0 0 20px  rgba(0,0,0,0.6);
+	-webkit-box-shadow: 0 0 20px  rgba(0,0,0,0.6);
+	-o-box-shadow: 0 0 20px  rgba(0,0,0,0.6);
+  }
