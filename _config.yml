@@ -7,6 +7,7 @@ address: "Leuven, Belgium"
 author: Amethix
 description: "Amethix works to create and maximize the impact of the world's leading corporations, startups, and nonprofits, so they can create a better future for everyone they serve."
 logo: "/assets/images/amethix-logo-header-webpage.png"
+logo_dark: "/assets/images/amethix-dark-logo-header-webpage.png"
 logo_icon: "/assets/images/logo-b.png"
 # contact form action
 contact_form_action: "https://formspree.io/f/xpvralvx" # works with https://fomrspree.io
