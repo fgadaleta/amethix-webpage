@@ -202,8 +202,8 @@ and (max-device-width : 812px) {
 
 .overlay-box {
   // this is first
-  background: $secondary-color;
-  opacity: 0.7;  // transparency of image
+  background: $happy-blue;
+  opacity: 0.85;  // transparency of image
   // opacity: 1;
   color: $white;
   position: absolute;
@@ -220,7 +220,7 @@ and (max-device-width : 812px) {
     top: 0px;
     width: 100%;
     height: 100%;
-    background: rgba(53, 51, 82, 0.95);
+    background: $happy-blue; // rgba(53, 51, 82, 0.95);
     right: 0px;
     opacity: 0;
     visibility: hidden;
@@ -228,7 +228,7 @@ and (max-device-width : 812px) {
   }
 
   &:hover {
-    box-shadow: 0 1rem 3rem rgba(79, 105, 156, 0.2) !important;
+    box-shadow: 1px 3px 3px 3px rgba(104, 104, 104, 0.2) !important;
   }
 
   &:hover:before {
@@ -289,7 +289,7 @@ and (max-device-width : 812px) {
     transform: translateY(-50%);
     z-index: 1;
     color: $white;
-    opacity: 0.7;  // transparency of text
+    // opacity: 0.7;  // transparency of text
     opacity: 1;
     h5 {
       // transform: translateX(-40px);

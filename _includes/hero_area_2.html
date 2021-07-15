@@ -34,7 +34,7 @@ vec4 taylorInvSqrt(vec4 r)
 }
 
 float snoise(vec3 v)
-  { 
+  {
   const vec2  C = vec2(1.0/6.0, 1.0/3.0) ;
   const vec4  D = vec4(0.0, 0.5, 1.0, 2.0);
 
@@ -50,10 +50,10 @@ float snoise(vec3 v)
   vec3 x2 = x0 - i2 + C.yyy;
   vec3 x3 = x0 - D.yyy;
 
-  i = mod289(i); 
-  vec4 p = permute( permute( permute( 
+  i = mod289(i);
+  vec4 p = permute( permute( permute(
              i.z + vec4(0.0, i1.z, i2.z, 1.0 ))
-           + i.y + vec4(0.0, i1.y, i2.y, 1.0 )) 
+           + i.y + vec4(0.0, i1.y, i2.y, 1.0 ))
            + i.x + vec4(0.0, i1.x, i2.x, 1.0 ));
 
   float n_ = 0.142857142857;
@@ -91,7 +91,7 @@ float snoise(vec3 v)
 
   vec4 m = max(0.6 - vec4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
   m = m * m;
-  return 42.0 * dot( m*m, vec4( dot(p0,x0), dot(p1,x1), 
+  return 42.0 * dot( m*m, vec4( dot(p0,x0), dot(p1,x1),
                                 dot(p2,x2), dot(p3,x3) ) );
   }
 
@@ -112,7 +112,7 @@ float snoise(vec3 v)
     vec2 vel = vec2(u_time*.1);
     st.xy *= 0.4;
     float r = snoise(vec3(st.x,st.y,u_time * 0.1));
-    
+
   if(r > 0.60){
     color = color5;
   } else if(r > 0.20){
@@ -124,7 +124,7 @@ float snoise(vec3 v)
   } else if(r > -2.0){
     color = color1;
   }
-    
+
     gl_FragColor = vec4(color,1.0);
   }
 // ]]>
@@ -141,8 +141,8 @@ float snoise(vec3 v)
 <section class="hero-0607">
 	<canvas id="home-hero"></canvas>
 	<div>
-		<h1 class=" text-uppercase text-xl">{{ banner.title | strip_html}}</h1>
-		<h2 class=" text-uppercase">{{ banner.content }}</h2>
+		<h1 class="text-xl">{{ banner.title | strip_html}}</h1>
+		<h2 class="">{{ banner.content }}</h2>
 	</div>
 </section>
 
@@ -221,11 +221,11 @@ float snoise(vec3 v)
 		currentTime = (now - startTime) / 7000; // update the current time for animations
 
 
-		gl.uniform1f(locationOfTime, currentTime); 
+		gl.uniform1f(locationOfTime, currentTime);
 
-		window.requestAnimationFrame(render, canvas); 
+		window.requestAnimationFrame(render, canvas);
 
-		positionLocation = gl.getAttribLocation(program, "a_position"); 
+		positionLocation = gl.getAttribLocation(program, "a_position");
 		gl.enableVertexAttribArray(positionLocation);
 		gl.vertexAttribPointer(positionLocation, 2, gl.FLOAT, false, 0, 0);
 		gl.drawArrays(gl.TRIANGLES, 0, 6);

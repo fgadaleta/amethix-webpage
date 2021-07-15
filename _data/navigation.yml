@@ -51,6 +51,9 @@ main:
 #     url: /portfolio-2
 #   - name: 404
 #     url: /404
+- name: Jobs
+  url: /jobs
+
 - name: Contact
   url: /contact
 
@@ -66,6 +69,8 @@ footer:
   url: https://datascienceathome.com
 - name: About Us
   url: /about
+- name: Jobs
+  url: /jobs
 - name: Contact
   url: /contact
 

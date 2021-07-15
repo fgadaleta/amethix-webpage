@@ -748,8 +748,8 @@ a:focus {
 	// background-size: 120%;
 	background-position: top;
 	margin: -30px -30px 60px;
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 	overflow: hidden;
 }
 
@@ -771,4 +771,8 @@ a:focus {
 
 .text-secondary2 {
 	color: $secondary-color;
+}
+
+.margin-bottom {
+	margin-bottom: 42px;
 }
