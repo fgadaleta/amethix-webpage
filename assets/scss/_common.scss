@@ -753,6 +753,15 @@ a:focus {
 	overflow: hidden;
 }
 
+.cover-work {
+	background-image: url(assets/images/bg/work-section-engineering.jpg);
+	background-position: top;
+	margin: -30px -30px 60px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	overflow: hidden;
+}
+
 .rounded-box {
 	border-radius: 25px;
 	// background: #73AD21;
