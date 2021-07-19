@@ -102,8 +102,8 @@ a:focus {
 		width: 100%;
 		height: 80vh;
 		overflow: hidden;
-		filter: blur(0.0625rem);
-		-webkit-filter: blur(0.0625rem);
+		// filter: blur(0.0625rem);
+		// -webkit-filter: blur(0.0625rem);
 	}
 
 	div {
@@ -121,9 +121,7 @@ a:focus {
 			margin-bottom: 2.5rem;
 			font-size: 5rem;
 			line-height: 5.1rem;
-
 			@include text-animation;
-
 			@include mobile-xs {
 				font-size: 3rem;
 				line-height: 3.4rem;
@@ -140,7 +138,7 @@ a:focus {
 			font-size: 1.7rem;
 			line-height: 2rem;
 			font-weight: 500;
-			color: white;
+			color: $secondary-color;
 
 			@include mobile-xs {
 				font-size: 1rem;
@@ -459,9 +457,9 @@ a:focus {
 		min-height: 15rem;
 		outline: none;
 		border: none;
+		position: relative;
 		box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-
-		i {
+		i.big {
 			color: $stripe_light_blue;
 			font-size: 3.1rem;
 			background: white;
@@ -484,9 +482,25 @@ a:focus {
 
 		p,
 		a {
-			color: $black-light;
+		    color: $black-light;
 		}
-	}
+
+		span {
+		    background: #F6F9FC;
+				margin-left: -0.95rem;
+				margin-right: -0.9rem;
+				border-radius: 0 0 5px 5px;
+		    transform: translateY(1.5rem);
+		    padding: 0.7rem 0.5rem;
+		    justify-self: flex-end;
+
+		    i {
+		        font-size: 0.7rem;
+						font-weight: bolder;
+		        margin-left: 0.3rem;
+		    }
+		}
+		}
 }
 
 .home-footer-contact-section-top-0607 {
@@ -784,4 +798,11 @@ a:focus {
 
 .margin-bottom {
 	margin-bottom: 42px;
+}
+
+.hover-up:hover {
+	transform: translateY(-4px);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 500ms;
+	cursor: pointer;
 }

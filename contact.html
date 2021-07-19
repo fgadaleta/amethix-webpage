@@ -15,6 +15,8 @@ hero:
   contacts:
     - icon: ti-location-pin
       title: Our Address
+      url: ""
+      action: CTA
       description: >
         1 Stadsvest 3012 Leuven,
 
@@ -22,12 +24,16 @@ hero:
         Belgium
     - icon: ti-mobile
       title: Call Us
+      url: "tel:+32478998936"
+      action: Telephone
       description: >
-        [(+32) 478 99 89 36](tel:+32478998936)
+        (+32) 478 99 89 36
     - icon: ti-email
       title: Email Us
+      url: "mailto:hello@amethix.com"
+      action: Mail
       description: >
-        [hello@amethix.com](mailto:hello@amethix.com)
+        hello@amethix.com
 ---
 
 
@@ -56,13 +62,17 @@ hero:
 		<div class="container mt-5">
 			<div class="row">
 				{% for contact in page.hero.contacts %}
-				<div class="col card">
-					<i class="{{ contact.icon }}"></i>
+				<a href="{{ contact.url }}" title="{{ contact.title }}" class="col card hover-up">
+					<i class="big {{ contact.icon }}"></i>
 					<h2>{{ contact.title }}</h2>
-					<div>
-						{{ contact.description | markdownify }}
-					</div>
-				</div>
+					<p>
+						{{ contact.description }}
+					</p>
+					<span>
+						{{ contact.action }}
+						<i class="ti-arrow-right"></i>
+					</span>
+				</a>
 				{% endfor %}
 			</div>
 		</div>
