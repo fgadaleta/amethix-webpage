@@ -4,9 +4,35 @@ header_image: "/assets/images/bg/sense-data-bg.jpgX"
 title: "Machines that learn. <br />Hype not included.<br />   "
 description: "Amethix is a technology company that builds analytics solutions across sectors. "
 bar: true
+technologies:
+  - title: Amazon
+    icon: amazon
+  - title: Python
+    icon: python
+  - title: Rust
+    icon: rust
+  - title: Nvidia
+    icon: nvidia
+  - title: Postgresql
+    icon: postgresql
+  - title: Apache
+    icon: apache
+  - title: Nginx
+    icon: nginx
+  - title: Github
+    icon: github
+  - title: Conda
+    icon: amazon
+  - title: Docker
+    icon: amazon
+  - title: Dask
+    icon: amazon
+  - title: numpy
+    icon: amazon
 ---
 
 {% include page_header_static_light.html %}
+{% include sprite.html %}
 
 
 
@@ -101,8 +127,18 @@ bar: true
 					<p style="text-align: justify;"></p>
 
 				</div>
-				</div>
 			</div>
+			<div class="technologies mt-5 row">
+				{% for tech in page.technologies %}
+				<p class="col-sm-4 col-lg-3 mt-2 mb-2">
+					<svg class="ml-2">
+						<use xlink:href="#shape-{{ tech.icon }}" />
+					</svg>
+					{{ tech.title }}
+				</p>
+				{% endfor %}
+			</div>
+		</div>
 
 </section>
 
@@ -267,17 +303,19 @@ bar: true
 			<div class="col-lg-6 col-md-7 offset-lg-1 mt-5 mt-md-0">
 				<!-- <span class="text-color h5 text-uppercase">About Us</span>
 				<h3 class="mb-4 mt-3">Who we are. What we do. Why we are here.</h3> -->
-				<div class="rooted-pillar rooted-pillar--oss">
-					<figure aria-hidden="true">
-					  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27">
-						<g fill="none" fill-rule="evenodd" transform="translate(-.488 .268)">
-							<path fill="#87BBFD" fill-rule="nonzero" d="M13.7044271,25.9444224 C6.66279652,25.9444224 0.954427083,20.2360529 0.954427083,13.1944224 C0.954427083,6.15279182 6.66279652,0.44442238 13.7044271,0.44442238 C20.7460576,0.44442238 26.4544271,6.15279182 26.4544271,13.1944224 C26.4544271,20.2360529 20.7460576,25.9444224 13.7044271,25.9444224 Z"></path>
-							<path fill="#6772E5" d="M11.4349271,9.56142238 L11.4334271,9.55542238 L7.80342708,13.1854224 L11.4334271,16.8124224 C11.8339716,17.2142095 11.8329642,17.8646279 11.4311771,18.2651724 C11.0293899,18.6657169 10.3789716,18.6647095 9.97842708,18.2629224 L5.62842708,13.9129224 C5.22807113,13.5122998 5.22807113,12.863045 5.62842708,12.4624224 L9.98292708,8.10942238 C10.3838858,7.70846368 11.0339683,7.70846369 11.4349271,8.10942241 C11.8358858,8.51038113 11.8358858,9.16046365 11.4349271,9.56142238 Z M21.9289271,12.4864224 L21.9319271,12.4849224 C22.3312847,12.8853724 22.3312847,13.5334723 21.9319271,13.9339224 L17.5759271,18.2869224 C17.1725216,18.6700267 16.5372914,18.6618299 16.1439055,18.268444 C15.7505196,17.8750581 15.7423228,17.2398279 16.1254271,16.8364224 L19.7524271,13.2109224 L16.1254271,9.58092238 C15.7418918,9.17791523 15.7494252,8.54266539 16.1424099,8.14886705 C16.5353946,7.75506871 17.1706275,7.74622139 17.5744271,8.12892238 L21.9289271,12.4864224 Z"></path>
-						</g>
-						</svg>
-					</figure>
-
-					<h4 class="common-BodyTitle">Industry and applied research </h4>
+				<div class="rooted-pillar rooted-pillar--oss ">
+					<div class="d-flex">
+							<figure aria-hidden="true" class="mr-3">
+								<svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27">
+									<g fill="none" fill-rule="evenodd" transform="translate(-.488 .268)">
+										<path fill="#87BBFD" fill-rule="nonzero" d="M13.7044271,25.9444224 C6.66279652,25.9444224 0.954427083,20.2360529 0.954427083,13.1944224 C0.954427083,6.15279182 6.66279652,0.44442238 13.7044271,0.44442238 C20.7460576,0.44442238 26.4544271,6.15279182 26.4544271,13.1944224 C26.4544271,20.2360529 20.7460576,25.9444224 13.7044271,25.9444224 Z"></path>
+										<path fill="#6772E5" d="M11.4349271,9.56142238 L11.4334271,9.55542238 L7.80342708,13.1854224 L11.4334271,16.8124224 C11.8339716,17.2142095 11.8329642,17.8646279 11.4311771,18.2651724 C11.0293899,18.6657169 10.3789716,18.6647095 9.97842708,18.2629224 L5.62842708,13.9129224 C5.22807113,13.5122998 5.22807113,12.863045 5.62842708,12.4624224 L9.98292708,8.10942238 C10.3838858,7.70846368 11.0339683,7.70846369 11.4349271,8.10942241 C11.8358858,8.51038113 11.8358858,9.16046365 11.4349271,9.56142238 Z M21.9289271,12.4864224 L21.9319271,12.4849224 C22.3312847,12.8853724 22.3312847,13.5334723 21.9319271,13.9339224 L17.5759271,18.2869224 C17.1725216,18.6700267 16.5372914,18.6618299 16.1439055,18.268444 C15.7505196,17.8750581 15.7423228,17.2398279 16.1254271,16.8364224 L19.7524271,13.2109224 L16.1254271,9.58092238 C15.7418918,9.17791523 15.7494252,8.54266539 16.1424099,8.14886705 C16.5353946,7.75506871 17.1706275,7.74622139 17.5744271,8.12892238 L21.9289271,12.4864224 Z"></path>
+									</g>
+								</svg>
+							</figure>
+							
+							<h4 class="common-BodyTitle">Industry and applied research </h4>
+					</div>
 					<p class="common-BodyText">
 						Nothing happens before a meticulous and exhaustive study of every conceivable requirement related to the specific use cases.
 						We are born researchers from some of Europe’s most prestigious universities. </p>
@@ -286,18 +324,20 @@ bar: true
 
 
 				<div class="rooted-pillar rooted-pillar--oss">
-					<figure aria-hidden="true">
-					  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27">
-						<g fill="none" fill-rule="evenodd" transform="translate(-.488 .268)">
-							<path fill="#87BBFD" fill-rule="nonzero" d="M13.7044271,25.9444224 C6.66279652,25.9444224 0.954427083,20.2360529 0.954427083,13.1944224 C0.954427083,6.15279182 6.66279652,0.44442238 13.7044271,0.44442238 C20.7460576,0.44442238 26.4544271,6.15279182 26.4544271,13.1944224 C26.4544271,20.2360529 20.7460576,25.9444224 13.7044271,25.9444224 Z"></path>
-							<path fill="#6772E5" d="M11.4349271,9.56142238 L11.4334271,9.55542238 L7.80342708,13.1854224 L11.4334271,16.8124224 C11.8339716,17.2142095 11.8329642,17.8646279 11.4311771,18.2651724 C11.0293899,18.6657169 10.3789716,18.6647095 9.97842708,18.2629224 L5.62842708,13.9129224 C5.22807113,13.5122998 5.22807113,12.863045 5.62842708,12.4624224 L9.98292708,8.10942238 C10.3838858,7.70846368 11.0339683,7.70846369 11.4349271,8.10942241 C11.8358858,8.51038113 11.8358858,9.16046365 11.4349271,9.56142238 Z M21.9289271,12.4864224 L21.9319271,12.4849224 C22.3312847,12.8853724 22.3312847,13.5334723 21.9319271,13.9339224 L17.5759271,18.2869224 C17.1725216,18.6700267 16.5372914,18.6618299 16.1439055,18.268444 C15.7505196,17.8750581 15.7423228,17.2398279 16.1254271,16.8364224 L19.7524271,13.2109224 L16.1254271,9.58092238 C15.7418918,9.17791523 15.7494252,8.54266539 16.1424099,8.14886705 C16.5353946,7.75506871 17.1706275,7.74622139 17.5744271,8.12892238 L21.9289271,12.4864224 Z"></path>
-						</g>
-						</svg>
-					</figure>
-
-					<h4 class="common-BodyTitle">
-					  Support for the developer community
-					</h4>
+					<div class="d-flex">
+						<figure aria-hidden="true" class="mr-3">
+								<svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27">
+									<g fill="none" fill-rule="evenodd" transform="translate(-.488 .268)">
+										<path fill="#87BBFD" fill-rule="nonzero" d="M13.7044271,25.9444224 C6.66279652,25.9444224 0.954427083,20.2360529 0.954427083,13.1944224 C0.954427083,6.15279182 6.66279652,0.44442238 13.7044271,0.44442238 C20.7460576,0.44442238 26.4544271,6.15279182 26.4544271,13.1944224 C26.4544271,20.2360529 20.7460576,25.9444224 13.7044271,25.9444224 Z"></path>
+										<path fill="#6772E5" d="M11.4349271,9.56142238 L11.4334271,9.55542238 L7.80342708,13.1854224 L11.4334271,16.8124224 C11.8339716,17.2142095 11.8329642,17.8646279 11.4311771,18.2651724 C11.0293899,18.6657169 10.3789716,18.6647095 9.97842708,18.2629224 L5.62842708,13.9129224 C5.22807113,13.5122998 5.22807113,12.863045 5.62842708,12.4624224 L9.98292708,8.10942238 C10.3838858,7.70846368 11.0339683,7.70846369 11.4349271,8.10942241 C11.8358858,8.51038113 11.8358858,9.16046365 11.4349271,9.56142238 Z M21.9289271,12.4864224 L21.9319271,12.4849224 C22.3312847,12.8853724 22.3312847,13.5334723 21.9319271,13.9339224 L17.5759271,18.2869224 C17.1725216,18.6700267 16.5372914,18.6618299 16.1439055,18.268444 C15.7505196,17.8750581 15.7423228,17.2398279 16.1254271,16.8364224 L19.7524271,13.2109224 L16.1254271,9.58092238 C15.7418918,9.17791523 15.7494252,8.54266539 16.1424099,8.14886705 C16.5353946,7.75506871 17.1706275,7.74622139 17.5744271,8.12892238 L21.9289271,12.4864224 Z"></path>
+									</g>
+								</svg>
+							</figure>
+						
+							<h4 class="common-BodyTitle">
+								Support for the developer community
+							</h4>
+					</div>
 					<p class="common-BodyText">
 					  We strongly believe and contribute in the open-source projects (github link) —
 					  giving back to the community through development, patches, and sponsorships.
@@ -305,16 +345,18 @@ bar: true
 				</div>
 
 				<div class="rooted-pillar rooted-pillar--oss">
-					<figure aria-hidden="true">
-					  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27">
-						<g fill="none" fill-rule="evenodd" transform="translate(-.488 .268)">
-							<path fill="#87BBFD" fill-rule="nonzero" d="M13.7044271,25.9444224 C6.66279652,25.9444224 0.954427083,20.2360529 0.954427083,13.1944224 C0.954427083,6.15279182 6.66279652,0.44442238 13.7044271,0.44442238 C20.7460576,0.44442238 26.4544271,6.15279182 26.4544271,13.1944224 C26.4544271,20.2360529 20.7460576,25.9444224 13.7044271,25.9444224 Z"></path>
-							<path fill="#6772E5" d="M11.4349271,9.56142238 L11.4334271,9.55542238 L7.80342708,13.1854224 L11.4334271,16.8124224 C11.8339716,17.2142095 11.8329642,17.8646279 11.4311771,18.2651724 C11.0293899,18.6657169 10.3789716,18.6647095 9.97842708,18.2629224 L5.62842708,13.9129224 C5.22807113,13.5122998 5.22807113,12.863045 5.62842708,12.4624224 L9.98292708,8.10942238 C10.3838858,7.70846368 11.0339683,7.70846369 11.4349271,8.10942241 C11.8358858,8.51038113 11.8358858,9.16046365 11.4349271,9.56142238 Z M21.9289271,12.4864224 L21.9319271,12.4849224 C22.3312847,12.8853724 22.3312847,13.5334723 21.9319271,13.9339224 L17.5759271,18.2869224 C17.1725216,18.6700267 16.5372914,18.6618299 16.1439055,18.268444 C15.7505196,17.8750581 15.7423228,17.2398279 16.1254271,16.8364224 L19.7524271,13.2109224 L16.1254271,9.58092238 C15.7418918,9.17791523 15.7494252,8.54266539 16.1424099,8.14886705 C16.5353946,7.75506871 17.1706275,7.74622139 17.5744271,8.12892238 L21.9289271,12.4864224 Z"></path>
-						</g>
-						</svg>
-					</figure>
+					<div class="d-flex">
+						<figure aria-hidden="true" class="mr-3">
+							<svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27">
+								<g fill="none" fill-rule="evenodd" transform="translate(-.488 .268)">
+									<path fill="#87BBFD" fill-rule="nonzero" d="M13.7044271,25.9444224 C6.66279652,25.9444224 0.954427083,20.2360529 0.954427083,13.1944224 C0.954427083,6.15279182 6.66279652,0.44442238 13.7044271,0.44442238 C20.7460576,0.44442238 26.4544271,6.15279182 26.4544271,13.1944224 C26.4544271,20.2360529 20.7460576,25.9444224 13.7044271,25.9444224 Z"></path>
+									<path fill="#6772E5" d="M11.4349271,9.56142238 L11.4334271,9.55542238 L7.80342708,13.1854224 L11.4334271,16.8124224 C11.8339716,17.2142095 11.8329642,17.8646279 11.4311771,18.2651724 C11.0293899,18.6657169 10.3789716,18.6647095 9.97842708,18.2629224 L5.62842708,13.9129224 C5.22807113,13.5122998 5.22807113,12.863045 5.62842708,12.4624224 L9.98292708,8.10942238 C10.3838858,7.70846368 11.0339683,7.70846369 11.4349271,8.10942241 C11.8358858,8.51038113 11.8358858,9.16046365 11.4349271,9.56142238 Z M21.9289271,12.4864224 L21.9319271,12.4849224 C22.3312847,12.8853724 22.3312847,13.5334723 21.9319271,13.9339224 L17.5759271,18.2869224 C17.1725216,18.6700267 16.5372914,18.6618299 16.1439055,18.268444 C15.7505196,17.8750581 15.7423228,17.2398279 16.1254271,16.8364224 L19.7524271,13.2109224 L16.1254271,9.58092238 C15.7418918,9.17791523 15.7494252,8.54266539 16.1424099,8.14886705 C16.5353946,7.75506871 17.1706275,7.74622139 17.5744271,8.12892238 L21.9289271,12.4864224 Z"></path>
+								</g>
+							</svg>
+						</figure>
 
-					<h4 class="common-BodyTitle">Committed to our goals</h4>
+						<h4 class="common-BodyTitle">Committed to our goals</h4>
+					</div>
 					<p class="common-BodyText">
 						Our feasibility studies are followed by a systematic engineering design that takes into account the most unfavourable real-life constraints.
 						We feel responsible of what we build.
@@ -428,14 +470,10 @@ bar: true
 {% assign client = site.data.homepage_2.clients %}
 {% if client.enable %}
 
-<section class="page-title header-padding overlay-static" style="max-height: 220px;">
+<section class="page-title header-padding overlay-static" style="margin-bottom: 0; padding-bottom: 0;">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-		  <h4 class="mb-2 text-lg">Some of the largest companies chose us </h4>
-		  <h6>We’ve helped some of the world’s leading businesses design, implement and deploy innovative solutions for their business.</h6>
-      </div>
-    </div>
+		  <h3 class="mb-4 mt-3 text-center">Some of the largest companies chose us </h4>
+			<h4 class="mb-4 mt-3 text-center">We’ve helped some of the world’s leading businesses design, implement and deploy innovative solutions for their business.</h4>
   </div>
 </section>
 <section class="section-sm">
@@ -457,17 +495,34 @@ bar: true
 
 <!-- job Start -->
 
-<section class="page-title header-padding overlay-static" style="max-height: 220px;">
-	<div class="container">
-	  <div class="row">
-		<div class="col-lg-9">
-			<h4>Amethix is headquartered in Brussels. We love the office as much as being remote. Our flexibility is unbeatable.</h4>
-		</div>
 
-		<img src="assets/images/bg/work-section-engineering.jpg" width="100%" style="min-height: 800px;">
-	  </div>
+<div class="container">
+	<div class="row">
+	<div class="col-lg-8">
+		<h4>Amethix is headquartered in Brussels. We love the office as much as being remote. Our flexibility is unbeatable.</h4>
 	</div>
-  </section>
+	<div>
+		<img src="assets/images/bg/work-section-engineering.jpg" alt="Amethix is headquartered" height="1280" width="1920" style="height: 70vh; width: 100vw; object-fit: cover; object-position: center;">
+	</div>
+	</div>
+	<div class="row">
+		<div class="col-6 pl-0">
+			<a href="#" class="card hover-up work-with-us-card">
+				<div>
+					<span>S</span>
+				</div>
+				<div>
+					<h3>
+						Come Work With Us
+						<i class="ti-arrow-right"></i>
+					</h3>
+					<p>Help us create economic access for entrepreneurs and enterprises all over the world.</p>
+				</div>
+				</a>
+		</div>
+	</div>
+</div>
+
 
 <!-- job End -->
 
