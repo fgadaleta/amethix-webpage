@@ -806,3 +806,55 @@ a:focus {
 	transition-duration: 500ms;
 	cursor: pointer;
 }
+
+.primary-rounded-btn, .secondary-rounded-btn {
+	background:$secondary-color;
+	border-radius:5rem;
+	padding: 0.2rem 0.9rem;
+	color: white !important;
+	margin-right: 0.5rem;
+	cursor: pointer;
+	margin-right: 0.7rem;
+	display: inline-flex;
+	flex-shrink: 0;
+	align-items: baseline;
+	i {
+		margin-left: 0.3rem;
+		font-size: 0.7rem;
+	}
+}
+
+.primary-rounded-btn:hover {
+	background-color: $primary-color;
+	color: white !important;
+}
+
+.secondary-rounded-btn{
+	background: transparent;
+	color: $secondary-color !important;
+}
+.secondary-rounded-btn:hover {
+	color: $black !important;
+}
+
+.get-started-section {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+    div {
+			margin: 1.3rem 1rem;
+        h3 {
+						margin-top: 0.5rem;
+            font-size: 1.3rem;
+            line-height: 1.5;
+            font-weight: 500;
+        }
+    }
+
+    div:first-child {
+        h2 {
+            font-size: 1.8rem;
+            line-height: 1.5;
+            font-weight: 500;
+        }
+    }
+}
