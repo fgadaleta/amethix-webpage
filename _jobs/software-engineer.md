@@ -1,7 +1,7 @@
 ---
 layout: jobs
-title: "Data Engineer"
-categories: ["data", "mlops", "devops"]
+title: "Software Engineer"
+categories: ["programming", "Rust", "backend"]
 thumbnail: "/assets/images/portfolio/nlp-portfolio.jpg"
 description: "MLOps and DevOps skills"
 ---

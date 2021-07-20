@@ -1,7 +1,7 @@
 ---
 layout: portfolio
-title: "Natural <br />Language <br />Processing"
-categories: ["NLP"]
+title: "Data Scientist"
+categories: ["data science", "AI", "machine learning"]
 thumbnail: "/assets/images/portfolio/nlp-portfolio.jpg"
 description: "Conversational engine <br />for personal finance"
 ---

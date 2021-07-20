@@ -1,7 +1,7 @@
 ---
 layout: portfolio
-title: "Natural <br />Language <br />Processing"
-categories: ["NLP"]
+title: "Frontend developer"
+categories: ["UI/UX", "Frontend", "Visualization"]
 thumbnail: "/assets/images/portfolio/nlp-portfolio.jpg"
 description: "Conversational engine <br />for personal finance"
 ---
