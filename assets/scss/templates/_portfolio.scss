@@ -93,7 +93,7 @@
 }
 
 .pt200 {
-  padding-top: 100px;
+  padding-top: 150px;
 }
 
 @media only screen
@@ -108,7 +108,7 @@ and (max-device-width : 812px) {
 // Portfolio SIngle
 //
 .portfolio-single {
-  padding: 180px 0px 100px;
+  // padding: 180px 0px 100px;
 }
 
 .post-single-share {
@@ -198,6 +198,20 @@ and (max-device-width : 812px) {
   }
 }
 */
+
+.overlay-box-light {
+  // this is first
+  background: #89b9ff;  // $happy-blue;
+  // opacity: 0.85;  // transparency of image
+  // opacity: 1;
+  color: $white;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
 
 
 .overlay-box {

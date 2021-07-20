@@ -1,0 +1,70 @@
+---
+layout: default
+---
+
+<!-- {% include header_2.html %} -->
+<!-- Slider Start -->
+{% assign header_image = page.thumbnail %}
+
+<section class="page-title header-padding overlay-static" style="
+	background: radial-gradient(circle, rgba(235, 235, 235, 0) 1%, rgba(0, 0, 0, 0.981) 100%),
+	url({% if header_image %}{{header_image}} {% else %} {{site.cover_image}} {% endif %}) 0 0 no-repeat fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	opacity: 0.9;
+	height: 100vh;
+	position: relative;
+	z-index: 1;
+	">
+
+	<div class="container relative z-10">
+		<div class="row">
+			<div class="col-lg-12">
+				<span class="h5 text-uppercase text-yello">{{banner.subtitle}}</span>
+				<h1 class="text-white mt-2 mb-4 text-uppercase text-xl  padding-top">{{ page.title }}</h1>
+				<h4 class="text-white text-uppercase">{{ page.description }}</h4>
+			</div>
+		</div>
+	</div>
+	<div class="skew-bottom-6"></div>
+</section>
+<!-- Slider End -->
+
+
+<section class="portfolio-singleX mtrp margin-bottom">
+	<div class="container">
+		<div class="row justify-content-centerX">
+			<div class="col-lg-12">
+			{{page.content}}
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- Call To action Start -->
+<section class="position-relative section-sm bg-extra-light margin-top">
+	<div class="container">
+		<div class="row align-items-center margin-bottom">
+			<div class="col-lg-12 ">
+				<h3 class="text-whiteX mb-0">We would love talking to you</h3>
+				<p style="text-align: left; color: rgb(53, 53, 53); font-size: 1.2em; line-height: 1.8em;">
+					This position is not for you?
+					We get you covered. Explore the other opportunities at Amethix. We regularly open positions relevant to the ongoing projects.
+				</p>
+			</div>
+			</div>
+
+		<div class="row align-items-center">
+			<div class="col-lg-3">
+				<a href="/positions" class="btn btn-primary text-uppercase">See open roles</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Call to action End -->
+
+
+
+<!-- {% include call_to_action.html %} -->
