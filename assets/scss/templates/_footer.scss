@@ -96,8 +96,44 @@ footer {
 			}
 		}
 	}
-
 }
+
+.footer-widget-light {
+	p {
+		color: rgb(51, 51, 51);
+	}
+
+	color: rgba(255, 255, 255, .8);
+
+	a[target="_blank"] {
+		color: rgba(51, 51, 51, 0.8) !important;
+	}
+
+	a {
+		&:hover {
+			color: rgb(51, 51, 51) !important;
+			// border-color: rgb(51, 51, 51) !important;
+		}
+	}
+
+	.lh-38 {
+		line-height: 24px;
+	}
+
+	ul {
+		li {
+			// padding: 6px 0px;
+			color: rgba(51, 51, 51, 0.8);
+
+			a {
+				color: rgba(51, 51, 51, 0.8);
+				text-transform: uppercase;
+				font-size: 14px;
+			}
+		}
+	}
+}
+
 
 .socials-links {
 	margin-top: 20px;
