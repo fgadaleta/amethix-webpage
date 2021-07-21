@@ -559,7 +559,7 @@ a:focus {
 
 .skew-bottom-6 {
 	background: rgb(254,254,254);
-	background: linear-gradient(-12deg, rgba(254,254,254,1) 50%, rgba(255,255,255,0) 50%); 
+	background: linear-gradient(-12deg, rgba(254,254,254,1) 50%, rgba(255,255,255,0) 50%);
 	z-index: -1;
 	content: '';
 	position: absolute;
@@ -938,4 +938,8 @@ a:focus {
             color: $primary-color !important;
         }
     }
+}
+
+.text-dark {
+    color: rgb(49, 49, 49) !important;
 }
