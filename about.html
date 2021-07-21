@@ -25,8 +25,6 @@ technologies:
     icon: conda
   - title: Docker
     icon: docker
-  - title: Dask
-    icon: amazon
   - title: numpy
     icon: numpy
   - title: Tensorflow
@@ -134,14 +132,16 @@ technologies:
 
 				</div>
 			</div>
-			<div class="technologies mt-5 row">
+			<div class="technologies mt-3 mb-5 row justify-content-center">
 				{% for tech in page.technologies %}
-				<p class="col-6 col-sm-4 col-lg-3 mt-2 mb-2">
-					<svg class="ml-2">
-						<use xlink:href="#shape-{{ tech.icon }}" />
-					</svg>
-					{{ tech.title }}
-				</p>
+				<div class="col-6 col-sm-4 col-lg-3 mt-2 mb-2">
+					<p class="" style="min-width: 130px; width: fit-content; margin-left: auto; margin-right: auto;">
+						<svg class="ml-2">
+							<use xlink:href="#shape-{{ tech.icon }}" />
+						</svg>
+						{{ tech.title }}
+					</p>
+				</div>
 				{% endfor %}
 			</div>
 		</div>
