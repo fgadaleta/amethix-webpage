@@ -22,13 +22,13 @@ technologies:
   - title: Github
     icon: github
   - title: Conda
-    icon: amazon
+    icon: conda
   - title: Docker
-    icon: amazon
+    icon: docker
   - title: Dask
     icon: amazon
   - title: numpy
-    icon: amazon
+    icon: numpy
   - title: Tensorflow
     icon: tensorflow
   - title: spark
@@ -136,7 +136,7 @@ technologies:
 			</div>
 			<div class="technologies mt-5 row">
 				{% for tech in page.technologies %}
-				<p class="col-sm-4 col-lg-3 mt-2 mb-2">
+				<p class="col-6 col-sm-4 col-lg-3 mt-2 mb-2">
 					<svg class="ml-2">
 						<use xlink:href="#shape-{{ tech.icon }}" />
 					</svg>

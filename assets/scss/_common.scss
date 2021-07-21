@@ -548,27 +548,29 @@ a:focus {
 
 }
 
-.skew-bottom-6 {
-	background-color: transparent;
-	height: 45vh;
-	position: relative;
-	z-index: 2;
-	margin-left: -1rem;
-	width: 102vw;
-}
+// .skew-bottom-6 {
+// 	background-color: transparent;
+// 	height: 45vh;
+// 	position: relative;
+// 	z-index: 2;
+// 	margin-left: -1rem;
+// 	width: 102vw;
+// }
 
-.skew-bottom-6::before {
-	height: 150%;
-	transform: skewY(-12deg) translateY(10vh);
-	background: white;
+.skew-bottom-6 {
+	background: rgb(254,254,254);
+	background: linear-gradient(-12deg, rgba(254,254,254,1) 50%, rgba(255,255,255,0) 50%); 
 	z-index: -1;
 	content: '';
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	left: 0;
-	display: block;
-	width: 100%;
+	right: 0;
+
+	@include mobile {
+		background: linear-gradient(-12deg, rgba(254,254,254,1) 37%, rgba(255,255,255,0) 37%);
+	}
 }
 
 .relative {
