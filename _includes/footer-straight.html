@@ -1,0 +1,121 @@
+<!-- Footer section start -->
+<!-- <div class="footer-blue-section-0806 contact-hero-bg">
+	<div>
+		<div></div>
+		<div></div>
+	</div>
+	<div>
+		<div></div>
+		<div></div>
+	</div>
+</div> -->
+<div class="margin-bottom margin-top">
+	<div>
+		<div></div>
+		<div></div>
+	</div>
+	<div>
+		<div></div>
+		<div></div>
+	</div>
+</div>
+
+<footer class="section position-relative pb-0 contact-hero-bgX">
+	<br />
+	<br />
+
+	<img src="/assets/images/bg/footer-bg.png" alt="" class="overlay-shape margin-top">
+	<div class="container margin-top text-dark">
+		<div class="row margin-top">
+			<div class="col-lg-3 col-md-6">
+				<div class="footer-widget-light  mb-5 mb-lg-0">
+					<h4 class="font-weight-bold text-dark mb-3">Amethix</h4>
+					{{site.footer_content | markdownify}}
+
+					<ul class="list-inline socials-links">
+						{% for social in site.social %}
+						<li class="list-inline-item mb-2">
+							<a target="_blank" href="{{social.link}}" class="active"><i class="{{social.icon}}"></i></a>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-lg-3 ml-lg-auto mb-5 mb-lg-0 col-md-6">
+				<div class="footer-widget-light">
+					<h4 class="text-dark mb-3 text-md">Navigation</h4>
+
+					<ul class="list-unstyled lh-38 text-dark">
+						{% for menu in site.data.navigation.footer %}
+						<li class="text-sm text-dark"><a href="{{menu.url | relative_url }}">{{menu.name}}</a></li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-6">
+				<div class="footer-widget-light mb-5 mb-lg-0">
+					<h4 class="text-whiteX mb-3 text-md">Solutions</h4>
+					<ul class="list-unstyled lh-38">
+						<li><a href="/portfolios/nlp">NLP</a></li>
+						<li><a href="/portfolios/smart-grid">Energy</a></li>
+						<li><a href="/portfolios/supply-chain ">Supply Chain</a></li>
+						<li><a href="/portfolios/healthcare-pharma">Healthcare</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="footer-widget-light">
+					<h4 class="text-whiteX mb-3 text-md">Contact Info</h4>
+					<ul class="list-unstyled lh-38">
+						<li>{{site.address}}</li>
+						<!-- <li><a href="tel:{{site.phone}}">{{site.phone}}</a></li> -->
+						<li><a href="mailto:{{site.email}}">{{site.email}}</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-btm ">
+		<div class="container border-topX py-4 mt-5">
+			<div class="row align-items-center justify-content-md-between">
+				<div class="col-12 col-lg-4">
+					<div class="text-center text-lg-left "> <span>{{ site.copyright }}</span></div>
+				</div>
+
+				<div class="col-lg-4 col-12">
+					<div class="text-center text-lg-right text-dark">
+						{% for menu in site.data.navigation.bottom %}
+						<a href="{{menu.link | relative_url }}">{{menu.name}} {% unless forloop.last %} <span class="mx-2">|</span> {% endunless %}</a>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Footer End -->
+
+<script src="{{site.google_map_api}}"></script>
+
+<!-- JS Plugins -->
+{% for js in site.data.plugins.js %}
+<script src="{{ js | relative_url }}"></script>
+{% endfor %}
+
+<!-- Main Script -->
+<script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-37903879-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', {{site.google_analytics}});
+</script>
+
+
+<script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: 'cb19b780-48e8-4a0a-b3d6-cfc2c803abf1', f: true }); done = true; } }; })();</script>
