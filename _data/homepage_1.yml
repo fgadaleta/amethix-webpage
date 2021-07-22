@@ -55,7 +55,7 @@ funfacts:
   item:
   - name : "work completed"
     icon : "/assets/images/icons/browser-light.png"
-    value : "LANGUAGE PROCESSING"
+    value : "DATA ENGINEERING"
 
   - name : "new projects"
     icon : "/assets/images/icons/web-light.png"
@@ -96,7 +96,7 @@ overview_bottom:
   item:
     - name : "work completed"
       icon : "/assets/images/icons/browser.png"
-      value : "LANGUAGE PROCESSING"
+      value : "DATA ENGINEERING"
 
     - name : "new projects"
       icon : "/assets/images/icons/web.png"

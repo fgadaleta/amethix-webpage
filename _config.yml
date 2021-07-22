@@ -3,7 +3,7 @@ url: "https://amethix.com" # the base hostname & protocol for your site, e.g. ht
 title: "Machine Learning and Artificial Intelligence | Amethix"
 email: "hello@amethix.com"
 phone: "+32 478 99 89 36"
-address: "Leuven, Belgium"
+address: "Brussels, Belgium"
 author: Amethix Technologies
 description: "Amethix works to create and maximize the impact of the world's leading corporations and startups, so they can create a better future for everyone they serve."
 logo: "/assets/images/amethix-logo-header-webpage.png"
@@ -13,7 +13,7 @@ logo_icon: "/assets/images/logo-b.png"
 contact_form_action: "https://formspree.io/f/xpvralvx"
 mailchimp_list: "https://themeix.us16.list-manage.com/subscribe/post?u=307862c135e4548eecf86f389&amp;id=342411fb35"
 # footer_content: "A way of thinking"
-copyright : "&copy; 2021"
+copyright : "&copy; Amethix"
 # page header default image
 cover_image: "/assets/images/bg/about-bg.jpg"
 google_map_api: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDnh74UN6BKgq9U5fMNGhdZOSpmM_QnZqs"
