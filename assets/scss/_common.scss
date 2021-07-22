@@ -943,3 +943,77 @@ a:focus {
 .text-dark {
     color: rgb(49, 49, 49) !important;
 }
+
+
+.StripeImage__hitArea, .StripeImage__stripes {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: skewY(-12deg);
+    transform-origin: 0 100%;
+}
+
+
+// div.skewed {
+// 	position: relative;
+// 	height: 340px;
+// 	transform: skew(-12deg) rotate(-12deg);
+// 	-webkit-transform: skew(-12deg) rotate(-12deg);
+// 	-moz-transform: skew(-12deg) rotate(-12deg);
+// 	overflow: hidden;
+//   }
+
+// div.skewed > * {
+// 	width: 110%;
+// 	position: absolute;
+// 	top: 50%;
+// 	transform: skew(-12deg) rotate(12deg) translateY(-50%);
+// 	-webkit-transform: skew(-12deg) rotate(12deg) translateY(-50%);
+// 	-moz-transform: skew(-12deg) rotate(12deg) translateY(-50%);
+// }
+
+.img-wrap {
+	position: relative;
+	// -webkit-clip-path: polygon(0 4%, 95% 0, 99% 100%, 4% 93%);
+	// clip-path: polygon(0 4%, 95% 0, 99% 100%, 4% 93%);
+	// -webkit-transform: skew(12deg) rotate(-12deg);
+	// -moz-transform: skew(12deg) rotate(-12deg);
+
+  }
+
+
+
+.imageContainer {
+	transform: skewY(-12deg);
+	overflow: hidden;
+	width: 800px;
+	height: 350px;
+	display: inline-block;
+	margin-left: -5px;
+  }
+
+  .imageContainer .image {
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	position: relative;
+	left: -50px;
+	width: 100%;
+	height: 350px;
+	transform: skewY(12deg);
+  }
+
+  .imageContainer .image#img1 {
+	background-image: url(/assets/icons/src/companies/becentral-inside.jpg);
+	max-height: "550px";
+	width: "920px";
+	object-fit: cover;
+	object-position: center;
+  }
+
+  .imageContainer .image#img2 {
+	background-image: url(/assets/icons/src/companies/becentral-inside.jpg);
+  }
+
