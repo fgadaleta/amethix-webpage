@@ -1006,7 +1006,7 @@ a:focus {
   }
 
   .imageContainer .image#img1 {
-	background-image: url(/assets/icons/src/companies/becentral-inside.jpg);
+	// background-image: url(/assets/icons/src/companies/becentral-inside.jpg);
 	max-height: "550px";
 	width: "920px";
 	object-fit: cover;
@@ -1016,8 +1016,6 @@ a:focus {
   .imageContainer .image#img2 {
 	background-image: url(/assets/icons/src/companies/becentral-inside.jpg);
   }
-
-
 	.skew12-img {
 		width: 100%;
 		height: 100%;
@@ -1025,3 +1023,7 @@ a:focus {
 		object-position: center;
 		transform: skewY(6deg);
 	}
+
+.padding-left {
+	padding-left: 18rem;
+}
