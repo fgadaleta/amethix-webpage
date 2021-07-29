@@ -1,104 +1,54 @@
 ---
-layout: portfolio
+layout: jobs
 title: "Frontend developer"
 categories: ["UI/UX", "Frontend", "Visualization"]
-thumbnail: "/assets/images/portfolio/nlp-portfolio.jpg"
-description: "Conversational engine <br />for personal finance"
+thumbnail: "/assets/images/about/skyscraper-job.jpg"
+description: "#frontend #UI #UX"
+status: "open"
 ---
 
-<div class="row">
-		<div class="col-lg-4 text-center">
-			<h4 class="text-color font-weight-bold mb-2">Client</h4>
-			<p>ABE.AI Inc.</p>
-		</div>
-		<div class="col-lg-4 text-center">
-			<h4 class="text-color font-weight-bold mb-2">Category</h4>
-			<p>Algorithm design, Governance, Software Development</p>
-		</div>
-		<div class="col-lg-4 text-center">
-			<h4 class="text-color font-weight-bold mb-2">Location</h4>
-			<p>USA</p>
-		</div>
-</div>
-
-<div class="col-lg-8 text-center">
-	<p>
-	Abe.AI gives financial institutions a fully featured product with the Virtual Financial Assistant, but it's critical that financial institutions own their roadmap and the data underlying machine learning models.
-	The Conversational AI Platform empowers financial institutions to leverage AI in finance for better customer experiences and increased operational efficiency.
-	</p>
-	<p>Abe.ai technology was built specifically for technology in banks, credit unions, and wealth managers.</p>
-
-<hr class="my-5">
-
-<div class="row">
-	<div class="col-lg-12 mt-5" style="text-align: justify; margin-bottom: -42px; margin-top: 20px;">
-			<div class="col-lg-12 text-center">
-				<h4 class="mb-5 text-uppercase">Project summary </h4>
+<section class="section about overflow-hidden margin-bottom">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4" style="text-align: left;">
+				<h5 class="text-color font-weight-bold mb-2">Sector</h5>
+					<p>UI/UX developer</p>
+				<h5 class="text-color font-weight-bold mb-2">Type</h5>
+					<p>Contract</p>
+				<h5 class="text-color font-weight-bold mb-2">Category</h5>
+					<p>Engineering, Developer, Backend</p>
+				<h5 class="text-color font-weight-bold mb-2">Location</h5>
+					<p>Belgium - Remote</p>
+					<a href="mailto:jobs@amethix.com" class="btn btn-primary text-uppercase margin-top">Apply now</a>
 			</div>
 
-		<p>
-		Personal finance has always been a challenge for people who struggle with their money.
-		Abe AI conversational engine - chatbot - is an advanced AI-based solution that helps people
-		manage their money in the most natural way.
-		</p>
+			<div class="col-md-6">
+				<div class="" style="color: #848485; text-align: justify; ">
+				<p>
+				This is an exciting role as frontend developer, a person who is motivated to combine the art of design with the art of programming.
+				Responsibilities will include translation of the UI/UX design wireframes to actual code that will produce visual elements of the application and interactions with
+				the end user and the backend system developed by the software engineers.
+				</p>
 
-		<div class="col-lg-12 text-center" style="text-align: justify; margin-bottom: -42px; margin-top: 20px;">
-				<h4 class="mb-5 text-uppercase">objectives</h4>
-		</div>
+				<div class="margin-bottom">
+				<p>
+					<b>You fit this role if you can</b>
+					<ul>
+						<li>Ensure the technical feasibility of UI/UX designs</li>
+					    <li>Optimize application for maximum speed and scalability</li>
+						<li>Proficient understanding of web markup, including HTML5, CSS3</li>
+						<li>Proficient understanding of at least one among ReactJS, AngularJS, VueJS </li>
+						<li>Knowledge of REST and GraphQL APIs </li>
+					</ul>
 
-		<p>
-		Amethix has played an essential role since the very early stage of the product.
-		We have supported ABE.AI in creating solutions for financial services for medium-sized credit unions and financial aggregators in the USA.
-		</p>
-		<p>
-		The entire conversation engine has been designed and integrated with advanced NLP techniques, from off-the-shelf machine learning methods to more advanced deep learning techniques.
-		Amethix implemented the most accurate Named Entity Recognition and Intent classification models, provided algorithms in the space of domain-specific language modeling, sentiment analysis and short-text queries.
-		</p>
+					<b>You also need to have</b>
+					<ul>
+						<li>Familiarity with tools like Git, CI/CD pipelines</li>
+						<li>Strong analytic skills, knowledge of algorithms and software engineering principles</li>
+						<li>Knowledge of cloud services like EC2, EMR, RDS, Redshift</li>
+					</ul>
 
-
-	</div>
-</div>
-
-
-<!--
-<div class="post-single-share py-4 mt-4 mb-5">
-		<h6 class="text-white">Share This on</h6>
-		<ul class="list-inline socials-links mb-0">
-			<li class="list-inline-item">
-				<a href="#" class="active"><i class="ti-facebook"></i></a>
-			</li>
-			<li class="list-inline-item">
-				<a href="#"><i class="ti-twitter"></i></a>
-			</li>
-			<li class="list-inline-item">
-				<a href="#"><i class="ti-vimeo"></i></a>
-			</li>
-			<li class="list-inline-item">
-				<a href="#"><i class="ti-linkedin"></i></a>
-			</li>
-		</ul>
-	</div>
-</div>
--->
-
-<div class="col-lg-12 mt-5">
-	<div class="carousel slide" id="single-slide">
-		<div class="carousel-inner">
-
-			<div class="carousel-item">
-				<img src="/assets/images/blog/blog-single.jpg" alt="" class="img-fluid">
-			</div>
-			<div class="carousel-item">
-				<img src="/assets/images/portfolio/portfolio-single.jpg" alt="" class="img-fluid">
-			</div>
-		</div>
-		 <div class="text-center mt-4">
-		 	<a class="control-prev" href="#single-slide" role="button" data-slide="prev">
-			    <span class="fa fa-long-arrow-alt-left" aria-hidden="true"></span>
-			  </a>
-			  <a class="control-next" href="#single-slide" role="button" data-slide="next">
-			    <span class="fa fa-long-arrow-alt-right" aria-hidden="true"></span>
-			  </a>
-		 </div>
+				</p>
+				</div>
 	</div>
 </div>

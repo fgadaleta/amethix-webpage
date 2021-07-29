@@ -2,8 +2,9 @@
 layout: jobs
 title: "Data Engineer"
 categories: ["data", "mlops", "devops"]
-thumbnail: "/assets/images/portfolio/nlp-portfolio.jpg"
-description: "MLOps and DevOps skills"
+thumbnail: "/assets/images/about/skyscraper-job.jpg"
+description: "#MLOps #DevOps #backend"
+status: "closed"
 ---
 
 <section class="section about overflow-hidden margin-bottom">
@@ -22,45 +23,25 @@ description: "MLOps and DevOps skills"
 			</div>
 
 			<div class="col-md-6">
-				<div class="" style="color: #848485;">
-				<p>Join Stripe’s Customers team to help us build APIs and products that help businesses on Stripe
-				gain valuable insights and build deeper relationships with their customers. </p>
-				<p>A strong foundation of interoperable APIs is critical to Stripe’s long-term success. It’s important that we get the APIs
-				that businesses use to model their customers right: that we understand how businesses think about their relationships and
-				that we ensure that integrating against our APIs is nothing short of an amazing experience. We are applying Stripe’s developer-centric
-				approach to building the flexible, programmable representation of humans and businesses that map across Stripe’s existing products.</p>
-				<p class="margin-bottom"></p>
+				<div class="" style="color: #848485; text-align: justify; ">
 				<p>
-					<b class="margin-top">You will</b>
+				Join the Amethix engineering team to help us build APIs and products that help businesses in sectors like pharmaceuticals, fintech, energy, and more.
+				The ideal candidate is an experienced data pipeline builder who enjoys building and optimizing data systems.
+				The Data Engineer will support our data scientists and software engineers on the data initiatives driven by Amethix for our clients and will ensure optimal data delivery architecture is always consistent.
+				</p>
+
+				<div class="margin-bottom">
+				<p>
+					<b>You fit this role if you have</b>
 					<ul>
-						<li>Design, build, and maintain APIs that users can rely on for decades</li>
-						<li>Design, build, and maintain APIs that users can rely on for decades</li>
-						<li>Design, build, and maintain APIs that users can rely on for decades</li>
-						<li>Design, build, and maintain APIs that users can rely on for decades</li>
+						<li>Advanced working SQL knowledge, experience with relational and non relational databases</li>
+						<li>Experience building and maintaining data pipelines, architectures and data sets</li>
+						<li>Strong analytic skills working with structured and unstructured datasets</li>
+						<li>Experience with data tools like Hadoop, Spark, Kafka, Airflow, etc. </li>
+						<li>Experience with cloud services like EC2, EMR, RDS, Redshift and knowledge of on-premise equivalents</li>
+						<li>Experience with languages like Python or Scala (knowledge of Rust is very appreciated)</li>
 					</ul>
 				</p>
-
-				<p>
-					<b class="margin-top">You fit this role if</b>
-					<ul>
-						<li>Have technically led projects which have involved multiple engineering teams</li>
-						<li>Design, build, and maintain APIs that users can rely on for decades</li>
-						<li>Design, build, and maintain APIs that users can rely on for decades</li>
-						<li>Design, build, and maintain APIs that users can rely on for decades</li>
-					</ul>
-				</p>
-
-				<p>
-					<b class="margin-top">What’s it like to work at Amethix?</b>
-				</p>
-				<p>
-					Amethix is helping the internet fulfill its potential as a platform for economic progress by building software tools that accelerate global economic access and technological development. Stripe makes it easy to start, run and scale an internet business from anywhere in the world.
-				</p>
-
-				<p>At Amethix, we're looking for people with passion, sense of ownership, and integrity. You're encouraged to apply even if your experience doesn't precisely match the job description. Your skills and passion will stand out—and set you apart—especially if your career has taken some extraordinary twists and turns. At Stripe, we welcome diverse perspectives and people who think rigorously and aren't afraid to challenge assumptions. Join us.
-				</p>
+				</div>
 	</div>
 </div>
-
-<!-- <hr class="my-5"> -->
-

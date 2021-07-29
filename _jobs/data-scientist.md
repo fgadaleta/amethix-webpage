@@ -1,104 +1,58 @@
 ---
-layout: portfolio
+layout: jobs
 title: "Data Scientist"
 categories: ["data science", "AI", "machine learning"]
-thumbnail: "/assets/images/portfolio/nlp-portfolio.jpg"
-description: "Conversational engine <br />for personal finance"
+thumbnail: "/assets/images/about/skyscraper-job.jpg"
+description: "#data #science #machine #learning"
+status: "closed"
 ---
 
-<div class="row">
-		<div class="col-lg-4 text-center">
-			<h4 class="text-color font-weight-bold mb-2">Client</h4>
-			<p>ABE.AI Inc.</p>
-		</div>
-		<div class="col-lg-4 text-center">
-			<h4 class="text-color font-weight-bold mb-2">Category</h4>
-			<p>Algorithm design, Governance, Software Development</p>
-		</div>
-		<div class="col-lg-4 text-center">
-			<h4 class="text-color font-weight-bold mb-2">Location</h4>
-			<p>USA</p>
-		</div>
-</div>
 
-<div class="col-lg-8 text-center">
-	<p>
-	Abe.AI gives financial institutions a fully featured product with the Virtual Financial Assistant, but it's critical that financial institutions own their roadmap and the data underlying machine learning models.
-	The Conversational AI Platform empowers financial institutions to leverage AI in finance for better customer experiences and increased operational efficiency.
-	</p>
-	<p>Abe.ai technology was built specifically for technology in banks, credit unions, and wealth managers.</p>
-
-<hr class="my-5">
-
-<div class="row">
-	<div class="col-lg-12 mt-5" style="text-align: justify; margin-bottom: -42px; margin-top: 20px;">
-			<div class="col-lg-12 text-center">
-				<h4 class="mb-5 text-uppercase">Project summary </h4>
+<section class="section about overflow-hidden margin-bottom">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4" style="text-align: left;">
+				<h5 class="text-color font-weight-bold mb-2">Sector</h5>
+					<p>Software Engineering</p>
+				<h5 class="text-color font-weight-bold mb-2">Type</h5>
+					<p>Contract</p>
+				<h5 class="text-color font-weight-bold mb-2">Category</h5>
+					<p>Engineering, Developer, Backend</p>
+				<h5 class="text-color font-weight-bold mb-2">Location</h5>
+					<p>Belgium - Remote</p>
+					<a href="mailto:jobs@amethix.com" class="btn btn-primary text-uppercase margin-top">Apply now</a>
 			</div>
 
-		<p>
-		Personal finance has always been a challenge for people who struggle with their money.
-		Abe AI conversational engine - chatbot - is an advanced AI-based solution that helps people
-		manage their money in the most natural way.
-		</p>
+			<div class="col-md-6">
+				<div class="" style="color: #848485; text-align: justify; ">
+				<p>
+				As data scientist at Amethix you will play a very central role in the team.
+				You will be involved in many aspects of the business processes that we design and implement
+				for our customers.
+				You will leverage your strong collaboration skills and ability to extract valuable insights from highly complex data sets to ask the right
+				questions and find the right answers.
+				</p>
 
-		<div class="col-lg-12 text-center" style="text-align: justify; margin-bottom: -42px; margin-top: 20px;">
-				<h4 class="mb-5 text-uppercase">objectives</h4>
-		</div>
+				<div class="margin-bottom">
+				<p>
+					<b>You fit this role if you can</b>
+					<ul>
+						<li>Understand statistics and the math behind the most common machine learning algorithms</li>
+					    <li>Analyze raw data: assessing quality, cleansing, structuring for downstream processing</li>
+						<li>Design accurate and scalable prediction algorithms</li>
+						<li>Collaborate with engineering team to bring analytical prototypes to production</li>
+						<li>Generate actionable insights for business improvements</li>
+					</ul>
 
-		<p>
-		Amethix has played an essential role since the very early stage of the product.
-		We have supported ABE.AI in creating solutions for financial services for medium-sized credit unions and financial aggregators in the USA.
-		</p>
-		<p>
-		The entire conversation engine has been designed and integrated with advanced NLP techniques, from off-the-shelf machine learning methods to more advanced deep learning techniques.
-		Amethix implemented the most accurate Named Entity Recognition and Intent classification models, provided algorithms in the space of domain-specific language modeling, sentiment analysis and short-text queries.
-		</p>
+					<b>You also need to have</b>
+					<ul>
+						<li>Fluency in at least two programming languages among Python, C/C++, Java, SQL, Rust</li>
+						<li>Familiarity with Big Data frameworks and visualization tools (Cassandra, Hadoop, Spark, Tableau)</li>
+						<li>Strong analytic skills, knowledge of algorithms and software engineering principles</li>
+						<li>Knowledge of cloud services like EC2, EMR, RDS, Redshift</li>
+					</ul>
 
-
-	</div>
-</div>
-
-
-<!--
-<div class="post-single-share py-4 mt-4 mb-5">
-		<h6 class="text-white">Share This on</h6>
-		<ul class="list-inline socials-links mb-0">
-			<li class="list-inline-item">
-				<a href="#" class="active"><i class="ti-facebook"></i></a>
-			</li>
-			<li class="list-inline-item">
-				<a href="#"><i class="ti-twitter"></i></a>
-			</li>
-			<li class="list-inline-item">
-				<a href="#"><i class="ti-vimeo"></i></a>
-			</li>
-			<li class="list-inline-item">
-				<a href="#"><i class="ti-linkedin"></i></a>
-			</li>
-		</ul>
-	</div>
-</div>
--->
-
-<div class="col-lg-12 mt-5">
-	<div class="carousel slide" id="single-slide">
-		<div class="carousel-inner">
-
-			<div class="carousel-item">
-				<img src="/assets/images/blog/blog-single.jpg" alt="" class="img-fluid">
-			</div>
-			<div class="carousel-item">
-				<img src="/assets/images/portfolio/portfolio-single.jpg" alt="" class="img-fluid">
-			</div>
-		</div>
-		 <div class="text-center mt-4">
-		 	<a class="control-prev" href="#single-slide" role="button" data-slide="prev">
-			    <span class="fa fa-long-arrow-alt-left" aria-hidden="true"></span>
-			  </a>
-			  <a class="control-next" href="#single-slide" role="button" data-slide="next">
-			    <span class="fa fa-long-arrow-alt-right" aria-hidden="true"></span>
-			  </a>
-		 </div>
+				</p>
+				</div>
 	</div>
 </div>
