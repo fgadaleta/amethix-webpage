@@ -15,7 +15,7 @@ hero:
   contacts:
     - icon: ti-location-pin
       title: Meet Us
-      url: ""
+      url: "https://goo.gl/maps/RTmbXH4DqcfWiBo47"
       action: CTA
       description: >
         10 Cantersteen, Brussels
@@ -62,7 +62,7 @@ hero:
 		<div class="container mt-5">
 			<div class="row">
 				{% for contact in page.hero.contacts %}
-				<a href="{{ contact.url }}" title="{{ contact.title }}" class="col card hover-up">
+				<a href="{{ contact.url }}" title="{{ contact.title }}" class="col card hover-up" target="blank">
 					<i class="big {{ contact.icon }}"></i>
 					<h2>{{ contact.title }}</h2>
 					<p>

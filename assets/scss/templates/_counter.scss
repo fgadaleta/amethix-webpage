@@ -1,7 +1,7 @@
 .counter-section-top-0607 {
-	height: 15rem;
+	height: 13rem;
 	transform: skewY(-6deg) translateY(8rem);
-	margin-top: 5rem;
+	margin-top: 0rem;
 
 	:first-child :first-child {
 		@include design($stripe_sky_blue);
@@ -14,7 +14,7 @@
 }
 
 .counter-section-bottom-0607 {
-	height: 17rem;
+	height: 13rem;
 	transform: skewY(174deg) translateY(-8rem);
 	display: flex;
 	justify-content: flex-end;
