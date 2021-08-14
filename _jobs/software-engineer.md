@@ -1,9 +1,9 @@
 ---
 layout: jobs
 title: "Software Engineer"
-categories: ["data", "mlops", "devops"]
+categories: ["programming", "Rust", "developer"]
 thumbnail: "/assets/images/about/skyscraper-job.jpg"
-description: "#Programming  #Software #Engineering #Rust #wasm"
+description: "#Rust #Programming #Software #wasm"
 status: "open"
 ---
 
@@ -18,7 +18,7 @@ status: "open"
 				<h5 class="text-color font-weight-bold mb-2">Type</h5>
 					<p>Contract</p>
 				<h5 class="text-color font-weight-bold mb-2">Category</h5>
-					<p>Engineering, Developer, Backend</p>
+					<p>Programming, Rust, Developer</p>
 				<h5 class="text-color font-weight-bold mb-2">Location</h5>
 					<p>Belgium - Remote</p>
 					<a href="mailto:jobs@amethix.com" class="btn btn-primary text-uppercase margin-top">Apply now</a>
@@ -37,7 +37,7 @@ status: "open"
 				<p>
 					<b>You fit this role if you have</b>
 					<ul>
-						<li>Advanced knowledge of the Rust programming language</li>
+						<li>Advanced knowledge of the <b>Rust</b> programming language</li>
 						<li>Experience building and maintaining backend systems, architectures </li>
 						<li>Strong analytic skills, knowledge of algorithms and software engineering principles</li>
 						<li>Experience with tools like Git, IDEs, debuggers, CI/CD pipelines</li>
