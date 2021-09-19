@@ -1,9 +1,9 @@
 ---
 layout: portfolio
-title: "Supply <br /> Chain"
+title: "Supply Chain"
 categories: ["supply-chain"]
 thumbnail: "/assets/images/portfolio/supply-portfolio.jpg"
-description: "Sales and supply chain analytics <br /> for medical products in new markets"
+description: "Sales and supply chain analytics for medical products in new markets"
 ---
 
 <div class="row">

@@ -1,4 +1,4 @@
-{% for portfolio in site.portfolios %}
+<!-- {% for portfolio in site.portfolios %}
 <div class="col-lg-3 col-6 mb-4 shuffle-item" data-groups="[{% for category in portfolio.categories %} &quot;{{ category | downcase | slugify }}&quot; {% unless forloop.last %}, {% endunless %} {% endfor %}]">
   <div class="position-relative inner-box">
     <div class="image position-relative ">
@@ -14,4 +14,47 @@
     </div>
   </div>
 </div>
+{% endfor %} -->
+
+
+{% for portfolio in site.portfolios %}
+<div class="row margin-bottom border-bottom" style="display: grid;">
+  <div class="col-lg-4" style="min-width: 350px; grid-column-start: 1;">
+    <h5>{{portfolio.title}}</h5>
+  </div>
+
+<div class="col-lg-9" style="grid-column-start: 4;">
+    <h6>{{portfolio.description}}</h6>
+  </div>
+
+  <div class="col-lg-6" style="grid-column-start: 9;">
+      <a class="nav-link text-light small-text" href="{{portfolio.url | relative_url }}">
+        <i class="ti-arrow-right"></i>
+      </a>
+  </div>
+
+<!-- <div class="col-lg-3 col-6 mb-4 shuffle-item" data-groups="[{% for category in portfolio.categories %} &quot;{{ category | downcase | slugify }}&quot; {% unless forloop.last %}, {% endunless %} {% endfor %}]">
+  <div class="position-relative inner-box">
+    <div class="image position-relative ">
+      <a class="overlay-content text-center" href="{{portfolio.url | relative_url }}">
+      <img src="{{portfolio.thumbnail | relative_url }}" alt="portfolio-image" class="img-fluid w-100 d-block" />
+
+      <div class="overlay-box">
+        <div class="overlay-inner">
+            <h5 class="mb-0 text-white">{{portfolio.title}}</h5>
+        </div>
+      </div>
+
+      <div class="overlay-inner">
+        <h5 class="mb-0 text-white">Description </h5>
+    </div>
+
+    </a>
+    </div>
+  </div>
+</div> -->
+</div>
+
 {% endfor %}
+
+<hr />

@@ -13,7 +13,6 @@
 	background: #e8e8e8; // $extra-color;
 }
 
-
 .bg-blue {
 	background: $blue !important;
 }
@@ -173,21 +172,27 @@ a:focus {
 	// background: url('assets/images/bg/network-bg.mp4') center center / cover no-repeat;
 }
 
+.hero-0608 {
+	position: relative;
+
+}
+
 .hero-0607 {
 	position: relative;
 
 	#home-hero {
-		transform: skewY(-12deg) translateY(-25vh);
+		// transform: skewY(-12deg) translateY(-25vh);
 		opacity: 0.95;
 		width: 100%;
-		height: 80vh;
+		height: 36vh;
 		overflow: hidden;
+
 		// filter: blur(0.0625rem);
 		// -webkit-filter: blur(0.0625rem);
 	}
 
 	div {
-		max-width: 60rem;
+		max-width: 100%;
 		margin: 0 auto;
 		position: absolute;
 		top: 10rem;
@@ -195,13 +200,12 @@ a:focus {
 		right: 0;
 		padding: 0.7rem;
 
-
-
 		h1 {
-			margin-bottom: 2.5rem;
-			font-size: 5rem;
+			margin-bottom: 3rem;
+			font-size: 5.3rem;
 			line-height: 5.1rem;
-			@include text-animation;
+			color: #000;
+			// @include text-animation;
 			@include mobile-xs {
 				font-size: 3rem;
 				line-height: 3.4rem;
@@ -308,11 +312,7 @@ a:focus {
 	.col-6 {
 		flex: 0 0 100%;
 	}
-
-
-
 }
-
 
 .container-fluid-short {
 	width: 60%;
@@ -1129,4 +1129,12 @@ a:focus {
 
 .rooted-pillar {
 	margin-bottom: 60px;
+}
+
+.container {
+	max-width: 960px;
+}
+
+.border-bottom {
+	border-bottom: solid 1px;
 }

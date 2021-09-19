@@ -99,7 +99,7 @@
 }
 
 .header-padding{
-	padding: 220px 0px 140px 0px;
+	padding: 120px 0px 40px 0px;
 }
 
 @media only screen
@@ -126,16 +126,16 @@ and (max-device-width : 812px) {
 
 .text-xl{
 	font-size: 60px;
-	line-height: 70px;
+	line-height: 80px;
 	// font-weight: bold;
 	letter-spacing: 0.2px;
 
 }
 
 .medium-size {
-	font-size: 18px;
-	font-style: italic;
-	line-height: 1.6em;
+	font-size: 22px;
+	// font-style: italic;
+	line-height: 1.4em;
 	letter-spacing: 0.2px;
 }
 

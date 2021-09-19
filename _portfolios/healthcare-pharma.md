@@ -1,9 +1,9 @@
 ---
 layout: portfolio
-title: "healthcare <br />& <br />pharma"
+title: "healthcare & pharma"
 categories: ["NLP"]
 thumbnail: "/assets/images/portfolio/healthcare-bg.jpg"
-description: "Advanced analytics for healthcare "
+description: "Advanced analytics for healthcare"
 ---
 
 <div class="row">

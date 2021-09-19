@@ -1,9 +1,9 @@
 ---
 layout: portfolio
-title: "Natural <br />Language <br />Processing"
+title: "Natural Language Processing"
 categories: ["NLP"]
 thumbnail: "/assets/images/portfolio/nlp-portfolio.jpg"
-description: "Conversational engine <br />for personal finance"
+description: "Conversational engine for personal finance"
 ---
 
 <div class="row">

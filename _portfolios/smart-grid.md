@@ -1,9 +1,9 @@
 ---
 layout: portfolio
-title: "Energy <br /> Smart Grid"
+title: "Energy Smart Grid"
 categories: ["smart grid"]
 thumbnail: "/assets/images/portfolio/energy-portfolio.jpg"
-description: "Predictive analytics for renewable energy <br />providers and dynamic grids"
+description: "Predictive analytics for renewable energy providers and dynamic grids"
 ---
 
 <div class="row">
