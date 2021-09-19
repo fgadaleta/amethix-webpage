@@ -22,23 +22,28 @@
 }
 
 .btn-primary {
-  background: #6772e5;  // $primary-color;
-  color: $white;
-  border-color: #6772e5;  // $primary-color;
+  background: #ffffff;  // $primary-color;
+  color: $black;
+  border-color: #000;  // $primary-color;
 
-  &:hover,
+  &:hover{
+    background: #fff;  // $secondary-color !important;
+    border-color: $black !important;
+    color: rgb(123, 123, 123) !important;
+  }
+
   &:active,
   &.focus,
   &.active {
-    background: #7780e4;  // $secondary-color !important;
+    background: #fff;  // $secondary-color !important;
     // border-color: $secondary-color !important;
     color: $white !important;
   }
 }
 
 .btn-secondary {
-  background: $secondary-color;
-  border-color: $secondary-color;
+  background: $white;  //$secondary-color;
+  border-color: $black; // $secondary-color;
   color: $white;
 
   &:hover,
