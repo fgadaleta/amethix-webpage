@@ -4,31 +4,6 @@ header_image: "/assets/images/bg/sense-data-bg.jpgX"
 title: "Machines that learn. <br />Hype not included.<br />   "
 description: "Amethix is a technology company that builds analytics solutions across sectors. "
 bar: true
-technologies:
-  - title: Amazon
-    icon: amazon
-  - title: Python
-    icon: python
-  - title: Rust
-    icon: rust
-  - title: Nvidia
-    icon: nvidia
-  - title: Postgresql
-    icon: postgresql
-  - title: Apache
-    icon: apache
-  - title: Github
-    icon: github
-  - title: Conda
-    icon: conda
-  - title: Docker
-    icon: docker
-  - title: numpy
-    icon: numpy
-  - title: Tensorflow
-    icon: tensorflow
-  - title: Pytorch
-    icon: pytorch
 ---
 
 
@@ -118,8 +93,7 @@ technologies:
 				</div>
 			</div>
 		</div>
-
-
+		<hr />
 
 		<div class="row">
 			<div class="col-md-6 col-lg-6" style="margin-right: 100px;">
@@ -158,6 +132,8 @@ technologies:
 				</div>
 			</div>
 		</div>
+
+
 </section>
 <!-- About End -->
 
@@ -188,14 +164,18 @@ technologies:
 				<img src="/assets/images/icons/aws.png" alt="" class="img-fluid mx-auto">
 			</div>
 		</div>
+		<hr />
+
 	</div>
 </section>
 <!-- techologies big End -->
 
 
-<section class="container sectionX Xportfolio-2 margin-bottom">
+<section class="section container sectionX Xportfolio-2 margin-bottomX">
+
 	<!-- <section class="section about overflow-hidden text-center"> -->
 		<!-- <div class="container "> -->
+
 			<div class="row justify-content-centerX">
 				<div class="col-lg-8 text-centerX">
 					<!-- <span class="text-color h5 text-uppercaseX">About Us</span> -->
@@ -210,7 +190,7 @@ technologies:
 
 
 <!-- row 2 -->
-<section class="section about" style="margin-top: 1rem; margin-bottom: -12rem;">
+<section class="section about margin-bottom">
     <div class="row">
         <div class="col-md-6 mt-5 padding-left">
             <div class="rooted-pillar rooted-pillar--oss">
@@ -280,19 +260,19 @@ technologies:
 
 
 <!-- Service Start -->
-<div class="counter-section-top-0607 contact-hero-bg">
+<!-- <div class="counter-section-top-0607 contact-hero-bgX">
 	<div>
 		<div></div>
 		<div></div>
 	</div>
 	<div></div>
-</div>
-<section class="section service contact-hero-bg position-relative">
-	<img src="/assets/images/bg/feature-bg.png" alt="" class="overlay-shape">
+</div> -->
+<section class="section service contact-hero-bgX position-relative margin-bottom">
+	<!-- <img src="/assets/images/bg/feature-bg.png" alt="" class="overlay-shape"> -->
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-7">
-				<h3 class="mb-5 mt-2 text-white">Services that Make Your Business Smarter. </h3>
+				<h3 class="mb-5 mt-2 text-whiteX">Services that Make Your Business Smarter. </h3>
 			</div>
 		</div>
 
@@ -300,9 +280,9 @@ technologies:
 			<div class="col-lg-4 col-md-6">
 				<div class="service-item mb-4 mb-lg-0 p-0">
 					<!-- <i class="ti-ruler-pencil text-color"></i> -->
-					<img src="/assets/images/icons/research-light.png" width="80px" style="opacity: 0.6;">
+					<!-- <img src="/assets/images/icons/research-light.png" width="80px" style="opacity: 0.6;"> -->
 
-					<h4 class="my-4 text-white">Research</h4>
+					<h4 class="my-4 text-whiteX">Research</h4>
 					<p class="text-justify">Amethix combines cutting edge technology with applied research to provide solutions that are elegant and robust,
 						functional and easy to maintain. Our engineers constantly interact with our researchers.
 						<br /><br />
@@ -313,8 +293,8 @@ technologies:
 			<div class="col-lg-4 col-md-6">
 				<div class="service-item mb-4 mb-lg-0 p-0">
 					<!-- <i class="ti-announcement text-color"></i> -->
-					<img src="/assets/images/icons/implement-light.png" width="80px" style="opacity: 0.6;">
-					<h4 class="my-4 text-white">Build</h4>
+					<!-- <img src="/assets/images/icons/implement-light.png" width="80px" style="opacity: 0.6;"> -->
+					<h4 class="my-4 text-whiteX">Build</h4>
 					<p class="text-justify">
 						We build software with the most advanced tools and the most widely recognized best practices.
 						All models and pipelines we create are tightly integrated with our customers' infrastructure and existing software.
@@ -326,8 +306,8 @@ technologies:
 			<div class="col-lg-4 col-md-6">
 				<div class="service-item mb-4 mb-lg-0 p-0">
 					<!-- <i class="ti-palette text-color"></i> -->
-					<img src="/assets/images/icons/rocket-light.png" width="80px" style="opacity: 0.6;">
-					<h4 class="my-4 text-white">Deploy</h4>
+					<!-- <img src="/assets/images/icons/rocket-light.png" width="80px" style="opacity: 0.6;"> -->
+					<h4 class="my-4 text-whiteX">Deploy</h4>
 					<p class="text-justify">Our proof-of-concepts are converted into software that is production ready to make an impact on your
 						business. For us <b> quality and reliability</b> aren’t just buzzwords. They’re our guiding. <br /> <br />
 						They define every aspect of what we do and deliver.
@@ -337,12 +317,12 @@ technologies:
 		</div>
 	</div>
 </section>
-<div class="counter-section-bottom-0607 contact-hero-bg">
+<!-- <div class="counter-section-bottom-0607 contact-hero-bgX">
 	<div>
 		<div></div>
 		<div></div>
 	</div>
-</div>
+</div> -->
 <!-- Service End -->
 
 
@@ -350,27 +330,41 @@ technologies:
 {% assign client = site.data.homepage_2.clients %}
 {% if client.enable %}
 
-<section class="page-title header-paddingX overlay-static" style="margin-bottom: 0; padding-bottom: 0;">
+<section class="section service contact-hero-bgX position-relative margin-bottomX">
+<!-- <section class="page-title header-paddingX overlay-static" style="margin-bottom: 0; padding-bottom: 0;"> -->
   <div class="container">
-		  <h3 class="mb-4 mt-3 text-center">Some of the largest companies chose us </h3>
-			<h4 class="mb-4 mt-3 text-center">We’ve helped some of the world’s leading businesses design, implement and deploy innovative solutions for their business.</h4>
+		 <h3 class="mb-4 mt-3 text-centerX">Some of the largest companies chose us </h3>
+		 <h4 class="mb-4 mt-3 text-centerX">We’ve helped some of the world’s leading businesses design,
+			 implement and deploy innovative solutions for their business.</h4>
+
+			 <div class="row no-gutters">
+				{% for logo in client.logos %}
+				<div class="col-md-3 col-sm-6 spacing">
+					<div class="team-item position-relative">
+						<!-- <img src="{{item.image | relative_url }}" alt="" class="img-fluid"> -->
+						<img src="{{ logo | relative_url }}" alt="" class="img-fluid mx-auto" width="180px">
+					</div>
+				</div>
+				{% endfor %}
+			</div>
   </div>
 </section>
-<section class="section-sm">
+{% endif %}
+
+<!-- <section class="section-sm">
 	<div class="container-fluid-short p-0">
 		<div class="row no-gutters">
 			{% for logo in client.logos %}
 			<div class="col-md-3 col-sm-6 spacing">
 				<div class="team-item position-relative">
-					<!-- <img src="{{item.image | relative_url }}" alt="" class="img-fluid"> -->
 					<img src="{{ logo | relative_url }}" alt="" class="img-fluid mx-auto" width="180px">
 				</div>
 			</div>
 			{% endfor %}
 		</div>
 	</div>
-</section>
-{% endif %}
+</section> -->
+<!-- {% endif %} -->
 <!-- Clients End -->
 
 <!-- job Start -->
