@@ -19,7 +19,7 @@ body {
 }
 
 p{
-  color: $black-light;
+  color: $black; // $black-light;
 }
 h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
   font-family: $heading-font;
@@ -126,4 +126,8 @@ and (max-device-width : 812px) {
 
 .text-light {
   color: #7d7d7d !important;
+}
+
+.text-smaller {
+  font-size: 0.9em;
 }
