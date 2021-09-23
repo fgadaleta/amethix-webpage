@@ -108,5 +108,39 @@
   gtag('config', {{site.google_analytics}});
 </script>
 
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
+<script src="/assets/js/jquery.animateTyping.js"></script>
+<!-- <script src="/assets/js/jquery.viewportchecker.js"></script> -->
+
+
+<script src="/assets/js/animate.min.js"></script>
+<script>
+  var animate = new Animate({
+	target: '[data-animate]',
+	animatedClass: 'visible',
+	offset: [0.5, 0.5],
+	delay: 0,
+	remove: false,
+	reverse: true,
+	scrolled: false,
+	debug: true,
+	onLoad: true,
+	onScroll: true,
+	onResize: false,
+	callbackOnInit: function () {
+	  console.log('Initialised');
+	},
+	callbackOnInView: function (element) {
+	  var animationType = element.getAttribute('data-animation-classes').replace('animated', '')
+		.trim();
+	  console.log(animationType + ' in view.');
+	},
+	callbackOnAnimate: function (element) {
+	  console.log(element)
+	}
+  });
+
+  animate.init();
+</script>
 
 <script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: 'cb19b780-48e8-4a0a-b3d6-cfc2c803abf1', f: true }); done = true; } }; })();</script>

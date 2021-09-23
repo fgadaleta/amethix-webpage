@@ -21,4 +21,20 @@
   <link rel="shortcut icon" href="{{ '/assets/images/favicon.png' | relative_url }} " type="image/x-icon">
   <!-- <link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }} " type="image/x-icon"> -->
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+  <script>
+    $(document).ready(function(){
+        $('.dummy').viewportChecker({
+            callbackFunction: function(elem, action){
+                setTimeout(function(){
+                    elem.html((action == "add") ? 'Callback with 500ms timeout: added class' : 'Callback with 500ms timeout: removed class');
+                },500);
+            },
+            scrollBox: ".scrollwrapper"
+        });
+    });
+</script>
+
+
 </head>
