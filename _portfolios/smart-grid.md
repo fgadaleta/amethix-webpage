@@ -7,21 +7,21 @@ description: "Predictive analytics for renewable energy providers and dynamic gr
 ---
 
 <div class="row">
-		<div class="col-lg-4 text-center">
+		<div class="col-lg-4 ">
 			<h4 class="text-color font-weight-bold mb-2">Client</h4>
 			<p>Centrica Inc.</p>
 		</div>
-		<div class="col-lg-4 text-center">
+		<div class="col-lg-4 ">
 			<h4 class="text-color font-weight-bold mb-2">Category</h4>
 			<p>Algorithm design, Production, Software Development</p>
 		</div>
-		<div class="col-lg-4 text-center">
+		<div class="col-lg-4 ">
 			<h4 class="text-color font-weight-bold mb-2">Location</h4>
 			<p>Belgium, Canada</p>
 		</div>
 </div>
 
-<div class="col-lg-8 text-center">
+<div class="col-lg-8 text-centerX">
 
 	<!-- <h2 class="mb-5 mt-2 text-uppercase">{{page.title}}</h2>
 	<p>{{page.description}}</p> -->
@@ -35,10 +35,10 @@ description: "Predictive analytics for renewable energy providers and dynamic gr
 <hr class="my-5">
 
 <div class="row">
-	<div class="col-lg-12 mt-5" style="text-align: justify; margin-bottom: -42px; margin-top: 20px;">
-			<div class="col-lg-12 text-center">
-				<h4 class="mb-5 text-uppercase">Project summary </h4>
-			</div>
+	<div class="col-lg-12 mt-5" style="text-align: left; margin-top: 20px;">
+		<div class="col-lg-12">
+			<h2 class="mb-5">Project summary </h2>
+		</div>
 		<p>
 		Amethix has been involved in two major projects related to the forecast of electricity prices for smart-grid optimization,
 		in the European and US market.
@@ -47,8 +47,8 @@ description: "Predictive analytics for renewable energy providers and dynamic gr
 		Both models are considered critical for the business of thousands of industrial clients, as they directly affect the yearly costs of their electricity bill.
 		</p>
 
-		<div class="col-lg-12 text-center" style="text-align: justify; margin-bottom: -42px; margin-top: 20px;">
-				<h4 class="mb-5 text-uppercase">objectives</h4>
+		<div class="col-lg-12" style="margin-top: 20px;">
+			<h2 class="mb-5">Objectives</h2>
 		</div>
 
 		<p>
@@ -80,18 +80,16 @@ description: "Predictive analytics for renewable energy providers and dynamic gr
 			</li>
 		</ul>
 	</div>
-</div>
--->
+</div> -->
 
-<div class="col-lg-12 mt-5">
+
+<!-- <div class="col-lg-12 mt-5">
 	<div class="carousel slide" id="single-slide">
 		<div class="carousel-inner">
-
-			<!--
 			<div class="carousel-item active">
 				<img src="/assets/images/portfolio/portfolio-single.jpg" alt="" class="img-fluid">
 			</div>
-			-->
+
 
 			<div class="carousel-item">
 				<img src="/assets/images/blog/blog-single.jpg" alt="" class="img-fluid">
@@ -109,6 +107,6 @@ description: "Predictive analytics for renewable energy providers and dynamic gr
 			  </a>
 		 </div>
 	</div>
-</div>
+</div> -->
 
 

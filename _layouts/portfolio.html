@@ -10,53 +10,36 @@ layout: default_light
 	padding-top: 10rem;
  ">
   <div class="container relative z-10">
-    <div class="row" sty>
-      <div class="col-lg-12 text-center">
-        <h2 class="mb-2 text-xl padding-top">{{page.title}}</h2>
-        <h4 class="mb-4 mt-3" style="max-width: 650px; margin: 1rem auto; padding-top: 1rem;">{{page.description}}</h4>
+    <div class="row">
+      <div class="col-lg-9">
+        <h1 class="mb-2 text-xl padding-top">{{page.title}}</h1>
+        <h4 class="" style="max-width: 650px; margin: 1rem auto; padding-top: 1rem;">{{page.description}}</h4>
         <!-- <h5 class="">{{page.description}}</h5> -->
       </div>
     </div>
   </div>
-  <div class="skew-bottom-6"></div>
-
-  <div class="twisted-hero-bars">
-    <div class="grid">
-      <div class="stripe"></div>
-      <div class="stripe"></div>
-      <div class="stripe"></div>
-      <div class="stripe"></div>
-      <div class="stripe"></div>
-      <div class="stripe"></div>
-      <div class="stripe"></div>
-      <div class="stripe"></div>
-      <div class="stripe"></div>
-    </div>
-  </div>
 </section>
-<div style="background: white; height: 1rem; width: 100%; margin-top: -0.5rem;"></div>
 
-<section class="portfolio-single">
+<section class="portfolio-single margin-bottom">
 	<div class="container">
-		<div class="row justify-content-center">
+		<div class="row">
 			{{page.content}}
 		</div>
 	</div>
 </section>
 
-{% include call_to_action.html %}
-
-<section class="section related-project">
+<section class="section service contact-hero-bgX position-relative margin-bottom">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-12 text-center">
-				<h4 class="mb-5 text-uppercase">Other Projects</h4>
+			<div class="col-lg-7">
+				<h2 class="mb-5 mt-2">Other Projects</h2>
 			</div>
 		</div>
+
 		<div class="row">
 			{% for portfolio in site.portfolios limit:"4" %}
 			<div class="col-lg-3">
-				<div class="portfolio-block text-center border-0 ">
+				<div class="portfolio-block border-0 ">
 					<img src="{{portfolio.thumbnail}}" class="img-fluid" alt="{{portfolio.title}}" />
 					<a class="card-img-overlay" href="{{portfolio.url}}">
 						<h5 class="card-title text-white mb-0">{{portfolio.title}}</h5>
