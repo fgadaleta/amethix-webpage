@@ -6,80 +6,130 @@ thumbnail: "/assets/images/portfolio/nlp-portfolio.jpg"
 description: "Conversational engine for personal finance"
 ---
 
-<div class="row">
-		<div class="col-lg-4 text-center">
-			<h4 class="text-color font-weight-bold mb-2">Client</h4>
-			<p>ABE.AI Inc.</p>
-		</div>
-		<div class="col-lg-4 text-center">
-			<h4 class="text-color font-weight-bold mb-2">Category</h4>
-			<p>Algorithm design, Governance, Software Development</p>
-		</div>
-		<div class="col-lg-4 text-center">
-			<h4 class="text-color font-weight-bold mb-2">Location</h4>
-			<p>USA</p>
-		</div>
-</div>
 
-<div class="col-lg-8 text-center">
-	<p>
-	Abe.AI gives financial institutions a fully featured product with the Virtual Financial Assistant, but it's critical that financial institutions own their roadmap and the data underlying machine learning models.
-	The Conversational AI Platform empowers financial institutions to leverage AI in finance for better customer experiences and increased operational efficiency.
-	</p>
-	<p>Abe.ai technology was built specifically for technology in banks, credit unions, and wealth managers.</p>
+<section class="container margin-bottom">
 
-<hr class="my-5">
+	<div class="row margin-bottom">
+		<div class="col-md-6 col-lg-4">
 
-<div class="row">
-	<div class="col-lg-12 mt-5" style="text-align: justify; margin-bottom: -42px; margin-top: 20px;">
-			<div class="col-lg-12 text-center">
-				<h4 class="mb-5 text-uppercase">Project summary </h4>
+		</div>
+	</div>
+
+		<div class="row margin-bottom">
+			<div class="col-md-6 col-lg-6" style="margin-right: 100px;">
+				<div class="rooted-pillarX rooted-pillar--ossX">
+					<h3 class="mb-5 mt-2">Project Overview</h3>
+
+					<p class="common-BodyText">
+						Abe.AI gives financial institutions a fully featured product with the Virtual Financial Assistant, but it's critical that financial institutions own their roadmap and the data underlying machine learning models.
+						The Conversational AI Platform empowers financial institutions to leverage AI in finance for better customer experiences and increased operational efficiency.
+					</p>
+					<p>Abe.ai technology was built specifically for technology in banks, credit unions, and wealth managers.</p>
+
+				</div>
 			</div>
 
-		<p>
-		Personal finance has always been a challenge for people who struggle with their money.
-		Abe AI conversational engine - chatbot - is an advanced AI-based solution that helps people
-		manage their money in the most natural way.
-		</p>
+			<div class="col-md-6 col-lg-4">
+				<div class="about-imgX rounded-boxX Xmb-3">
+					<div class="cover"></div>
 
-		<div class="col-lg-12 text-center" style="text-align: justify; margin-bottom: -42px; margin-top: 20px;">
-				<h4 class="mb-5 text-uppercase">objectives</h4>
+			<p>
+				<!-- <img src="/assets/images/about/dsh-logo.png" alt="" class="img-corner w-100X" > -->
+
+			<div class="footer-widget mb-5 mb-lg-0">
+				<div class="footer-widget mb-5 mb-lg-0">
+					<h4 class="mb-3 text-md">Client</h4>
+					<ul class="list-unstyled lh-38">
+						<li>Abe AI Inc.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer-widget mb-5 mb-lg-0">
+				<h4 class="mb-3 text-md">Category</h4>
+				<ul class="list-unstyled lh-38">
+					<li>Algorithm design, Governance, Software Development</li>
+				</ul>
+			</div>
+
+			<div class="footer-widget mb-5 mb-lg-0">
+				<h4 class="mb-3 text-md">Location</h4>
+				<ul class="list-unstyled lh-38">
+					<li>USA</li>
+				</ul>
+			</div>
+
+
+					 </p>
+
+					  <!-- <a href="https://datascienceathome.com" class="nav-link text-light small-text">To the podcast
+						<i class="fa fa-play"></i>
+					  </a> -->
+
+						<!-- <div class="video-play">
+						<div class="play-bg">
+							<a class="popup-youtube" href="https://www.youtube.com/watch?v=jrkvirglgaQ"><i class="fa fa-play"></i></a>
+						</div>
+						</div> -->
+				</div>
+			</div>
+		</div>
+		<hr />
+</section>
+
+<!-- About Start -->
+<section class="container sectionX Xportfolio-2 margin-bottom">
+	<div class="row margin-bottom">
+			<div class="col-md-6 col-lg-6" style="margin-right: 100px;">
+				<div class="rooted-pillarX rooted-pillar--ossX">
+					<h3 class="mb-5 mt-2 text-uppercaseX">Intelligence for Financial Conversational Engines</h3>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-4">
+				<div class="about-imgX rounded-boxX Xmb-3">
+					<div class="cover"></div>
+				</div>
+			</div>
+	</div>
+
+	<div class="row margin-bottom strong-border-top">
+			<div class="col-md-6 col-lg-6 margin-bottom" style="margin-right: 100px;">
+					<!-- <h4 class="mb-5 mt-2">Project Overview</h4>
+					QUi -->
+			</div>
+			<div class="col-md-6 col-lg-4">
+				<div class="about-imgX rounded-boxX Xmb-3"></div>
+			</div>
 		</div>
 
-		<p>
-		Amethix has played an essential role since the very early stage of the product.
-		We have supported ABE.AI in creating solutions for financial services for medium-sized credit unions and financial aggregators in the USA.
-		</p>
-		<p>
-		The entire conversation engine has been designed and integrated with advanced NLP techniques, from off-the-shelf machine learning methods to more advanced deep learning techniques.
-		Amethix implemented the most accurate Named Entity Recognition and Intent classification models, provided algorithms in the space of domain-specific language modeling, sentiment analysis and short-text queries.
-		</p>
+		<div class="row strong-border-top margin-bottom">
+			<div class="col-md-9 col-lg-9 margin-bottom" style="margin-right: 100px; text-align: justify;">
+					<h4 class="mb-5 mt-2">Objectives </h4>
+					<p class="common-BodyText">
+						Personal finance has always been a challenge for people who struggle with their money.
+						Abe AI conversational engine - chatbot - is an advanced AI-based solution that helps people
+						manage their money in the most natural way.
+					<p>
+						Amethix has played an essential role since the very early stage of the product.
+						We have supported ABE.AI in creating solutions for financial services for medium-sized credit unions and financial aggregators in the USA.
+					</p>
+					<p>
+						The entire conversation engine has been designed and integrated with advanced NLP techniques, from off-the-shelf machine learning methods to more advanced deep learning techniques.
+						Amethix implemented the most accurate Named Entity Recognition and Intent classification models, provided algorithms in the space of domain-specific language modeling, sentiment analysis and short-text queries.
+					</p>
+
+			<div class="col-md-6 col-lg-4">
+				<div class="about-imgX rounded-boxX Xmb-3"></div>
+			</div>
+			<!-- </div>
+		</div>
+</section> -->
+<!-- About End -->
 
 
-	</div>
-</div>
 
 
-<!--
-<div class="post-single-share py-4 mt-4 mb-5">
-		<h6 class="text-white">Share This on</h6>
-		<ul class="list-inline socials-links mb-0">
-			<li class="list-inline-item">
-				<a href="#" class="active"><i class="ti-facebook"></i></a>
-			</li>
-			<li class="list-inline-item">
-				<a href="#"><i class="ti-twitter"></i></a>
-			</li>
-			<li class="list-inline-item">
-				<a href="#"><i class="ti-vimeo"></i></a>
-			</li>
-			<li class="list-inline-item">
-				<a href="#"><i class="ti-linkedin"></i></a>
-			</li>
-		</ul>
-	</div>
-</div>
--->
 
 <div class="col-lg-12 mt-5">
 	<div class="carousel slide" id="single-slide">
