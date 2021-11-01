@@ -56,7 +56,7 @@
         $('head').append(`
            <style>
                .animate-typing[data-animate-index="${index}"]::after {
-                   content: '|';
+                   content: '_';
                    animation: animateCursor ${speed}ms infinite alternate cubic-bezier(.68,-0.55,.27,1.55);
                }
            </style>
@@ -87,7 +87,7 @@
         elementTyping.text('');
 
         // Show the animated cursor at the end of text
-        showCursor(elementTyping, index, cursorSpeed);
+        showCursor(elementTyping, index, cursorSpeed*1.5);
 
         // Iterate to sub-texts for animating
         // Use async/await because each iteration must wait for each animation to be done

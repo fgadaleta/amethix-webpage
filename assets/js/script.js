@@ -5,6 +5,49 @@
 
   var win = $(window);
 
+  // check if element is in view
+  function inView() {
+    // get window height
+    var windowHeight = window.innerHeight;
+    // get number of pixels that the document is scrolled
+    var scrollY = window.scrollY || window.pageYOffset;
+
+    // get current scroll position (distance from the top of the page to the bottom of the current viewport)
+    var scrollPosition = scrollY + windowHeight;
+    // get element position (distance from the top of the page to the bottom of the element)
+    var elementPosition =
+        element.getBoundingClientRect().top + scrollY + elementHeight;
+
+    // is scroll position greater than element position? (is element in view?)
+    if (scrollPosition > elementPosition) {
+        return true;
+    }
+    return false;
+  }
+
+  // animate element when it is in view
+  function animate() {
+    console.log("into animate");
+    // is element in view?
+    if (inView()) {
+      console.log("element in view");
+      console.log(element);
+
+        // element is in view, add class to element
+        element.classList.add("typing-demo");
+        // element.classList.add("animate-typing");
+
+    }
+  }
+
+  // get the element to animate
+  var element = document.getElementById("appear");
+  var elementHeight = element.clientHeight;
+  console.log("found element from script");
+
+  // listen for scroll event and call animate function
+  document.addEventListener("scroll", animate);
+
   function navBar () {
     if ($(window).scrollTop() > 70) {
       // $('.main-nav').addClass('nav-top');
@@ -16,7 +59,8 @@
   }
 
   navBar();
-  
+
+
   // navigation fixed top
   win.on('scroll', function () {
     navBar();
@@ -138,9 +182,9 @@
 
   win.on('load', function () { // makes sure the whole site is loaded
 
-    // ----------------------- 
+    // -----------------------
     // Progress Bar--------------------
-    // 
+    //
     $('.progress-bar').each(function () {
       var width = $(this).data('percent');
       $(this).css({
@@ -185,10 +229,7 @@
     });
   }
 
-
-
   // meta social link
-
   $('.share-btn').on('click', function (e) {
     e.preventDefault();
     $('.meta-share .social-links').toggleClass('open');
