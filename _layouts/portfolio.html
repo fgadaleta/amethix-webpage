@@ -2,6 +2,7 @@
 layout: default_light
 ---
 
+<!--
 <section class="page-title header-padding overlay-staticX" style="
   url({% if page.header_image %}{{page.header_image}} {% else %} {{site.cover_image}} {% endif %}) 0 0 no-repeat fixed;
   opacity: 1;
@@ -14,53 +15,137 @@ layout: default_light
     <div class="row">
       <div class="col-lg-9">
         <h1 class="text-xl">{{page.title}}</h1>
-        <!-- <h4 class="mb-4 mt-3" style="max-width: 650px; margin: 1rem auto; padding-top: 1rem;">{{page.description}}</h4> -->
         <h5 class="">{{page.description}}</h5>
-		<!-- <h4 class="mb-4 mt-3" style="max-width: 550px; margin: 1rem auto; padding-top: 5rem;">
-			Building analytics solutions across sectors is what we enjoy doing.
-		</h4> -->
 	</div>
     </div>
   </div>
   <div class="skew-bottom-6"></div>
+</section> -->
+
+      <!-- Centered large image -->
+      <!-- <section class="section-main section margin-bottom">
+		<div class="container">
+		   <div class="row">
+			  <div class="design__image__13slv6u design__image__1wlkxmy" style="max-width: 100%;">
+				 <div data-animation="pixelated">
+				 <img src={{ page.header_video }}
+				 sizes="100vw" alt="shutterstock 1462733690" loading="lazy" class="design__animated__13slv6u" style="opacity: 1;"
+				 width="100%" height="auto">
+				 <div data-animation="pixelated-canvas" class="design__canvas__13slv6u" style="opacity: 0; display: none;">
+					</div>
+				 </div>
+			  </div>
+		</div>
+	 </div>
+	 </section> -->
+
+
+<section class="container margin-bottom">
+	<hr />
+	<div class="row margin-bottom">
+		<div class="col-md-6 col-lg-4"> </div>
+	</div>
+		<div class="row margin-bottom">
+			<div class="col-md-6 col-lg-6" style="margin-right: 100px;">
+				<div class="rooted-pillarX rooted-pillar--ossX">
+					<h3 class="mb-5 mt-2">Project Overview</h3>
+					<p class="common-BodyText"> {{ page.project_overview }} </p>
+					<p>{{ page.project_summary }}</p>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4">
+				<div class="about-imgX rounded-boxX Xmb-3">
+					<div class="cover">
+				</div>
+			<p>
+			<div class="footer-widget mb-5 mb-lg-0">
+				<div class="footer-widget mb-5 mb-lg-0">
+					<h4 class="mb-3 text-md">Client</h4>
+					<ul class="list-unstyled lh-38">
+						<li>{{ page.client }}</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-widget mb-5 mb-lg-0">
+				<h4 class="mb-3 text-md">Category</h4>
+				<ul class="list-unstyled lh-38">
+					<li>{{page.category }}</li>
+				</ul>
+			</div>
+			<div class="footer-widget mb-5 mb-lg-0">
+				<h4 class="mb-3 text-md">Location</h4>
+				<ul class="list-unstyled lh-38">
+					<li>{{ page.location }}</li>
+				</ul>
+			</div>
+			</p>
+			</div>
+			</div>
+		</div>
+		<hr />
+</section>
+
+<!-- About Project -->
+<section class="container sectionX Xportfolio-2 margin-bottom">
+	<div class="row margin-bottom">
+			<div class="col-md-6 col-lg-12" style="margin-right: 100px;">
+				<div class="rooted-pillarX rooted-pillar--ossX">
+					    <h1 id="appearX" class="mb-5 mt-2 text-uppercaseX dummy animate-typing" data-type-speed="40">
+							{{ page.project_teaser }}
+						</h1>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4">
+				<div class="about-imgX rounded-boxX Xmb-3">
+					<div class="cover"></div>
+				</div>
+			</div>
+	</div>
+</section>
+<!-- About Project End -->
+
+
+<section class="container margin-bottom">
+    <div class="box visible" data-animate data-animation-classes="animated swing" data-animation-scrolled="true"></div>
+    <div class="row">
+        <div class="col-md-6 col-lg-4">
+            <br />
+            <!-- <b class="animate-typing" data-type-speed="40">Increase your business impact</b> -->
+			<p class="text-smaller"> {{ page.testimonial_quote }} </p>
+			<p> {{ page.testimonial_author }} </p>
+            <!-- <div class="row mt-3 position-static ml-2">
+                <a href="/solutions" class="primary-rounded-btn">Solutions <i class="ti-arrow-right"></i></a>
+            </div> -->
+        </div>
+        <div class="col-md-6 col-lg-4">
+			<!-- <img src="assets/icons/comments-dollar-solid.svg" width="42px"> -->
+			<!-- <img src="assets/images/icons/document.png" width="38px"> -->
+            <br />
+            <b>PROBLEM SPACE</b>
+            <p class="text-smaller">{{page.problem_space}} </p>
+			<b>SOLUTION</b>
+            <p>{{ page.problem_solution }} </p>
+        </div>
+        <div class="col-md-6 col-lg-4">
+			<!-- <img src="assets/icons/brain-solid.svg" width="42px">-->
+			<!-- <img src="assets/images/icons/browser.png" width="38px"> -->
+            <br />
+            <b>Make your business smarter</b>
+            <p class="text-smaller">Enhance your business with AI and machine learning. Your data has never been so powerful.</p>
+            <a href="/contact" class="secondary-rounded-btn text-smaller">Contact sales <i class="ti-arrow-right"></i></a>
+        </div>
+    </div>
 </section>
 
 
-<!-- <section class="page-title header-padding overlay-static" style="
-  background: radial-gradient(circle, rgba(250, 250, 250, 0.90) 10%, rgba(255, 255, 255, 0.981) 100%);
-  opacity: 0.9;
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-	padding-top: 10rem; ">
-  <div class="container relative z-10">
-    <div class="row">
-      <div class="col-lg-9">
-        <h1 class="mb-2 text-xl padding-top">{{page.title}}</h1>
-        <h4 class="" style="max-width: 650px; margin: 1rem auto; padding-top: 1rem;">{{page.description}}</h4>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<!-- <section class="portfolio-single margin-bottom"> -->
-<!-- <section class="container margin-bottom"> -->
-<!--
-	<div class="container"> -->
-		<!-- <div class="row"> -->
-			{{page.content}}
-		<!-- </div> -->
-	<!-- </div> -->
-<!-- </section> -->
-
+<!-- Carousel of other projects -->
 <section class="section service contact-hero-bgX position-relative margin-bottom">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-7">
-				<h2 class="mb-5 mt-2">Other Projects</h2>
+				<h2 class="mb-5 mt-2">Browse</h2>
 			</div>
 		</div>
-
 		<div class="row">
 			{% for portfolio in site.portfolios limit:"4" %}
 			<div class="col-lg-3">
@@ -76,4 +161,4 @@ layout: default_light
 		</div>
 	</div>
 </section>
-
+<!-- End of Carousel of other projects -->
