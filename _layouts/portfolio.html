@@ -111,8 +111,13 @@ layout: default_light
         <div class="col-md-6 col-lg-4">
             <br />
             <!-- <b class="animate-typing" data-type-speed="40">Increase your business impact</b> -->
-			<p class="text-smaller"> {{ page.testimonial_quote }} </p>
-			<p> {{ page.testimonial_author }} </p>
+			<blockquote>
+				{{ page.testimonial_quote }}
+			</blockquote>
+			<cite>{{ page.testimonial_author }}</cite>
+
+			<!-- <p class="text-quote"> &ldquo; {{ page.testimonial_quote }}  &rdquo; </p>
+			<p> {{ page.testimonial_author }} </p> -->
             <!-- <div class="row mt-3 position-static ml-2">
                 <a href="/solutions" class="primary-rounded-btn">Solutions <i class="ti-arrow-right"></i></a>
             </div> -->
@@ -132,7 +137,13 @@ layout: default_light
             <br />
             <b>Make your business smarter</b>
             <p class="text-smaller">Enhance your business with AI and machine learning. Your data has never been so powerful.</p>
-            <a href="/contact" class="secondary-rounded-btn text-smaller">Contact sales <i class="ti-arrow-right"></i></a>
+            <!-- <a href="/contact" class="secondary-rounded-btn text-smaller">Contact sales <i class="ti-arrow-right"></i></a> -->
+
+			<div class="row mt-3 position-static ml-2">
+                <a href="/contact" class="primary-rounded-btn">Contact sales <i class="ti-arrow-right"></i></a>
+                <!-- <a href="/contact" class="secondary-rounded-btn">Contact sales <i class="ti-arrow-right"></i></a> -->
+            </div>
+
         </div>
     </div>
 </section>

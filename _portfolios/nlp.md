@@ -3,9 +3,9 @@ layout: portfolio
 title: "Natural Language Processing"
 categories: ["NLP"]
 thumbnail: "/assets/images/portfolio/nlp-portfolio.jpg"
-header_video: "https://palantir.com/assets/xrfr7uokpv1b/57Nxf3p8sQeBj4DgAJ1o9r/1ac398723106f705b55d1b1040ce5037/home.mp4"
+header_video: "/assets/videos/amethix-chatbot-video.mp4"
 description: "Conversational engine for personal finance"
-client: "Abe AI Inc."
+client: "Abe AI Inc. - Envestnet Yodlee Inc."
 location: "USA"
 category: "Algorithm design, Governance, Software Development"
 project_overview: "Abe.AI gives financial institutions a fully featured product with the Virtual Financial Assistant,
@@ -16,7 +16,7 @@ problem_solution: "Amethix has played an essential role since the very early sta
 				We have supported ABE.AI in creating solutions for financial services for medium-sized credit unions and financial aggregators in the USA. The entire conversation engine has been designed and integrated with advanced NLP techniques, from off-the-shelf machine learning methods to more advanced deep learning techniques. <br />
 				Amethix implemented the most accurate Named Entity Recognition and Intent classification models, provided algorithms in the space of domain-specific language modeling, sentiment analysis and short-text queries."
 project_summary: "Abe.ai technology was built specifically for technology in banks, credit unions, and wealth managers."
-project_teaser: "Smart Financial Conversational Engine"
+project_teaser: "Smart Chatbot for Personal Finance"
 testimonial_author: "Satoshi Nakamoto - Founder of Bitcoin"
 testimonial_quote: "without Amethix we were lost and then we found them and our business went fuckin viral and we became millionaires"
 ---
