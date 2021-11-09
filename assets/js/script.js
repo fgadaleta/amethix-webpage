@@ -261,8 +261,10 @@
       $(".typewrite").each(function (idx, elm) {
         if (inView(elm)) {
           var typewrite = new Typewriter(elm, { cursor: "_", delay: 70 });
-          typewrite.typeString($(elm).data("text")).pauseFor(2500)
-            .start();
+          typewrite.typeString($(elm).data("text")).pauseFor(500)
+            .start().callFunction(function(elem){
+              $(elem.elements.cursor).hide();
+            });
           $(elm).removeClass("typewrite");
         }
       });
