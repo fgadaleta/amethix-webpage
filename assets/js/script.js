@@ -260,7 +260,11 @@
     function typeWhenVisible() {
       $(".typewrite").each(function (idx, elm) {
         if (inView(elm)) {
-          var typewrite = new Typewriter(elm, { cursor: "_", delay: 70 });
+          let delay = 70;
+          if($(elm).data("delay")){
+            delay = $(elm).data("delay");
+          }
+          var typewrite = new Typewriter(elm, { cursor: "_", delay: delay });
           typewrite.typeString($(elm).data("text")).pauseFor(500)
             .start().callFunction(function(elem){
               $(elem.elements.cursor).hide();
