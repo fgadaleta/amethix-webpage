@@ -1125,6 +1125,21 @@ a:focus {
 		transform: translateX(16px) translateY(-16px);
 	}
 
+	.page-title.header-padding{
+		padding: 120px 0px 10px 10px;
+	}
+
+	.section.pt200{
+		padding-top: 0px;
+	}
+
+	div.grid-container{
+		display: flex;
+	}
+
+	div.grid-container .item h5{
+		white-space: normal !important;
+	}
 }
 
 .rooted-pillar {
@@ -1249,5 +1264,7 @@ a:focus {
 
   }
 
-
+.typehead{
+	font-size: 3em;
+}
 

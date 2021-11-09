@@ -6,7 +6,7 @@
   var win = $(window);
 
   // check if element is in view
-  function inView() {
+  function inView(element) {
     // get window height
     var windowHeight = window.innerHeight;
     // get number of pixels that the document is scrolled
@@ -16,39 +16,39 @@
     var scrollPosition = scrollY + windowHeight;
     // get element position (distance from the top of the page to the bottom of the element)
     var elementPosition =
-        element.getBoundingClientRect().top + scrollY + elementHeight;
+      element.getBoundingClientRect().top + scrollY + elementHeight;
 
     // is scroll position greater than element position? (is element in view?)
     if (scrollPosition > elementPosition) {
-        return true;
+      return true;
     }
     return false;
   }
 
+  var element = document.getElementById("appear");
   // animate element when it is in view
   function animate() {
     console.log("into animate");
     // is element in view?
-    if (inView()) {
+    if (inView(element)) {
       console.log("element in view");
       console.log(element);
 
-        // element is in view, add class to element
-        element.classList.add("typing-demo");
-        // element.classList.add("animate-typing");
+      // element is in view, add class to element
+      //element.classList.add("typing-demo");
+      // element.classList.add("animate-typing");
 
     }
   }
 
   // get the element to animate
-  var element = document.getElementById("appear");
   var elementHeight = element.clientHeight;
   console.log("found element from script");
 
   // listen for scroll event and call animate function
   document.addEventListener("scroll", animate);
 
-  function navBar () {
+  function navBar() {
     if ($(window).scrollTop() > 70) {
       // $('.main-nav').addClass('nav-top');
       $('.main-nav').hide();
@@ -254,4 +254,105 @@
   }
 
 
+  $(document).ready(function () {
+    $(document).scroll(typeWhenVisible);
+
+    function typeWhenVisible() {
+      $(".typewrite").each(function (idx, elm) {
+        if (inView(elm)) {
+          var typewrite = new Typewriter(elm, { cursor: "_", delay: 70 });
+          typewrite.typeString($(elm).data("text")).pauseFor(2500)
+            .start();
+          $(elm).removeClass("typewrite");
+        }
+      });
+    }
+
+    typeWhenVisible();
+
+
+
+    function animatePixel(imgElem) {
+      // Grab the Canvas and Drawing Context
+      var canvas = document.createElement('canvas');
+      $(canvas).addClass("toBePixeled");
+      var ctx = canvas.getContext('2d');
+      $(canvas).insertAfter(imgElem);
+      var blocks = 13;
+
+      // Create an image element
+      var img = new Image();
+
+      //When the page first loads - draw the initial demo image
+      window.onload = firstDraw();
+
+      function firstDraw() {
+        //preload the demo image
+        var initialImageURL = imgElem.src;
+        draw(initialImageURL);
+      }
+
+      var height, width;
+
+      
+      function draw(imgURL) {
+        img.crossOrigin = "anonymous";
+        img.src = imgURL;
+
+        img.onload = function () {
+          canvas.height = imgElem.height;
+          canvas.width = imgElem.width;
+          ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+          height = imgElem.height;
+          width = imgElem.width;
+          pixelate(1);
+          $(imgElem).hide();
+          $(document).scroll(function(){
+            if(inView(canvas) && $(canvas).hasClass("toBePixeled")){
+              let last = 0;
+              for(let i=0; i<=12; i += 1){
+                setTimeout(() => {
+                  pixelate(i);
+                  last = 100 * i;
+                }, 100*i);
+              }
+              setTimeout(() => {
+                pixelate(100, true);
+              }, 1500);
+              $(canvas).removeClass("toBePixeled");
+            }
+          });
+        };
+      }
+
+      //
+      function pixelate(blocks, last=false) {
+        //dynamically adjust canvas size to the size of the uploaded image
+        canvas.height = height;
+        canvas.width = width;
+
+        /// if in play mode use that value, else use slider value
+        var size = (blocks) * 0.01,
+
+          /// cache scaled width and height
+          w = canvas.width * size,
+          h = canvas.height * size;
+
+        /// draw original image to the scaled size
+        ctx.drawImage(img, 0, 0, w, h);
+
+        /// then draw that scaled image thumb back to fill canvas
+        /// As smoothing is off the result will be pixelated
+        ctx.mozImageSmoothingEnabled = false;
+        ctx.imageSmoothingEnabled = false;
+        if(last){
+          ctx.mozImageSmoothingEnabled = true;
+          ctx.imageSmoothingEnabled = true;
+        }
+        ctx.drawImage(canvas, 0, 0, w, h, 0, 0, canvas.width, canvas.height);
+      }
+    }
+
+    animatePixel(document.querySelector(".imgpx"));
+  });
 })(jQuery);
