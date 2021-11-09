@@ -1137,8 +1137,56 @@ a:focus {
 		display: flex;
 	}
 
-	div.grid-container .item h5{
+	div.grid-container .item p{
 		white-space: normal !important;
+		width: 120px;
+	}
+
+	.portfolio-2.margin-bottom .container .row{
+		margin-bottom: 0px !important;
+	}
+
+	.margin-bottom .container .row .col-md-6{
+		padding-bottom: 20px;
+	}
+
+	div.grid-container-small{
+		display: flex;
+		flex-direction: column;
+		grid-gap: 0px;
+	}
+
+	img.img-corner{
+		position: relative;
+		margin: 20px;
+		float: right;
+		top: unset;
+		right: unset;
+	}
+
+	.about-img img{
+		max-width: 110px !important;
+		top: 30px;
+	}
+
+	.about-img .img-corner-left{
+		left: 10px;
+	}
+
+	.about-img .img-corner-center{
+		left: 130px;
+	}
+
+	.about-img .img-corner-right{
+		left: 250px;
+	}
+
+	div.portfolio-gallery{
+		flex-direction: column;
+	}
+
+	div.portfolio-gallery .shuffle-item{
+		max-width: unset;
 	}
 }
 
