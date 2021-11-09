@@ -17,7 +17,7 @@
     var scrollPosition = scrollY + windowHeight;
     // get element position (distance from the top of the page to the bottom of the element)
     var elementPosition =
-      element.getBoundingClientRect().top + scrollY + (elementHeight);
+      element.getBoundingClientRect().top + scrollY + (elementHeight / 2);
 
     // is scroll position greater than element position? (is element in view?)
     if (scrollPosition > elementPosition) {
@@ -314,6 +314,18 @@
           width = imgElem.width;
           pixelate(1);
           $(imgElem).hide();
+          if(inView(canvas) && $(canvas).hasClass("toBePixeled")){
+            for(let i=0; i<=12; i += 1){
+              setTimeout(() => {
+                pixelate(i);
+              }, speed*i);
+            }
+            
+            setTimeout(() => {
+              pixelate(100, true);
+            }, speed*12 + 200);
+            $(canvas).removeClass("toBePixeled");
+          }
           $(document).scroll(function(){
             if(inView(canvas) && $(canvas).hasClass("toBePixeled")){
               for(let i=0; i<=12; i += 1){
