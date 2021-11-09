@@ -43,7 +43,7 @@
   }
 
   // get the element to animate
-  
+
   console.log("found element from script");
 
   // listen for scroll event and call animate function
@@ -301,7 +301,7 @@
 
       var height, width;
 
-      
+
       function draw(imgURL) {
         img.crossOrigin = "anonymous";
         img.src = imgURL;
