@@ -12,11 +12,12 @@
     // get number of pixels that the document is scrolled
     var scrollY = window.scrollY || window.pageYOffset;
 
+    var elementHeight = element.clientHeight;
     // get current scroll position (distance from the top of the page to the bottom of the current viewport)
     var scrollPosition = scrollY + windowHeight;
     // get element position (distance from the top of the page to the bottom of the element)
     var elementPosition =
-      element.getBoundingClientRect().top + scrollY + elementHeight;
+      element.getBoundingClientRect().top + scrollY + (elementHeight);
 
     // is scroll position greater than element position? (is element in view?)
     if (scrollPosition > elementPosition) {
@@ -42,7 +43,7 @@
   }
 
   // get the element to animate
-  var elementHeight = element.clientHeight;
+  
   console.log("found element from script");
 
   // listen for scroll event and call animate function
