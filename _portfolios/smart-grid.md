@@ -3,7 +3,7 @@ layout: portfolio
 title: "Energy Smart Grid"
 categories: ["smart grid"]
 thumbnail: "/assets/images/portfolio/energy-portfolio.jpg"
-header_video: "https://palantir.com/assets/xrfr7uokpv1b/57Nxf3p8sQeBj4DgAJ1o9r/1ac398723106f705b55d1b1040ce5037/home.mp4"
+header_video: "/assets/videos/amethix-energy-video.mp4"
 description: "Predictive analytics for renewable energy providers and dynamic grids"
 client: "Centrica Inc."
 location: "Belgium, Canada"
