@@ -279,7 +279,7 @@
 
 
 
-    function animatePixel(imgElem) {
+    function animatePixel(imgElem, speed=100) {
       // Grab the Canvas and Drawing Context
       var canvas = document.createElement('canvas');
       $(canvas).addClass("toBePixeled");
@@ -316,16 +316,15 @@
           $(imgElem).hide();
           $(document).scroll(function(){
             if(inView(canvas) && $(canvas).hasClass("toBePixeled")){
-              let last = 0;
               for(let i=0; i<=12; i += 1){
                 setTimeout(() => {
                   pixelate(i);
-                  last = 100 * i;
-                }, 100*i);
+                }, speed*i);
               }
+              
               setTimeout(() => {
                 pixelate(100, true);
-              }, 1500);
+              }, speed*12 + 200);
               $(canvas).removeClass("toBePixeled");
             }
           });
@@ -360,6 +359,12 @@
       }
     }
 
-    animatePixel(document.querySelector(".imgpx"));
+    $(".imgpx").each(function(idx, elm){
+      var duration = 1;
+      if($(elm).data("duration")){
+        duration = $(elm).data("duration");
+      }
+      animatePixel(elm, duration*100);
+    });
   });
 })(jQuery);
