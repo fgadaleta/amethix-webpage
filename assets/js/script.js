@@ -279,7 +279,7 @@
 
 
 
-    function animatePixel(imgElem, speed) {
+    function animatePixel(imgElem, speed=100) {
       // Grab the Canvas and Drawing Context
       var canvas = document.createElement('canvas');
       $(canvas).addClass("toBePixeled");
@@ -359,6 +359,12 @@
       }
     }
 
-    animatePixel(document.querySelector(".imgpx"), 100);
+    $(".imgpx").each(function(idx, elm){
+      var duration = 1;
+      if($(elm).data("duration")){
+        duration = $(elm).data("duration");
+      }
+      animatePixel(elm, duration*100);
+    });
   });
 })(jQuery);
