@@ -1,7 +1,7 @@
 {% for job in site.jobs %}
 <div class="col-lg-12 col-6 mb-4 shuffle-item" data-groups="[{% for category in job.categories %} &quot;{{ category | downcase | slugify }}&quot; {% unless forloop.last %}, {% endunless %} {% endfor %}]">
   <div class="position-relative inner-box">
-    <div class="image position-relative">
+    <div class="image position-relative small-text">
 
       {% if job.status == "open" %}
       <a class="overlay-content" href="{{job.url | relative_url }}">
@@ -9,7 +9,7 @@
     {% elsif job.status == "closed" %}
     <a class="overlay-content"  style="cursor: not-allowed; opacity: 0.5;" >
     {% endif %}
-      <h4 class="mb-0">{{job.title}} {% if job.status == "closed" %} (closed) {% endif %} </h4>
+      <h4 class="mb-0 text-small">{{job.title}} {% if job.status == "closed" %} (closed) {% endif %} </h4>
       <hr />
   </a>
     </div>

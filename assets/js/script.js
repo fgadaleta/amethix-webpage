@@ -26,28 +26,24 @@
     return false;
   }
 
-  var element = document.getElementById("appear");
+  // var element = document.getElementById("appear");
   // animate element when it is in view
-  function animate() {
-    console.log("into animate");
+  // function animate() {
+    // console.log("into animate");
     // is element in view?
-    if (inView(element)) {
-      console.log("element in view");
-      console.log(element);
-
-      // element is in view, add class to element
-      //element.classList.add("typing-demo");
-      // element.classList.add("animate-typing");
-
-    }
-  }
+    // if (inView(element)) {
+    //   // console.log("element in view");
+    //   // console.log(element);
+    //   // element is in view, add class to element
+    //   //element.classList.add("typing-demo");
+    //   // element.classList.add("animate-typing");
+    // }
+  // }
 
   // get the element to animate
-
-  console.log("found element from script");
-
+  // console.log("found element from script");
   // listen for scroll event and call animate function
-  document.addEventListener("scroll", animate);
+  // document.addEventListener("scroll", animate);
 
   function navBar() {
     if ($(window).scrollTop() > 70) {
@@ -320,7 +316,7 @@
                 pixelate(i);
               }, speed*i);
             }
-            
+
             setTimeout(() => {
               pixelate(100, true);
             }, speed*12 + 200);
@@ -333,7 +329,7 @@
                   pixelate(i);
                 }, speed*i);
               }
-              
+
               setTimeout(() => {
                 pixelate(100, true);
               }, speed*12 + 200);

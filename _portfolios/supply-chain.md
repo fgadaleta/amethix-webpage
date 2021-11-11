@@ -13,7 +13,7 @@ problem_space: "In the process of innovation, from the lab to bringing new produ
 problem_solution: "Amethix has been involved in a critical supply chain project related to the introduction of new medications in the Asian market. We designed and implemented custom statistical models for demand forecasting and pricing analysis. <br /> Our findings have helped the Company deploy optimal strategies for supply chain and pricing models, taking into account a number of external factors not always under control of the Company."
 project_summary: "Amethix has been involved in two major projects related to the forecast of electricity prices for smart-grid optimization, in the European and US market."
 project_teaser: "supply chain analytics for medical products"
-testimonial_author: "Satoshi Nakamoto - Founder of Bitcoin"
-testimonial_quote: "without Amethix we were lost and then we found them and our business went fuckin viral and we became millionaires"
+testimonial_author: "Blake Harbert - Operational Forecasting GoBrands Inc."
+testimonial_quote: "Working with Amethix has been a great experience thank to their sharp design and promptness.Predictions stayed accurate under drastic changes in many geographic locations"
 ---
 

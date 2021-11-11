@@ -13,11 +13,11 @@ logo_icon: "/assets/images/logo-b.png"
 contact_form_action: "https://formspree.io/f/xpvralvx"
 mailchimp_list: "https://themeix.us16.list-manage.com/subscribe/post?u=307862c135e4548eecf86f389&amp;id=342411fb35"
 # footer_content: "A way of thinking"
-copyright : "&copy; Amethix"
+copyright : "&copy; 2021 Amethix"
 # page header default image
 cover_image: "/assets/images/bg/about-bg.jpg"
-google_map_api: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDnh74UN6BKgq9U5fMNGhdZOSpmM_QnZqs"
-google_analytics: "UA-37903879-7"
+# google_map_api: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDnh74UN6BKgq9U5fMNGhdZOSpmM_QnZqs"
+# google_analytics: "UA-37903879-7"
 
 ############### Call to Action ###############
 cta:

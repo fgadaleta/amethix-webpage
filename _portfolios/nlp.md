@@ -8,16 +8,15 @@ description: "Conversational engine for personal finance"
 client: "Abe AI Inc. - Envestnet Yodlee Inc."
 location: "USA"
 category: "Algorithm design, Governance, Software Development"
-project_overview: "Abe.AI gives financial institutions a fully featured product with the Virtual Financial Assistant,
-						but it's critical that financial institutions own their roadmap and the data underlying machine
-						learning models. The Conversational AI Platform empowers financial institutions to leverage AI in finance for better customer experiences and increased operational efficiency."
-problem_space: "Personal finance has always been a challenge for people who struggle with their money. Abe AI conversational engine - chatbot - is an advanced AI-based solution that helps people manage their money in the most natural way."
+project_overview: "AbeAI gives financial institutions a fully featured product with the Virtual Financial Assistant,
+				 It is of paramount importance that financial institutions own their roadmap and the data underlying machine learning models. AbeAI's Conversational AI Platform empowers financial institutions to leverage AI in finance for better customer experience and increased operational efficiency."
+problem_space: "Personal finance has always been a challenge for people who struggle with their money. AbeAI's conversational engine is an advanced AI-based solution that helps people manage their money in the most natural way."
 problem_solution: "Amethix has played an essential role since the very early stage of the product.
-				We have supported ABE.AI in creating solutions for financial services for medium-sized credit unions and financial aggregators in the USA. The entire conversation engine has been designed and integrated with advanced NLP techniques, from off-the-shelf machine learning methods to more advanced deep learning techniques. <br />
-				Amethix implemented the most accurate Named Entity Recognition and Intent classification models, provided algorithms in the space of domain-specific language modeling, sentiment analysis and short-text queries."
-project_summary: "Abe.ai technology was built specifically for technology in banks, credit unions, and wealth managers."
+				The team have supported AbeAI in creating solutions for financial services for medium-sized credit unions and financial aggregators in the USA. The entire conversation engine has been designed and integrated with advanced NLP techniques, from off-the-shelf machine learning methods to more advanced deep learning solutions. <br />
+				Amethix has implemented the most accurate Named Entity Recognition and Intent Classification models; they have provided algorithms in the space of domain-specific language modeling, sentiment analysis and short-text queries."
+project_summary: "AbeAI technology has been designed to operate within banks, credit unions, financial transactions aggregators, and wealth management systems."
 project_teaser: "Smart Chatbot for Personal Finance"
-testimonial_author: "Satoshi Nakamoto - Founder of Bitcoin"
-testimonial_quote: "without Amethix we were lost and then we found them and our business went fuckin viral and we became millionaires"
+testimonial_author: "Rob Guylfoyle - CEO AbeAI"
+testimonial_quote: "Amethix added semantics to the NLP stack of our financial chatbot. This improved intent classification, and overall accuracy. We loved it. Our customers loved it!"
 ---
 

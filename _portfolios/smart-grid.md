@@ -14,7 +14,7 @@ problem_space: "Amethix has been involved in two major projects related to the f
 problem_solution: "Amethix developed predictive models of electricity price for multiple European countries (Belgium, France, Germany). We designed and implemented the best predictive models for peak energy consumption in the North America market and advised best practices in designing machine learning pipelines for reproducibility and scalability within the organisation. <br />"
 project_summary: "Amethix has been involved in two major projects related to the forecast of electricity prices for smart-grid optimization, in the European and US market."
 project_teaser: "Analytics for renewable energy"
-testimonial_author: "Satoshi Nakamoto - Founder of Bitcoin"
-testimonial_quote: "without Amethix we were lost and then we found them and our business went fuckin viral and we became millionaires"
+testimonial_author: "Don Gossen - CEO Keyko"
+testimonial_quote: "Amethix contributed to Ocean Protocol during its infancy and made the project move forward immeasurably. I'm always looking for excuses to working with them again in the future."
 ---
 
