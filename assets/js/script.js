@@ -70,6 +70,7 @@
 
 
   // clients slider
+  
   $('.clients-wrap').slick({
     slidesToShow: 5,
     slidesToScroll: 5,
@@ -111,6 +112,7 @@
 
     ]
   });
+  
 
 
   // testimonial slider
@@ -372,6 +374,7 @@
       if($(elm).data("duration")){
         duration = $(elm).data("duration");
       }
+      console.log(elm);
       animatePixel(elm, duration*100);
     });
   });

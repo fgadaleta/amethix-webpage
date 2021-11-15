@@ -8,7 +8,6 @@ css:
 
 ################ JS Plugins ######################
 js:
-  - "/assets/plugins/jQuery/jquery.min.js"
   - "/assets/plugins/bootstrap/bootstrap.min.js"
   - "/assets/plugins/slick-carousel/slick/slick.min.js"
   - "/assets/plugins/shuffle/shuffle.min.js"
