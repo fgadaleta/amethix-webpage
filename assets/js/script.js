@@ -374,7 +374,6 @@
       if($(elm).data("duration")){
         duration = $(elm).data("duration");
       }
-      console.log(elm);
       animatePixel(elm, duration*100);
     });
   });
