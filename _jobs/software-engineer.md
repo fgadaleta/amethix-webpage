@@ -4,7 +4,7 @@ title: "Software Engineer"
 categories: ["programming", "Rust", "developer"]
 thumbnail: "/assets/images/about/skyscraper-job.jpg"
 description: "#Rust #Programming #Software #wasm"
-status: "open"
+status: "closed"
 ---
 
 

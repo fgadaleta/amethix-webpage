@@ -4,7 +4,7 @@ title: "Frontend developer"
 categories: ["UI/UX", "Frontend", "Visualization"]
 thumbnail: "/assets/images/about/skyscraper-job.jpg"
 description: "#frontend #UI #UX"
-status: "open"
+status: "closed"
 ---
 
 <section class="section about overflow-hidden margin-bottom">

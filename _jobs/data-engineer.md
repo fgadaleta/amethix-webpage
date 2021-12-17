@@ -4,7 +4,7 @@ title: "Data Engineer"
 categories: ["data", "mlops", "devops"]
 thumbnail: "/assets/images/about/skyscraper-job.jpg"
 description: "#MLOps #DevOps #backend"
-status: "open"
+status: "closed"
 ---
 
 <section class="section about overflow-hidden margin-bottom">
