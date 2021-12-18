@@ -127,6 +127,7 @@ a {
 	-moz-transition: all .3s ease;
 	-webkit-transition: all .3s ease;
 	-o-transition: all .3s ease;
+	color: #000;
 }
 
 a:hover {
@@ -540,7 +541,8 @@ a:focus {
 		position: relative;
 		box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 		i.big {
-			color: $stripe_light_blue;
+			// color: $stripe_light_blue;
+			color: #484848;
 			font-size: 3.1rem;
 			background: white;
 			width: 6rem;
@@ -567,17 +569,19 @@ a:focus {
 
 		span {
 		    background: #F6F9FC;
-				margin-left: -0.95rem;
-				margin-right: -0.9rem;
-				border-radius: 0 0 5px 5px;
+			color: #484848;
+			margin-left: -0.95rem;
+			margin-right: -0.9rem;
+			border-radius: 0 0 5px 5px;
 		    transform: translateY(1.5rem);
 		    padding: 0.7rem 0.5rem;
 		    justify-self: flex-end;
 
 		    i {
 		        font-size: 0.7rem;
-						font-weight: bolder;
+				font-weight: bolder;
 		        margin-left: 0.3rem;
+				color: #484848;
 		    }
 		}
 		}
@@ -971,7 +975,8 @@ a:focus {
         overflow: hidden;
 
         span {
-            background: $stripe_light_blue;
+            // background: $stripe_light_blue;
+			background: #8a8a8a;
             color: white;
             width: 6rem;
             height: 6rem;
@@ -993,7 +998,7 @@ a:focus {
             display: flex;
             align-items: baseline;
             font-size: 1.5rem;
-            color: $stripe_light_blue !important;
+            // color: $stripe_light_blue !important;
 
             i {
                 font-size: 1rem;

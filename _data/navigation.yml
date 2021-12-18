@@ -30,8 +30,8 @@ main:
     url: /portfolios/smart-grid
   - name: Supply-Chain
     url: /portfolios/supply-chain
-  - name: Healthcare&Pharma
-    url: /portfolios/healthcare-pharma
+  # - name: Healthcare&Pharma
+  #   url: /portfolios/healthcare-pharma
 
 - name: Media
   submenu:
