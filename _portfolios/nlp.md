@@ -4,7 +4,7 @@ title: "Natural Language Processing"
 categories: ["NLP"]
 thumbnail: "/assets/images/portfolio/nlp-portfolio.jpg"
 header_video: "/assets/videos/amethix-chatbot-video.mp4"
-description: "Conversational engine for personal finance"
+description: "Conversational engine for personal finance and fintech services"
 client: "Abe AI Inc. - Envestnet Yodlee Inc."
 location: "USA"
 category: "Algorithm design, Governance, Software Development"

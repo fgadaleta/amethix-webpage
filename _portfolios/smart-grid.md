@@ -4,7 +4,7 @@ title: "Energy Smart Grid"
 categories: ["smart grid"]
 thumbnail: "/assets/images/portfolio/energy-portfolio.jpg"
 header_video: "/assets/videos/amethix-energy-video.mp4"
-description: "Predictive analytics for renewable energy providers and dynamic grids"
+description: "Predictive analytics for renewable energy providers and adaptive power grids"
 client: "Centrica Inc."
 location: "Belgium, Canada"
 category: "Algorithm design, Production, Software Development"
