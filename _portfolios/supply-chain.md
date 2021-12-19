@@ -5,7 +5,7 @@ categories: ["supply-chain"]
 thumbnail: "/assets/images/portfolio/supply-portfolio.jpg"
 header_video: "/assets/videos/amethix-supplychain-video.mp4"
 description: "Sales and supply chain analytics for food delivery"
-client: "GoBrangs Inc."
+client: "GoBrands Inc."
 location: "USA"
 category: "Algorithm design, Production, Software Development"
 project_overview: "GoBrands, Inc. provides on-demand retail and delivery of products. The Company offers college essentials, party supplies, and accessories to snacks, frozen foods, and household essentials. "
