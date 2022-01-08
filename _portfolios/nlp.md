@@ -7,7 +7,7 @@ header_video: "/assets/videos/amethix-chatbot-video.mp4"
 description: "Conversational engine for personal finance and fintech services"
 client: "Abe AI Inc. - Envestnet Yodlee Inc."
 location: "USA"
-category: "Algorithm design, Governance, Software Development"
+category: "Algorithm design, Governance, Softw Dev."
 project_overview: "AbeAI gives financial institutions a fully featured product with the Virtual Financial Assistant,
 				 It is a necessity that financial institutions own their roadmap and the data underlying machine learning models. AbeAI's Conversational AI Platform empowers financial institutions to leverage AI in finance for better customer experience and increased operational efficiency."
 problem_space: "Personal finance has always been a challenge for people who struggle with their money. AbeAI's conversational engine is an advanced AI-based solution that helps people manage their money in the most natural way."

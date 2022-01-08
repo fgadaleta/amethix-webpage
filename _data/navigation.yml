@@ -30,6 +30,8 @@ main:
     url: /portfolios/smart-grid
   - name: Supply-Chain
     url: /portfolios/supply-chain
+  - name: Embedded ML
+    url: /portfolios/embedded-ml
   # - name: Healthcare&Pharma
   #   url: /portfolios/healthcare-pharma
 
