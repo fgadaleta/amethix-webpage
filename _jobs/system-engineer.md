@@ -18,7 +18,7 @@ status: "open"
 				<h5 class="text-color font-weight-bold mb-2">Type</h5>
 					<p>Contract</p>
 				<h5 class="text-color font-weight-bold mb-2">Category</h5>
-					<p>Programming, Rust, Developer</p>
+					<p>Programming, Embedded, Robotics</p>
 				<h5 class="text-color font-weight-bold mb-2">Location</h5>
 					<p>UAE</p>
 					<a href="mailto:jobs@amethix.com" class="btn btn-primary text-uppercase margin-top">Apply now</a>
@@ -103,8 +103,8 @@ Flexibility to work on more than one project at the same time and ability to swi
 
 
                 </p>
-				</div>
-</div>
+
+
 
 
 

@@ -18,7 +18,7 @@ status: "open"
 				<h5 class="text-color font-weight-bold mb-2">Type</h5>
 					<p>Contract</p>
 				<h5 class="text-color font-weight-bold mb-2">Category</h5>
-					<p>Programming, Rust, Developer</p>
+					<p>Programming, Robotics, Autonomous</p>
 				<h5 class="text-color font-weight-bold mb-2">Location</h5>
 					<p>UAE</p>
 					<a href="mailto:jobs@amethix.com" class="btn btn-primary text-uppercase margin-top">Apply now</a>
@@ -124,7 +124,7 @@ Willingness to learn and grow in the robotics field
 </ul>
                 </p>
 
-                 <b>SKILLS AND EXPERIENCE</b>
+                 <b>NICE TO HAVE</b>
                 <p>
                 <ul>
                 <li>
@@ -133,6 +133,20 @@ Willingness to learn and grow in the robotics field
 </li>
                 </ul>
                 </p>
+
+
+ <b>QUALIFICATIONS</b>
+                <p>
+                <ul>
+                <li>
+                Master's degree in Robotics, Computer Science, applied Mathematics, Aerospace Engineering or Aeronautical Engineering, with a focus in robotics. In absence of a master’s degree, a bachelor’s degree in the above fields plus master-equivalent work experience
+                </li>
+                <li>
+                Additional relevant work experience is a big plus
+                </li>
+                </ul>
+                </p>
+
 
 				</div>
 	</div>
