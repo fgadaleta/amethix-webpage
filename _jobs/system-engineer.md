@@ -14,13 +14,13 @@ status: "open"
 		<div class="row">
 			<div class="col-lg-4" style="text-align: left;">
 				<h5 class="text-color font-weight-bold mb-2">Sector</h5>
-					<p>Autonomous Robots System Engineer</p>
+					<p>Embedded Robots System Engineer</p>
 				<h5 class="text-color font-weight-bold mb-2">Type</h5>
 					<p>Contract</p>
 				<h5 class="text-color font-weight-bold mb-2">Category</h5>
 					<p>Programming, Rust, Developer</p>
 				<h5 class="text-color font-weight-bold mb-2">Location</h5>
-					<p>Belgium - Remote</p>
+					<p>UAE</p>
 					<a href="mailto:jobs@amethix.com" class="btn btn-primary text-uppercase margin-top">Apply now</a>
 			</div>
 
@@ -31,9 +31,8 @@ status: "open"
                 </p>
 
 				<div class="margin-bottom">
-				<p>
+        <p>
 					<b>Responsibilities</b>
-
                     <ul>
                         <li>
                         Optimize and refactor early-stage algorithms for simulations and real robots  </li>
@@ -43,8 +42,9 @@ status: "open"
                 <li>
                     Participate in the design and implementation of simulated and real robot experimental setups and experiments
                 </li>
+    </p>
+                </div>
 
-                </p>
 
                     <b>SKILLS AND EXPERIENCE</b>
                 <p>
@@ -108,7 +108,6 @@ Flexibility to work on more than one project at the same time and ability to swi
 
                 </p>
 				</div>
-	</div>
 </div>
 
 
