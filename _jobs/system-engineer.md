@@ -31,7 +31,7 @@ status: "open"
                 </p>
 
 				<div class="margin-bottom">
-        <p>
+
 					<b>Responsibilities</b>
                     <ul>
                         <li>
@@ -42,8 +42,6 @@ status: "open"
                 <li>
                     Participate in the design and implementation of simulated and real robot experimental setups and experiments
                 </li>
-    </p>
-                </div>
 
 
                     <b>SKILLS AND EXPERIENCE</b>
@@ -60,11 +58,9 @@ Experience in trouble-shooting embedded systems and microcontroller peripherals
 </li>
 
                 <li>
-
 Experience in interfaces, IP protocols, and hardware subsystems and architectures
 </li>
                 <li>
-
 Proficiency in working with common embedded systems communication protocols
 </li>
                 <li>
