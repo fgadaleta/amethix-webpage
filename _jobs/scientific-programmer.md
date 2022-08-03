@@ -3,7 +3,7 @@ layout: jobs
 title: "Scientific Programmer"
 categories: ["programming", "Simulation", "Algorithms", "Performance analysis"]
 thumbnail: "/assets/images/about/skyscraper-job.jpg"
-description: "#Rust #Programming #Software #wasm"
+description: "#Simulation #Algorithms #Programming #Software #wasm"
 status: "open"
 ---
 
