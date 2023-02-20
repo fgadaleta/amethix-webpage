@@ -14,13 +14,13 @@ status: "open"
 		<div class="row">
 			<div class="col-lg-4" style="text-align: left;">
 				<h5 class="text-color font-weight-bold mb-2">Sector</h5>
-					<p>Fintech</p>
+					<p>Banking</p>
 				<h5 class="text-color font-weight-bold mb-2">Type</h5>
 					<p>Contract</p>
 				<h5 class="text-color font-weight-bold mb-2">Category</h5>
 					<p>SPSS, Market Researcher, Data analysis</p>
 				<h5 class="text-color font-weight-bold mb-2">Location</h5>
-					<p>Belgium - Remote</p>
+					<p>Belgium - Hybrid</p>
 					<a href="mailto:jobs@amethix.com?subject=Job Application Data Analyst market research" class="btn btn-primary text-uppercase margin-top">Apply now</a>
 			</div>
 
