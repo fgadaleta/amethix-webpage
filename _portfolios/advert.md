@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-title: "Contextual computer-vision based Digital Advertising"
+title: "Context Aware Digital Advertising"
 categories: ["advertising", "computer vision", "OOH"]
 header_image: "/assets/images/portfolio/dooh.jpg"
 thumbnail: "/assets/images/portfolio/dooh-thumnail.jpg"
