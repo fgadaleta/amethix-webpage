@@ -32,6 +32,8 @@ main:
     url: /portfolios/supply-chain
   - name: Embedded ML
     url: /portfolios/embedded-ml
+  - name: OOH Advertising
+    url: /portfolios/advert
   # - name: Healthcare&Pharma
   #   url: /portfolios/healthcare-pharma
 
