@@ -5,7 +5,7 @@ email: "hello@amethix.com"
 phone: "+32 478 99 89 36"
 address: "25 Rue de l'Enseignement <br />1000 Brussels<br />Belgium"
 author: Amethix Technologies
-description: "Amethix works to create and maximize the impact of the world's leading corporations and startups, so they can create a better future for everyone they serve."
+description: "Amethix build software to maximize the impact of the world's leading organizations, so they can integrate their data for better decisions and operations."
 logo: "/assets/images/amethix-logo-header-webpage.png"
 logo_dark: "/assets/images/amethix-dark-logo-header-webpage.png"
 logo_icon: "/assets/images/logo-b.png"
@@ -13,7 +13,7 @@ logo_icon: "/assets/images/logo-b.png"
 contact_form_action: "https://formspree.io/f/xpvralvx"
 # mailchimp_list: "https://themeix.us16.list-manage.com/subscribe/post?u=307862c135e4548eecf86f389&amp;id=342411fb35"
 # footer_content: "A way of thinking"
-copyright : "&copy; 2023 Amethix"
+copyright : "&copy; 2024 Amethix Technologies.<br />All rights reserved."
 # page header default image
 cover_image: "/assets/images/bg/about-bg.jpg"
 # google_map_api: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDnh74UN6BKgq9U5fMNGhdZOSpmM_QnZqs"
@@ -22,7 +22,7 @@ google_analytics: "UA-37903879-7"
 ############### Call to Action ###############
 cta:
   enable : true
-  title : "Let's make your business smarter"
+  title : "Let us empower you"
   bg_image : "/assets/images/bg/cta-bg-2.png"
   button:
     label : "get a quote"

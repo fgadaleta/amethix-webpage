@@ -5,36 +5,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
 html,body{
-  // min-width: 1056;
-  // max-width: 80rem;
-  // width: 100%;
-  width: 100%;
+  max-width: 2000px; /* Increase the max-width */
+  margin: 0 auto; /* Center on the screen */
   height: 100%;
 }
 
-html{
+
+html {
   overflow-x: hidden;
 }
 
 body {
   font-family: $body-font;
   -webkit-font-smoothing: antialiased;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
-  line-height:26px;
+  line-height: 28px;
   letter-spacing: 1px;
+  padding: 0 10px; /* Minimize side padding */
 }
 
 p{
   color: #888; // $black; // $black-light;
   // font-family: $paragraph-font;
-
 }
 
 
 h1,.h1,h2,.h2,h3,.h3 {
   font-family: $heading-font;
-
 }
 
 h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
@@ -48,8 +46,6 @@ h1 ,.h1{
   text-transform: capitalize;
   font-size: 70px;
   // font-weight: bold;
-
-
 }
 
 h2,.h2 {
@@ -102,10 +98,14 @@ h6,.h6 {
   text-transform: uppercase;
 }
 
+
+.text-md-lower {
+  font-size: 18px;
+}
+
 .text-sm{
   font-size: 14px;
   text-transform: uppercase;
-
 }
 
 .text-justify {
@@ -145,6 +145,10 @@ and (max-device-width : 812px) {
 }
 
 .text-smaller {
+  font-size: 1em;
+}
+
+.text-smallest {
   font-size: 0.9em;
 }
 

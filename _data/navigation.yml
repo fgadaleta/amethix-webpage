@@ -21,8 +21,9 @@ main:
   #   url: https://medium.com/amethix
   # - name: Blog Two
   #   url: /blog-2
-- name: Solutions
-  url: /solutions
+
+- name: Capabilities
+  url: /capabilities
   submenu:
   - name: NLP
     url: /portfolios/nlp
@@ -36,6 +37,7 @@ main:
     url: /portfolios/advert
   # - name: Healthcare&Pharma
   #   url: /portfolios/healthcare-pharma
+
 
 - name: Media
   submenu:
@@ -65,8 +67,8 @@ main:
 footer:
 - name: Home
   url: /
-- name: Solutions
-  url: /solutions
+- name: Capabilities
+  url: /capabilities
 - name: Blog
   url: https://medium.com/amethix
 - name: Podcast

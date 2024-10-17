@@ -10,29 +10,35 @@
 	</div>
 </div> -->
 
+
 <footer class="section position-relative pb-0 contact-hero-bgX">
 	<img src="/assets/images/bg/footer-bg.png" alt="" class="overlay-shape">
+
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-3 col-md-6">
-				<div class="footer-widget  mb-5 mb-lg-0">
-					<h4 class="mb-3">Amethix</h4>
-					{{site.footer_content | markdownify}}
-
-					<ul class="list-inline socials-links">
-						{% for social in site.social %}
-						<li class="list-inline-item mb-2">
-							<a target="_blank" href="{{social.link}}" class="active"><i class="{{social.icon}}"></i></a>
-						</li>
-						{% endfor %}
-					</ul>
+			<!-- <div class="col-lg-2 col-md-6 ml-lg-auto mb-4 mb-lg-0">
+				<div class="footer-widget mb-4 mb-lg-0"> -->
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-widget mb-5 mb-lg-0">
+						<h4 class="mb-3 text-md-lower">Amethix</h4>
+						<div class="text-smallest">{{site.copyright}} </div>
+						{{site.footer_content | markdownify}}
+						<ul class="list-inline socials-links">
+							{% for social in site.social %}
+							<li class="list-inline-item mb-2">
+								<a target="_blank" href="{{social.link}}" class="active"><i class="{{social.icon}}"></i></a>
+							</li>
+							{% endfor %}
+						</ul>
 				</div>
 			</div>
 
-			<div class="col-lg-3 ml-lg-auto mb-5 mb-lg-0 col-md-6">
-				<div class="footer-widget">
-					<h4 class="text-white mb-3 text-md">Navigation</h4>
+			<!-- <div class="col-lg-3 ml-lg-auto mb-4 mb-lg-0"> -->
+				<!-- <div class="footer-widget"> -->
+					<div class="col-lg-2 col-md-6">
+					<div class="footer-widget mb-5 mb-lg-0">
 
+					<h4 class="mb-4 text-sm">Navigation</h4>
 					<ul class="list-unstyled lh-38">
 						{% for menu in site.data.navigation.footer %}
 						<li class="text-sm"><a href="{{menu.url | relative_url }}">{{menu.name}}</a></li>
@@ -40,22 +46,40 @@
 					</ul>
 				</div>
 			</div>
+
+
 			<div class="col-lg-2 col-md-6">
 				<div class="footer-widget mb-5 mb-lg-0">
-					<h4 class="text-white mb-3 text-md">Solutions</h4>
+					<h4 class="mb-3 text-sm">Impact Studies</h4>
 					<ul class="list-unstyled lh-38">
 						<li><a href="/portfolios/nlp">NLP</a></li>
 						<li><a href="/portfolios/smart-grid">Energy</a></li>
 						<li><a href="/portfolios/supply-chain ">Supply Chain</a></li>
-						<li><a href="/portfolios/healthcare-pharma">Healthcare</a></li>
+
 					</ul>
 				</div>
 			</div>
+
+			<div class="col-lg-2 col-md-6">
+				<div class="footer-widget mb-5 mb-lg-0">
+					<h4 class="mb-3 text-sm">Capabilities</h4>
+					<ul class="list-unstyled lh-38">
+						<li><a href="/capabilities/ai-ml">AI-ML</a></li>
+						<li><a href="/capabilities/data-integration">Data Integration</a></li>
+						<li><a href="/capabilities/digital-twin">Digital Twin</a></li>
+						<li><a href="/capabilities/edge-ai">Edge AI</a></li>
+						<li><a href="/capabilities/robotics">Robotics</a></li>
+
+					</ul>
+				</div>
+			</div>
+
+
 			<div class="col-lg-3 col-md-6">
 				<div class="footer-widget">
-					<h4 class="text-white mb-3 text-md">Contact Info</h4>
+					<h4 class="mb-3 text-sm">Contacts</h4>
 					<ul class="list-unstyled lh-38">
-						<li>{{site.address}}</li>
+						<li class="text-uppercase">{{site.address}}</li>
 						<!-- <li><a href="tel:{{site.phone}}">{{site.phone}}</a></li> -->
 						<li><a href="mailto:{{site.email}}">{{site.email}}</a></li>
 					</ul>

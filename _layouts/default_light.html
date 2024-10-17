@@ -7,25 +7,25 @@
    {% include header_light.html %}
 
    <main class="overflow-x-hidden">
-         <section class="page-title header-padding overlay-staticX" style="
-                           url({% if page.header_image %}{{page.header_image}} {% else %} {{site.cover_image}} {% endif %}) 0 0 no-repeat fixed;
-                           opacity: 1;
-                           background-size: cover;
-                           background-repeat: no-repeat;
-                           overflow: hidden;
-                           max-height: 976px;">
-            <div class="container relative z-10">
-               <div class="row">
-                  <div class="col-lg-9">
-                  <h1 class="text-xl">{{ page.title }} </h1>
-                  <h5 class="">{{ page.description }} </h5>
-                  <!-- <h1 class="text-xl typewrite typehead" data-text=" {{ page.title }}" data-delay="40"></h1>
-                  <h5 class="typewrite" data-text=" {{ page.description }}" data-delay="40"></h5> -->
-               </div>
-               </div>
+      <section class="page-title header-padding overlay-staticX" style="
+                        url({% if page.header_image %}{{page.header_image}} {% else %} {{site.cover_image}} {% endif %}) 0 0 no-repeat fixed;
+                        opacity: 1;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        overflow: hidden;
+                        max-height: 976px;">
+         <div class="container relative z-10">
+            <div class="row">
+               <div class="col-lg-9">
+               <h1 class="text-xl">{{ page.title }} </h1>
+               <h5 class="">{{ page.description }} </h5>
+               <!-- <h1 class="text-xl typewrite typehead" data-text=" {{ page.title }}" data-delay="40"></h1>
+               <h5 class="typewrite" data-text=" {{ page.description }}" data-delay="40"></h5> -->
             </div>
-            <div class="skew-bottom-6"></div>
-      </section>
+            </div>
+         </div>
+         <div class="skew-bottom-6"></div>
+   </section>
 
 
       <!-- Centered large image -->
@@ -78,7 +78,7 @@
 
    </main>
 
-   {% include footer-straight.html %}
+   {% include footer.html %}
 
 </body>
 </html>

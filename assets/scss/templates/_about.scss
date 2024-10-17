@@ -102,6 +102,10 @@
 	padding: 120px 0px 40px 0px;
 }
 
+.header-top-padding{
+	padding-top: 84px;
+}
+
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 812px) {
@@ -125,7 +129,7 @@ and (max-device-width : 812px) {
 
 
 .text-xl{
-	font-size: 80px;
+	font-size: 100px;
 	line-height: 1.2em;
 	// font-weight: bold;
 	letter-spacing: -1.9px;
