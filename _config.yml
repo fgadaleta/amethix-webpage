@@ -62,6 +62,8 @@ sass:
 
 #collections
 collections:
+  capabilities:
+    output: true
   portfolios:
     output: true
   jobs:

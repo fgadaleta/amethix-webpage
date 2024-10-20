@@ -1,0 +1,17 @@
+<hr />
+
+{% for sec in page.sectors %}
+  <div class="grid-container-small border-bottom">
+
+    <div class="item">
+      <div class="col-lg-4">
+        <p style="white-space: nowrap;" class="mb-5 mt-2 dummy">↳ {{ sec }}</p>
+      </div>
+    </div>
+
+    <div class="item" style="text-align: left; vertical-align: middle; font-size: 1em;">
+      <p id="appear" class="mb-5 mt-2 dummy typewrite" data-delay="1" data-text="{{ page.sectors_description[forloop.index0] }}"></p>
+    </div>
+
+  </div>
+{% endfor %}

@@ -1214,35 +1214,46 @@ a:focus {
 	border-bottom: solid $black 1px ;
 }
 
+.grid-container-small {
+	display: grid;
+	width: 100%;
+	// grid-template-columns: 42fr 33fr 25fr; //  (instead of 42% 33% 25%).
+	// grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	grid-template-columns: 30% 40% 30%;
+	grid-gap: 20px;
+	grid-column-gap: 10px;
+	// background-color: #2196F3;
+	padding: 5px;
+	color: #000;
+  }
+
 .grid-container {
 	display: grid;
 	width: 100%;
 	// grid-template-columns: 42fr 33fr 25fr; //  (instead of 42% 33% 25%).
 	// grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-	grid-template-columns: 40% 40% 30%;
+	grid-template-columns: 40% 50% 20%;
 	grid-gap: 10px;
 	grid-column-gap: 10px;
 	// background-color: #2196F3;
 	padding: 5px;
   }
 
-  .grid-container-small {
-	display: grid;
-	width: 100%;
-	// grid-template-columns: 42fr 33fr 25fr; //  (instead of 42% 33% 25%).
-	// grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-	grid-template-columns: 15% 30% 55%;
-	grid-gap: 10px;
-	grid-column-gap: 10px;
-	// background-color: #2196F3;
-	padding: 5px;
-  }
+
 
   .grid-container > div {
 	// background-color: rgba(255, 255, 255, 0.8);
 	text-align: center;
 	padding: 20px 0;
 	font-size: 30px;
+  }
+
+  .grid-container-small > div {
+	// background-color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	padding: 20px 0;
+	font-size: 24px;
+	font-weight: 400;
   }
 
   .min-height {
