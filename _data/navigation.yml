@@ -25,16 +25,22 @@ main:
 - name: Capabilities
   url: /capabilities
   submenu:
-  - name: NLP
-    url: /portfolios/nlp
+  - name: Defence Tech
+    url: /capabilities/defense
+  - name: Autonomous Robotics
+    url: /capabilities/robotics
+  - name: Zero-Trust Networks
+    url: /capabilities/irene
   - name: Energy
     url: /portfolios/smart-grid
-  - name: Supply-Chain
-    url: /portfolios/supply-chain
   - name: Embedded ML
     url: /portfolios/embedded-ml
   - name: OOH Advertising
     url: /portfolios/advert
+  # - name: NLP
+  #   url: /portfolios/nlp
+  # - name: Supply-Chain
+  #   url: /portfolios/supply-chain
   # - name: Healthcare&Pharma
   #   url: /portfolios/healthcare-pharma
 
