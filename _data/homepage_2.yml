@@ -146,33 +146,33 @@ services:
     image: "/assets/images/team/test-1.jpg"
     content: "Battle-tested software for defense systems, tactical operations, and mission-critical military infrastructure."
     boxes:
-      - icon : "ti-announcement"
+      - icon : "ti-check-box"
         content: "Real-time performance under stress"
-      - icon : "ti-announcement"
+      - icon : "ti-check-box"
         content: "Security-first architecture"
-      - icon : "ti-announcement"
+      - icon : "ti-check-box"
         content: "Extreme reliability standards"
 
   - name : "Critical Infrastructure"
     image : "/assets/images/team/test-1.jpg"
     content : "Systems that power essential services where downtime is measured in lives and billions of dollars."
     boxes:
-      - icon : "ti-announcement"
+      - icon : "ti-check-box"
         content: "Zero-tolerance failure engineering"
-      - icon : "ti-announcement"
+      - icon : "ti-check-box"
         content: "Fault-tolerant design"
-      - icon : "ti-announcement"
+      - icon : "ti-check-box"
         content: "24/7 operational excellence"
 
   - name : "Advanced AI Systems"
     image : "/assets/images/team/test-1.jpg"
     content : "Ultra-optimized architectures for AI applications requiring maximum performance and precision."
     boxes:
-      - icon : "ti-announcement"
+      - icon : "ti-check-box"
         content: "Performance optimization at scale"
-      - icon : "ti-announcement"
+      - icon : "ti-check-box"
         content: "Resource-efficient design"
-      - icon : "ti-announcement"
+      - icon : "ti-check-box"
         content: "Edge to cloud architecture"
 
 

@@ -4,7 +4,7 @@
 <section class="section testimonial position-relative">
 	<div class="h60 bg-testimonial1"></div>
 	<div class="container">
-		<div class="row">
+		<div class="row margin-bottom">
 			<div class="col-lg-12 text-center">
                 <h1 class="mb-5 mt-2">{{ service.title }}</h1>
 				<span class="h5 text-color text-uppercase">
@@ -17,13 +17,18 @@
 			{% for item in service.item %}
 			<div class="col-lg-4">
 
-				<div class="card text-center rounded-0 shadow mb-4">
-                    <h5 class="mb-0 mt-2">{{ item.name }}</h5>
-					{{item.content| markdownify}}
+				<div class="card text-center1 rounded-0 shadow mb-4">
+                    <h4 class="mb-0 mt-2">{{ item.name }}</h4>
+                    <p>
+					    {{item.content| markdownify}}
+                    </p>
 
                     {% for box in item.boxes %}
+                    <div class="box-line" style="text-align: left;">
                         <i class="{{box.icon}} text-color"></i>
                         <span class="text-color">{{ box.content }}</span>
+                    </div>
+
                     {% endfor %}
 
 				</div>
