@@ -30,18 +30,48 @@ portfolio:
   enable : true
   item:
   - name : "Project one"
-    image : "/assets/images/bg/feature-bg.png"
+    image : "/assets/images/portfolio/pexels-josh-sorenson-378268.jpg"
     content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
     cta:
       - label: "Read more"
         link: "/projects/one"
 
-  - name : "Project two"
-    image : "/assets/images/bg/feature-bg.png"
-    content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
+  - name : "Context Aware Digital Advertising"
+    image : "/assets/images/portfolio/dooh.jpg"
+    content : "We integrate computer vision and environmental sensors to revolutionize OOH advertising. By using cameras and sensors to collect data on environmental conditions, pedestrian traffic, and viewer demographics, we can tailor advertisements to the context in real-time."
     cta:
       - label: "Read more"
-        link: "/projects/two"
+        link: "/portfolios/advert"
+
+carousels:
+  - images:
+    - image : "/assets/images/portfolio/pexels-josh-sorenson-378268.jpg"
+      name : "Autonomous Robotics"
+      content : "From complex environments to high-risk tasks, critical sectors demand autonomous systems that ensure precision, safety, and reliability. In agriculture, UAVs are used for crop monitoring, while in logistics, UGVs enable fast and safe parcel delivery. Military and defense sectors require sophisticated systems for surveillance, reconnaissance, and tactical operations."
+      cta:
+        label: "Read more"
+        link: "/capabilities/robotics"
+
+    - image : "/assets/images/portfolio/dooh.jpg"
+      name : "Context Aware Digital Advertising"
+      content : "We integrate computer vision and environmental sensors to revolutionize OOH advertising. By using cameras and sensors to collect data on environmental conditions, pedestrian traffic, and viewer demographics, we can tailor advertisements to the context in real-time."
+      cta:
+        label: "Read more"
+        link: "/portfolios/advert"
+
+    - image : "/assets/images/portfolio/pexels-narcisa-aciko-1292464.jpg"
+      name : "Energy Smart Grid"
+      content : "Predictive models of electricity price for multiple European countries (Belgium, France, Germany) have brought massive financial benefits during peak energy consumption."
+      cta:
+        label: "Read more"
+        link: "/portfolios/smart-grid"
+
+    - image : "/assets/images/portfolio/pexels-tom-fisk-3057960.jpg"
+      name : "Supply chain analytics for food delivery"
+      content : "Accurately forecasting order volumes and geographic locations can significantly impact a company's quality of service, delivery time, and logistics. With machine learning and AI, businesses can gain valuable insights into customer behavior, market trends, and demand patterns, leading to improved inventory management, capacity planning, and logistics."
+      cta:
+        label: "Read more"
+        link: "/portfolios/supply-chain"
 
 
 ################## About ###########################
