@@ -9,21 +9,40 @@ hero_area:
     link : "/contact"
 
 ###################### Services #####################
-services:
+# services:
+#   enable : true
+#   bg_image : "/assets/images/bg/feature-bg.png"
+#   item:
+#   - name : "Brand Design"
+#     icon : "ti-ruler-pencil"
+#     content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
+#
+#   - name : "Seo & Marketing"
+#     icon : "ti-announcement"
+#     content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
+#
+#   - name : "Creative Design"
+#     icon : "ti-palette"
+#     content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
+
+###################### Portfolio #####################
+portfolio:
   enable : true
-  bg_image : "/assets/images/bg/feature-bg.png"
   item:
-  - name : "Brand Design"
-    icon : "ti-ruler-pencil"
+  - name : "Project one"
+    image : "/assets/images/bg/feature-bg.png"
     content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
+    cta:
+      - label: "Read more"
+        link: "/projects/one"
 
-  - name : "Seo & Marketing"
-    icon : "ti-announcement"
+  - name : "Project two"
+    image : "/assets/images/bg/feature-bg.png"
     content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
+    cta:
+      - label: "Read more"
+        link: "/projects/two"
 
-  - name : "Creative Design"
-    icon : "ti-palette"
-    content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
 
 ################## About ###########################
 about:
@@ -32,11 +51,7 @@ about:
   title : "We are Design & <br>Development Team."
   video_thumb : "/assets/images/about/about.jpg"
   video_url : "https://www.youtube.com/watch?v=jrkvirglgaQ"
-  content : "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat.duis aute irure.
-
-
-  Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
-  "
+  content : "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat.duis aute irure."
   button:
     enable : true
     label : "Purchase now"
@@ -97,7 +112,7 @@ testimonial:
 
   - name : "Liam Hughes"
     designation : "Manager"
-    image : "/assets/images/team/test-2.jpg"
+    icon : "ti-ruler-pencil"
     content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim	veniam."
 
   - name : "Liam Hughes"
@@ -119,6 +134,46 @@ testimonial:
     designation : "Manager"
     image : "/assets/images/team/test-3.jpg"
     content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim	veniam."
+
+
+######################### Services ####################
+services:
+  enable : true
+  subtitle: "Specialized engineering for the world's most demanding applications"
+  title: "Built for Mission-Critical Environments"
+  item:
+  - name: "Military Applications"
+    image: "/assets/images/team/test-1.jpg"
+    content: "Battle-tested software for defense systems, tactical operations, and mission-critical military infrastructure."
+    boxes:
+      - icon : "ti-announcement"
+        content: "Real-time performance under stress"
+      - icon : "ti-announcement"
+        content: "Security-first architecture"
+      - icon : "ti-announcement"
+        content: "Extreme reliability standards"
+
+  - name : "Critical Infrastructure"
+    image : "/assets/images/team/test-1.jpg"
+    content : "Systems that power essential services where downtime is measured in lives and billions of dollars."
+    boxes:
+      - icon : "ti-announcement"
+        content: "Zero-tolerance failure engineering"
+      - icon : "ti-announcement"
+        content: "Fault-tolerant design"
+      - icon : "ti-announcement"
+        content: "24/7 operational excellence"
+
+  - name : "Advanced AI Systems"
+    image : "/assets/images/team/test-1.jpg"
+    content : "Ultra-optimized architectures for AI applications requiring maximum performance and precision."
+    boxes:
+      - icon : "ti-announcement"
+        content: "Performance optimization at scale"
+      - icon : "ti-announcement"
+        content: "Resource-efficient design"
+      - icon : "ti-announcement"
+        content: "Edge to cloud architecture"
 
 
 ###################### Clients ######################

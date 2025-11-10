@@ -106,6 +106,68 @@
 	padding-top: 84px;
 }
 
+.hero-video-section {
+  position: relative;
+  width: 100vw;
+  height: 100vh; /* full screen height; change to 70vh if you want smaller */
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+//   top: 0;
+//   left: 0;
+
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+//   width: auto;
+//   height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  background-color: white;
+    pointer-events: none; /* ensures clicks pass through to the video */
+
+}
+
+.video-overlay-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+//   font-weight: 800;
+//   font-size: 2.5rem;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+//   z-index: 999999;
+    white-space: nowrap;
+
+//   pointer-events: none; /* ensures clicks pass through to the video */
+}
+
+.overlay-main {
+  font-size: clamp(3rem, 5vw, 6rem);
+  font-weight: 600;
+  margin: 0;
+  color: white;
+  line-height: 1.2;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.overlay-sub {
+  font-size: clamp(3rem, 5vw, 6rem);
+  font-weight: 600;
+  margin-top: 0.5em;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+
+
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 812px) {
