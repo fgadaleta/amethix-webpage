@@ -1,11 +1,12 @@
 #main-nav {
   // height: 100px;
   // overflow-x: hidden;
-    position: absolute;   /* overlays on top of video */
+  position: fixed;
+  // position: absolute;   /* overlays on top of video */
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9990;          /* make sure it’s above the video */
+  z-index: 11;          /* make sure it’s above the video */
   background: transparent !important;
   transition: background-color 0.3s ease;
 

@@ -8,6 +8,7 @@ author: Amethix Technologies
 description: "Amethix build software to maximize the impact of the world's leading organizations, so they can integrate their data for better decisions and operations."
 logo: "/assets/images/amethix-logo-header-webpage.png"
 logo_dark: "/assets/images/amethix-dark-logo-header-webpage.png"
+logo_light: "/assets/images/amethix-logo-header-webpage.png"
 logo_icon: "/assets/images/logo-b.png"
 # contact form action
 contact_form_action: "https://formspree.io/f/xpvralvx"

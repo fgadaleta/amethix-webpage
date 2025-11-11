@@ -4,7 +4,9 @@
 
 <body data-spy="scroll" data-target="#ftco-navbar-spy" data-offset="0" >
 
-   {% include header_light.html %}
+  {%if site.data.homepage_2.hero_area.navbar_enable%}
+    {% include header_light.html %}
+   {% endif %}
    <main class="overflow-x-hidden">
       {{content}}
    </main>
