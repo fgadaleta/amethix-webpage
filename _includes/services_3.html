@@ -1,7 +1,7 @@
 <!-- Testimonial Start -->
 {% assign service = site.data.homepage_2.services %}
 {% if service.enable %}
-<section class="section testimonial position-relative">
+<section class="section testimonial position-relative pt-5">
 	<div class="h60 bg-testimonial1"></div>
 	<div class="container">
 		<div class="row margin-bottom">
@@ -17,7 +17,7 @@
 			{% for item in service.item %}
 			<div class="col-lg-4">
 
-				<div class="card text-center1 rounded-0 shadow mb-4">
+				<div class="card text-center1 rounded-0 mb-4">
                     <h4 class="mb-0 mt-2">{{ item.name }}</h4>
                     <p>
 					    {{item.content| markdownify}}

@@ -7,7 +7,7 @@
   left: 0;
   width: 100%;
   z-index: 11;          /* make sure it’s above the video */
-  background: transparent !important;
+ 
   transition: background-color 0.3s ease;
 
 
@@ -81,7 +81,7 @@
 
     .navbar .dropdown-menu {
       display: inherit;
-      background: #fff0;
+ 
     }
 
     .dropdown-item {
@@ -137,7 +137,7 @@ and (max-device-width : 812px) {
 
   .navbar .dropdown-menu {
     display: inherit;
-    background: #fff0;
+ 
   }
 
   .dropdown-item {
@@ -153,7 +153,7 @@ and (max-device-width : 812px) {
 
 .navbar-toggler span {
   @include desktop {
-    color: $white;
+   
   }
 }
 
@@ -254,7 +254,7 @@ and (max-device-width : 812px) {
   }
 
   .navbar-toggler span {
-    color: $white;
+  
   }
 }
 
@@ -269,7 +269,7 @@ and (max-device-width : 812px) {
   }
 
   .navbar-toggler span {
-    color: $white;
+    
   }
 }
 

@@ -45,7 +45,7 @@
   // listen for scroll event and call animate function
   // document.addEventListener("scroll", animate);
 
-  function navBar() {
+/*  function navBar() {
     if ($(window).scrollTop() > 70) {
       // $('.main-nav').addClass('nav-top');
       $('.main-nav').hide();
@@ -56,6 +56,8 @@
   }
 
   navBar();
+
+  */
 
 
   // navigation fixed top

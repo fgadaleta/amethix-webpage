@@ -5,7 +5,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
 html,body{
-  max-width: 2000px; /* Increase the max-width */
   margin: 0 auto; /* Center on the screen */
   height: 100%;
 }
@@ -21,8 +20,8 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
-  letter-spacing: 1px;
-  padding: 0 10px; /* Minimize side padding */
+ 
+ 
 }
 
 p{
@@ -243,7 +242,7 @@ cite {
 
 
 .paragraph-smaller {
-  text-align: justify;
+ 
   font-size: 0.9em;
   color: #888;
 }

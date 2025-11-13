@@ -37,3 +37,13 @@ VERSION:	1.0
 @import 'templates/blog-single.scss';
 
 @import 'templates/footer.scss';
+
+/* Custom CSS */
+
+ 
+#main-nav {
+    background: #fff;
+}
+.pt-150 {
+    padding-top: 150px;
+}

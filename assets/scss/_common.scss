@@ -65,13 +65,13 @@
 	padding: 5px;
 	background: #fff;
 	box-shadow: 0 6px 12px -2px rgba(50,50,93,.25),0 3px 7px -3px rgba(0,0,0,.3);
-	transform: translateX(16px) translateY(-16px);
+	transform: translateX(0px) translateY(-16px);
 }
 
 .img-corner-left {
 	position: absolute;
 	top: 0px;
-	right: 340px;
+	left: 30px;
 	max-width: 140px;
 	display: flex;
 	justify-content: center;
@@ -282,26 +282,7 @@ a:focus {
 
 @media only screen and (min-device-width : 375px) and (max-device-width : 812px) {
 
-	.navbar-nav {
-		top: 0;
-		left: 0;
-		margin-top: 0px;
-		// display: block;
-		width: 100%;
-		background-color: rgba(44, 44, 44, 0.6);
-		padding: 0px;
-		// flex-direction: column;
-		// position: fixed;
-		z-index: 1;
-		transition: 0.5s;
-		// position: static;
-		// list-style-type: none;
-		// margin: 0;
-		// padding: 0;
-		position: absolute;
-		//   overflow-x: hidden;
-
-	}
+	 
 
 	.col-lg-6 {
 		max-width: 100%;
@@ -539,9 +520,11 @@ a:focus {
 		max-width: 25rem;
 		min-height: 15rem;
 		outline: none;
-		border: none;
+	 
 		position: relative;
-		box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+		    border: 1px solid #ddd;
+    height: 100%;
+    min-height: 300px;
 		i.big {
 			// color: $stripe_light_blue;
 			color: #484848;
@@ -686,10 +669,7 @@ a:focus {
 	margin: 0 0.7rem;
 }
 
-.underline-center:hover {
-	color: white !important;
-	font-weight: bold !important;
-}
+ 
 
 .underline-center:before {
 	content: "";
@@ -728,13 +708,17 @@ a:focus {
 
 
 @media (max-width: 991.98px) {
+	#main-nav {
+ 
+	}
 	.navbar {
-		background: transparent !important;
+	 
 	}
 
 	#navigation>ul {
-		background: white !important;
-		columns: $secondary-color;
+		background: transparent !important;
+		color: $secondary-color;
+		text-align: left !important;
 	}
 
 	#navigation>ul>li ul {
@@ -869,21 +853,13 @@ a:focus {
 	overflow: hidden;
 }
 
-.rounded-box {
-	margin-top: 60px;
-	// border-radius: 25px;
-	// background: #73AD21;
-	padding: 30px;
-	// width: 200px;
-	// height: 150px;
-	width: 500px;
-	height: 240px;
-	// border: solid 1px #555;
-	// background-color: #eed;
-	box-shadow: 0 0 20px rgba(70, 70, 70, 0.6);
-	// -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-	// -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-	// -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+ .rounded-box {
+    margin-top: 60px;
+    padding: 30px;
+    /* width: 500px; */
+    /* height: 240px; */
+    border: 1px solid #ddd;
+    border-radius: 12px;
 }
 
 .text-secondary2 {
@@ -1254,8 +1230,7 @@ a:focus {
 	// background-color: rgba(255, 255, 255, 0.8);
 	text-align: center;
 	padding: 20px 0;
-	font-size: 24px;
-	font-weight: 400;
+ 
   }
 
   .min-height {
