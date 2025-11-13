@@ -1,290 +1,152 @@
-{% assign letterstring = "a,b,c,d,e,f,g,h,i,j,k,l,m,n" %}
-{% assign letters = letterstring | split: ',' %}
 {% assign number = include.number | minus: 1 %}
-<div class="carousel__holder">
-    <div id="carousel{{ number }}" class="carousel">
+<div class="carousel__holder ">
+  <div id="glide{{ number }}" class="glide" data-duration="{{ include.duration | default: 0 }}" style="--desktop-slider-height: {{ include.desktop_height | default: '70' }}{{ include.desktop_unit | default: 'vh' }};">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
         {% for item in site.data.homepage_2.carousels[number].images %}
-          <input class="carousel__activator" type="radio" name="carousel{{ number }}" id="{{ number }}{{ letters[forloop.index0] }}" {% if forloop.first %}checked="checked"{% endif %} />
-        {% endfor %}
-        {% for item in site.data.homepage_2.carousels[number].images %}
-          {% if forloop.index == forloop.length %}
-            {% assign nextindex = 0 %}
-          {% else %}
-            {% assign nextindex = forloop.index0 | plus: 1 %}
-          {% endif %}
-          {% assign nextletter = letters[nextindex] %}
-          {% if forloop.index0 == 0 %}
-            {% assign previndex = forloop.length | minus: 1 %}
-          {% else %}
-            {% assign previndex = forloop.index0 | minus: 1 %}
-          {% endif %}
-          {% assign prevletter = letters[previndex] %}
-          <div class="carousel__controls">
-              <label class="carousel__control carousel__control--backward" for="{{ number }}{{ prevletter }}"></label>
-              <label class="carousel__control carousel__control--forward" for="{{ number }}{{ nextletter }}"></label>
+        <li class="glide__slide">
+          <div class="slide__bg">
+            <img class="slide__img" src="{{ item.image }}" alt="{{ item.name | escape }}" />
           </div>
+          <div class="carousel__overlay">
+            <div class="carousel__overlay-content">
+              <h3 class="carousel__title">{{ item.name }}</h3>
+              <p class="carousel__description">{{ item.content }}</p>
+              {% if item.cta %}
+                <a class="carousel__button" href="{{ item.cta.link }}">{{ item.cta.label }}</a>
+              {% endif %}
+            </div>
+          </div>
+        </li>
         {% endfor %}
-        <div class="carousel__track">
-          <ul>
-            {% for item in site.data.homepage_2.carousels[number].images %}
-            <li class="carousel__slide" style="background-image: url('{{ item.image }}');">
-
-                <div class="carousel__overlay">
-                  <div class="carousel__overlay-content">
-                    <h3 class="carousel__title">{{ item.name }}</h3>
-                    <p class="carousel__description">{{ item.content }}</p>
-                    {% if item.cta %}
-                        <a class="carousel__button" href="{{ item.cta.link }}">{{ item.cta.label }}</a>
-                    {% endif %}
-                  </div>
-                </div>
-
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-        <div class="carousel__indicators">
-            {% for item in site.data.homepage_2.carousels[number].images %}
-              <label class="carousel__indicator" for="{{ number }}{{ letters[forloop.index0] }}"></label>
-            {% endfor %}
-        </div>
+      </ul>
     </div>
+
+    <div class="glide__arrows" data-glide-el="controls">
+      <button class="carousel__control carousel__control--backward" data-glide-dir="<" aria-label="Previous slide">
+        <svg class="carousel__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M15 6l-6 6 6 6" />
+        </svg>
+      </button>
+      <button class="carousel__control carousel__control--forward" data-glide-dir=">" aria-label="Next slide">
+        <svg class="carousel__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M9 6l6 6-6 6" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="glide__bullets carousel__indicators" data-glide-el="controls[nav]">
+      {% for item in site.data.homepage_2.carousels[number].images %}
+        <button class="carousel__indicator" data-glide-dir="={{ forloop.index0 }}" aria-label="Go to slide {{ forloop.index }}"></button>
+      {% endfor %}
+    </div>
+  </div>
 </div>
 
+<!-- Glide.js core styles and script via CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.6.0/dist/css/glide.core.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.6.0/dist/glide.min.js"></script>
+
 <style>
-.carousel__holder {width: 100%; position: relative; padding-bottom: {{ include.height }}{{ include.unit }}; margin: 1rem 0 1rem;}
-.carousel {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  text-align: center;
-  position: absolute;
-  padding: 0;
-  border-radius: 10px;
-}
-.carousel__controls,
-.carousel__activator {
-  display: none;
-}
-{% for item in site.data.homepage_2.carousels[number].images %}
-.carousel__activator:nth-of-type({{ forloop.index }}):checked ~ .carousel__track {
-  -webkit-transform: translateX(-{{ forloop.index0 }}00%);
-          transform: translateX(-{{ forloop.index0 }}00%);
-}
-.carousel__activator:nth-of-type({{ forloop.index }}):checked ~ .carousel__slide:nth-of-type({{ forloop.index }}) {
-  transition: opacity 0.5s, -webkit-transform 0.5s;
-  transition: opacity 0.5s, transform 0.5s;
-  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-.carousel__activator:nth-of-type({{ forloop.index }}):checked ~ .carousel__controls:nth-of-type({{ forloop.index }}) {
-  display: block;
-  opacity: 1;
-}
-.carousel__activator:nth-of-type({{ forloop.index }}):checked ~ .carousel__indicators .carousel__indicator:nth-of-type({{ forloop.index }}) {
-  opacity: 1;
-}
-{% endfor %}
+/* Holder: no fixed aspect; height grows with content */
+.carousel__holder { width: 100%; position: relative; margin: 1rem 0; }
+.glide { width: 100%;  overflow: hidden; background: #000; }
+.glide__track { width: 100%; }
 
-.carousel__control {
-  height: 30px;
-  width: 30px;
-  margin-top: -15px;
-  top: 50%;
-  position: absolute;
-  display: block;
-  cursor: pointer;
-  border-width: 5px 5px 0 0;
-  border-style: solid;
-  border-color: #fafafa;
-  opacity: 0.35;
-  opacity: 1;
-  outline: 0;
-  z-index: 3;
-}
-.carousel__control:hover {
-  opacity: 1;
-}
-.carousel__control--backward {
-  left: 20px;
-  -webkit-transform: rotate(-135deg);
-          transform: rotate(-135deg);
-}
-.carousel__control--forward {
-  right: 20px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.carousel__indicators {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  text-align: center;
-}
-.carousel__indicator {
-  height: 15px;
-  width: 15px;
-  border-radius: 100%;
-  display: inline-block;
-  z-index: 2;
-  cursor: pointer;
-  opacity: 0.35;
-  margin: 0 2.5px 0 2.5px;
-}
-.carousel__indicator:hover {
-  opacity: 0.75;
-}
-.carousel__track {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 0;
-  margin: 0;
-  transition: -webkit-transform 0.5s ease 0s;
-  transition: transform 0.5s ease 0s;
-  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
-}
-.carousel__track .carousel__slide {
-  display: block;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-}
-{% for item in site.data.homepage_2.carousels[number].images %}
-.carousel__track .carousel__slide:nth-of-type({{ forloop.index }}) {
-  -webkit-transform: translateX({{ forloop.index0 }}00%);
-          transform: translateX({{ forloop.index0 }}00%);
-}
-{% endfor %}
+/* Slide background image with gradient vignettes */
+.glide__slide { position: relative; }
+.slide__bg { position: relative; }
+.slide__img { width: 100%; height: auto; display: block; object-fit: cover; }
+.slide__bg::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.32) 40%, rgba(0,0,0,0.32) 60%, rgba(0,0,0,0.72) 100%), radial-gradient(ellipse at center, rgba(0,0,0,0) 45%, rgba(0,0,0,0.55) 100%); z-index: 1; pointer-events: none; }
+.slide__bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,0,0,0.28) 0%, rgba(0,0,0,0.0) 30%, rgba(0,0,0,0.0) 70%, rgba(0,0,0,0.28) 100%); z-index: 1; pointer-events: none; }
 
-
-.carousel__overlay {
-  position: absolute;
-  top: 10%;
-  left: 20%;
-  transform: translateX(-50%);
-  width: 100%;
-  background: rgba(0, 0, 0, 0.55);
-  border-radius: 10px;
-  color: #fff;
-  text-align: left;
-  max-width: 600px;
-  min-width: 250px;
-  padding: 20px 25px;
-  /* max-width: 400px; */
+/* Overlay content panel */
+.carousel__overlay { position: absolute; top: 50%; left: 5%; transform: translateY(-50%); color: #fff; text-align: left; max-width: 620px; min-width: 250px; padding: 18px 22px; z-index: 2; border-radius: 10px; background:
+  linear-gradient(180deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.35) 40%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.78) 100%),
+  radial-gradient(ellipse at center, rgba(0,0,0,0) 45%, rgba(0,0,0,0.55) 100%);
 }
-.carousel__overlay-content {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.carousel__overlay-content { display: flex; flex-direction: column; gap: 10px; }
+.carousel__title { margin: 0; font-size: clamp(1.25rem, 2.5vw, 2.2rem); line-height: 1.25; font-weight: 600; color: #fff; }
+.carousel__description { font-size: clamp(0.9rem, 1.6vw, 1.2rem); line-height: 1.5; opacity: 0.92; color: #fff; }
+.carousel__button { align-self: start; display: inline-block; background: transparent; color: #fff; padding: 8px 16px; border-radius: 15px; text-decoration: none; font-weight: 500; transition: background 0.3s; border: 1px solid #fff; }
+.carousel__button:hover { background: rgba(255,255,255,0.15); }
+
+/* Arrows styled like before */
+.glide__arrows { pointer-events: none; }
+.carousel__control { height: 44px; width: 44px; position: absolute; top: 50%; transform: translateY(-50%); display: inline-flex; align-items: center; justify-content: center; cursor: pointer; opacity: 0.9; z-index: 3; pointer-events: auto; border: none; outline: none; border-radius: 999px; background: rgba(0,0,0,0.35); backdrop-filter: blur(2px); transition: background 0.2s ease, opacity 0.2s ease, transform 0.2s ease; }
+.carousel__control:hover { background: rgba(0,0,0,0.5); opacity: 1; }
+.carousel__control:focus, .carousel__control:active { outline: none; box-shadow: none; }
+.carousel__control--backward { left: 18px; }
+.carousel__control--forward { right: 18px; }
+.carousel__icon { width: 22px; height: 22px; stroke: #fff; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+
+/* Indicators */
+.carousel__indicators { position: absolute; bottom: 14px; width: 100%; text-align: center; }
+.carousel__indicator { height: 10px; width: 10px; border-radius: 50%; display: inline-block; z-index: 2; cursor: pointer; opacity: 0.35; margin: 0 4px; background-color: #fafafa; border: none; }
+.carousel__indicator:hover { opacity: 0.75; }
+.carousel__indicator[aria-current="true"] { opacity: 1; }
+
+/* Mobile: place overlay below image to avoid clipping */
+@media (max-width: 768px) {
+  .carousel__overlay { position: static; transform: none; left: auto; top: auto; width: calc(100% - 32px); margin: 12px auto; max-width: none; padding: 14px 16px; }
 }
 
-.carousel__title {
-  margin: 0;
-  font-size: 2.5rem;
-  line-height: 2;
-  font-weight: 600;
-  color: #fff;
+/* Desktop: control image height via CSS variable */
+@media (min-width: 768px) {
+  .glide .slide__img { height: var(--desktop-slider-height, 60vh); }
 }
-
-.carousel__description {
-  font-size: 1.5rem;
-  line-height: 1.4;
-  opacity: 0.9;
-  color: #fff;
-
-}
-.carousel__button {
-  align-self: start;
-  display: inline-block;
-  background: #ffffff00;
-  color: #ffffff;
-  padding: 8px 16px;
-  border-radius: 15px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background 0.3s;
-  border: #fff solid 1px;
-}
-.carousel__button:hover {
-  /* background: #c5c5c5;
-  color: #010101; */
-  background: #ffffff00;
-  /* color: #ffffff; */
-
-}
-
-
-.carousel--scale .carousel__slide {
-  -webkit-transform: scale(0);
-          transform: scale(0);
-}
-.carousel__slide {
-  height: 100%;
-  position: absolute;
-  opacity: 0;
-  overflow: hidden;
-}
-.carousel__slide .overlay {height: 100%;}
-.carousel--thumb .carousel__indicator {
-  height: 30px;
-  width: 30px;
-}
-.carousel__indicator {
-  background-color: #fafafa;
-}
-{% for item in site.data.homepage_2.carousels[number].images %}
-.carousel__slide:nth-of-type({{ forloop.index }}),
-.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type({{ forloop.index }}) {
-  background-size: cover;
-  background-position: center;
-}
-{% endfor %}
 </style>
 
 <script>
-  function isVisible(el) {
-        while (el) {
-            if (el === document) {
-                return true;
-            }
+(function(){
+  var root = document.getElementById('glide{{ number }}');
+  if(!root || typeof Glide === 'undefined') return;
 
-            var $style = window.getComputedStyle(el, null);
+  var autoplayMs = (parseInt(root.getAttribute('data-duration'), 10) || 0) * 1000;
+  var glide = new Glide(root, {
+    type: 'carousel',
+    perView: 1,
+    gap: 0,
+    animationDuration: 600,
+    keyboard: true,
+    autoplay: autoplayMs > 0 ? autoplayMs : false
+  });
 
-            if (!el) {
-                return false;
-            } else if (!$style) {
-                return false;
-            } else if ($style.display === 'none') {
-                return false;
-            } else if ($style.visibility === 'hidden') {
-                return false;
-            } else if (+$style.opacity === 0) {
-                return false;
-            } else if (($style.display === 'block' || $style.display === 'inline-block') &&
-                $style.height === '0px' && $style.overflow === 'hidden') {
-                return false;
-            } else {
-                return $style.position === 'fixed' || isVisible(el.parentNode);
-            }
-        }
-  }
-  {% if include.duration %}
-  setInterval(function(){
-    var j=0;
-    var elements = document.querySelectorAll('#carousel{{ number}} .carousel__control--forward');
-    for(i=(elements.length - 1);i>-1;i--) {
-      if(isVisible(elements[i])) j=i;
+  function updateHeight(){
+    var track = root.querySelector('.glide__track');
+    if(!track) return;
+    var isDesktop = window.matchMedia('(min-width: 768px)').matches;
+    var desktopVar = getComputedStyle(root).getPropertyValue('--desktop-slider-height').trim();
+    if (isDesktop && desktopVar) {
+      track.style.height = desktopVar;
+      root.style.height = desktopVar;
+      return;
     }
-    elements[j].click();
-  },{{ include.duration }}000);
-  {% endif %}
+    var active = root.querySelector('.glide__slide--active');
+    if(!active) return;
+    var h = active.offsetHeight;
+    track.style.height = h + 'px';
+    root.style.height = h + 'px';
+  }
+
+  // Update height on mount and after each run
+  glide.on(['mount.after','run.after'], updateHeight);
+  window.addEventListener('resize', updateHeight);
+
+  // Ensure height recalculates when images load
+  root.querySelectorAll('.slide__img').forEach(function(img){
+    img.addEventListener('load', updateHeight, { once: true });
+  });
+
+  // Reflect active bullet opacity
+  glide.on(['mount.after','run.after'], function(){
+    var bullets = root.querySelectorAll('.carousel__indicator');
+    bullets.forEach(function(b){ b.removeAttribute('aria-current'); });
+    var idx = glide.index;
+    var current = root.querySelector('.carousel__indicator[data-glide-dir="=' + idx + '"]');
+    if(current) current.setAttribute('aria-current', 'true');
+  });
+
+  glide.mount();
+})();
 </script>

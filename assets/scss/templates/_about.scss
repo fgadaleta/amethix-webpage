@@ -118,6 +118,40 @@
 
 }
 
+/* Premium overlay: subtle vignette + film grain for better legibility */
+.hero-video-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* premium black gradient with subtle vignette */
+  background:
+    linear-gradient(180deg,
+      rgba(0,0,0,0.55) 0%,
+      rgba(0,0,0,0.32) 40%,
+      rgba(0,0,0,0.32) 60%,
+      rgba(0,0,0,0.72) 100%),
+    radial-gradient(ellipse at center,
+      rgba(0,0,0,0) 45%,
+      rgba(0,0,0,0.55) 100%);
+  z-index: 1; /* above video, below text */
+  pointer-events: none;
+}
+
+.hero-video-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* secondary edge darkening for crisp typography */
+  background:
+    linear-gradient(90deg,
+      rgba(0,0,0,0.28) 0%,
+      rgba(0,0,0,0.0) 30%,
+      rgba(0,0,0,0.0) 70%,
+      rgba(0,0,0,0.28) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
 .hero-video {
   position: absolute;
   top: 50%;
@@ -130,6 +164,7 @@
   object-fit: cover;
   background-color: white;
     pointer-events: none; /* ensures clicks pass through to the video */
+    z-index: 0;
 
 }
 
@@ -142,6 +177,7 @@
     text-align: center;
     text-shadow: 0 2px 8px rgba(0,0,0,0.6);
     width: calc(100% - 50px);
+    z-index: 2; /* above overlays */
 }
 
 
