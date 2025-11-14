@@ -25,7 +25,7 @@ status: "open"
 			</div>
 
 			<div class="col-md-6">
-				<div class="" style="color: #848485; text-align: justify; ">
+				<div class="" style="color: #848485;   ">
 				<p>
 				A Data Governance CoE has been created within a Scaled Agile way of working at a bank. The bank is looking for a Data Modeler to support the Enterprise Data Model (EDM) squad in creating EDM and designing APIs and Kafka messages.
 

@@ -25,7 +25,7 @@ status: "open"
 			</div>
 
 			<div class="col-md-6">
-				<div class="" style="color: #848485; text-align: justify; ">
+				<div class="" style="color: #848485;   ">
 				<p>
 				As a Embedded System Engineer, the candidate will be asked to design and implement embedded systems for robotic applications. The candidate will assist the team with the creation and the design of the algorithms that will run both in simulated environments and robots. To this end, a background in robotics or AI is preferred. The candidate should prove himself accountable and autonomous and should be able to work in a team. An MSc degree in computer science/computer engineering or similar is required for the position.
                 </p>

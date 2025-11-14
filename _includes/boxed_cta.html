@@ -1,14 +1,15 @@
+{% assign bcta = site.data.homepage_2.boxed_cta %}
 <!-- Boxed CTA section with dual buttons -->
 <section class="boxed-cta section">
   <div class="container">
     <div class="boxed-cta__card">
-      <h2 class="boxed-cta__title">Ready to Work With Engineers Who Understand What's at Stake?</h2>
-      <p class="boxed-cta__lead">Schedule a technical consultation. Tell us about your mission-critical requirements. Let's build software that actually works when it matters most.</p>
+      <h2 class="boxed-cta__title">{{ bcta.title }}</h2>
+      <p class="boxed-cta__lead">{{ bcta.lead }}</p>
       <div class="boxed-cta__actions">
-        <a class="cta-btn cta-btn--primary" href="/contact.html">Schedule Your Consultation</a>
-        <a class="cta-btn cta-btn--secondary" href="/assets/docs/why-ai-projects-fail.pdf">Download: Why AI Projects Fail in Production</a>
+        <a class="cta-btn cta-btn--primary" href="{{ bcta.primary_button.link }}">{{ bcta.primary_button.label }}</a>
+        <a class="cta-btn cta-btn--secondary" href="{{ bcta.secondary_button.link }}">{{ bcta.secondary_button.label }}</a>
       </div>
-      <p class="boxed-cta__note">No sales pitch. Just a conversation with engineers who’ve been there.</p>
+      <p class="boxed-cta__note">{{ bcta.note }}</p>
     </div>
   </div>
 </section>

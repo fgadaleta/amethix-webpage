@@ -24,7 +24,7 @@ status: "closed"
 			</div>
 
 			<div class="col-md-6">
-				<div class="" style="color: #848485; text-align: justify; ">
+				<div class="" style="color: #848485;   ">
 				<p>
 				As data scientist at Amethix you will play a very central role in the team.
 				You will be involved in many aspects of the business processes that we design and implement

@@ -25,7 +25,7 @@ status: "open"
 			</div>
 
 			<div class="col-md-6">
-				<div class="" style="color: #848485; text-align: justify; ">
+				<div class="" style="color: #848485;   ">
 				<p><strong>Introduction:</strong> The Data tribe is a key component of the Data department and aims to service all areas of the bank with transversal BI solutions and tools. As a Data Modelling/Datavault Engineer, you will be responsible for establishing and deploying standards and guidelines, promoting modelling techniques, providing training sessions and assessing the quality of data models. You will play a crucial role in implementing the bank's big data platform and contributing to spreading the new data governance and “Know your data” culture throughout the bank.</p>
 
 				<div class="margin-bottom">

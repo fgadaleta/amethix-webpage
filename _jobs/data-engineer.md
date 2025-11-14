@@ -23,7 +23,7 @@ status: "closed"
 			</div>
 
 			<div class="col-md-6">
-				<div class="" style="color: #848485; text-align: justify; ">
+				<div class="" style="color: #848485;   ">
 				<p>
 				Join the Amethix engineering team to help us build APIs and products that help businesses in sectors like pharmaceuticals, fintech, energy, and more.
 				The ideal candidate is an experienced data pipeline builder who enjoys building and optimizing data systems.

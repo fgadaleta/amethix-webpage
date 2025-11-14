@@ -25,7 +25,7 @@ status: "open"
 			</div>
 
 			<div class="col-md-6">
-				<div class="" style="color: #848485; text-align: justify; ">
+				<div class="" style="color: #848485;   ">
 				<p>
 				As a Scientific Programmer, the candidate will be asked to write, manage and optimize the code developed within the team. The candidate will assist in the creation and the design of the algorithms that will run both in simulation and robots. To this end, a background in robotics or AI is requested. The candidate should prove himself accountable and autonomous and should be able to work in a team. An MSc degree in computer science/computer engineering or similar is required for the position.
 				</p>

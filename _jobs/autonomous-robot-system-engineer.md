@@ -25,7 +25,7 @@ status: "open"
 			</div>
 
 			<div class="col-md-6">
-				<div class="" style="color: #848485; text-align: justify; ">
+				<div class="" style="color: #848485;   ">
 				<p>
 As an Autonomous Robots System Engineer, you will become a pivotal member of the control team.
 You will work closely with other researchers and engineers of the centre to design, develop and integrate the robotic control, planning, and decision-making algorithms that empower ground, aerial, marine, and manipulator robots with autonomy. Your main role will be system-level software development, enhancement and integration of the different components contributing to the robot's autonomy stack, such as state estimation, low-level control, trajectory following and generation, while in close synergy with the perception pipeline.
