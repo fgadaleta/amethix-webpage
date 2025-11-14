@@ -12,8 +12,15 @@ layout: default
 
 {% include services_3.html %}
 
+{% assign bf = site.data.homepage_2.boxed_features %}
+{% if bf and bf.enable %}
 {% include boxed_features.html %}
+{% endif %}
+
+{% assign bcta = site.data.homepage_2.boxed_cta %}
+{% if bcta and bcta.enable %}
 {% include boxed_cta.html %}
+{% endif %}
 
 
 {% include why_amethix.html %}

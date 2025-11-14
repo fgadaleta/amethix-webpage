@@ -25,7 +25,7 @@ status: "closed"
 			</div>
 
 			<div class="col-md-6">
-				<div class="" style="color: #848485; text-align: justify; ">
+				<div class="" style="color: #848485;   ">
 				<p>
 				This is an exciting and challenging role on the Amethix Engineering team.
 				Amethix is building cutting edge software to operate semi-autonomous robots in controlled environments.

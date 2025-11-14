@@ -241,3 +241,28 @@ team:
   - name : "Liam Hughes"
     designation : "Manager"
     image : "/assets/images/team/team-4.jpg"
+
+###################### Boxed Features (Optional) ######################
+boxed_features:
+  enable: true
+  eyebrow: "The AI Gap Everyone's Ignoring"
+  title: "They’re Selling AI Dreams. We Deliver AI Systems That Actually Work."
+  lead: "You need AI systems that process real-time data, make critical decisions under pressure, and never go down."
+  boxes:
+    - heading: "What They Promise:"
+      content: "Revolutionary AI that changes everything. Works in demos with clean data."
+    - heading: "What We Deliver:"
+      content: "Production-grade AI that handles messy real-world data, extreme conditions, and mission-critical decisions."
+
+###################### Boxed CTA (Optional) ###########################
+boxed_cta:
+  enable: true
+  title: "Ready to Work With Engineers Who Understand What's at Stake?"
+  lead: "Schedule a technical consultation. Tell us about your mission-critical requirements. Let's build software that actually works when it matters most."
+  primary_button:
+    label: "Schedule Your Consultation"
+    link: "/contact.html"
+  secondary_button:
+    label: "Download: Why AI Projects Fail in Production"
+    link: "/assets/docs/why-ai-projects-fail.pdf"
+  note: "No sales pitch. Just a conversation with engineers who’ve been there."

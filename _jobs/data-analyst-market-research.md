@@ -25,7 +25,7 @@ status: "open"
 			</div>
 
 			<div class="col-md-6">
-				<div class="" style="color: #848485; text-align: justify; ">
+				<div class="" style="color: #848485;   ">
 				<p>
 				The Market Research Expert position is open in the Customer Insights team. The team focuses on collecting and analyzing relevant client feedback
 				leveraged with data insights, alongside market information & financial results. The ideal candidate will be a customer insights expert with a strong

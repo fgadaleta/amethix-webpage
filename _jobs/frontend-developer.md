@@ -23,7 +23,7 @@ status: "closed"
 			</div>
 
 			<div class="col-md-6">
-				<div class="" style="color: #848485; text-align: justify; ">
+				<div class="" style="color: #848485;   ">
 				<p>
 				This is an exciting role as frontend developer, a person who is motivated to combine the art of design with the art of programming.
 				Responsibilities will include translation of the UI/UX design wireframes to actual code that will produce visual elements of the application and interactions with

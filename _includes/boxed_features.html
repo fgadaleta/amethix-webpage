@@ -1,20 +1,18 @@
+{% assign bf = site.data.homepage_2.boxed_features %}
 <section class="gray-section section">
   <div class="container">
     <div class="gray-section__card">
       <div class="gray-section__inner">
-      <p class="gray-section__eyebrow">The AI Gap Everyone's Ignoring</p>
-      <h2 class="gray-section__title">They’re Selling AI Dreams. We Deliver AI Systems That Actually Work.</h2>
-      <p class="gray-section__lead">You need AI systems that process real-time data, make critical decisions under pressure, and never go down.</p>
+      <p class="gray-section__eyebrow">{{ bf.eyebrow }}</p>
+      <h2 class="gray-section__title">{{ bf.title }}</h2>
+      <p class="gray-section__lead">{{ bf.lead }}</p>
 
+      {% for box in bf.boxes %}
       <div class="gray-section__box">
-        <h3>What They Promise:</h3>
-        <p>Revolutionary AI that changes everything. Works in demos with clean data.</p>
+        <h3>{{ box.heading }}</h3>
+        <p>{{ box.content }}</p>
       </div>
-
-      <div class="gray-section__box">
-        <h3>What We Deliver:</h3>
-        <p>Production-grade AI that handles messy real-world data, extreme conditions, and mission-critical decisions.</p>
-      </div>
+      {% endfor %}
       </div>
     </div>
   </div>
