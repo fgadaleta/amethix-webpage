@@ -1,0 +1,62 @@
+/* Gray Section: neutral background, regular text color */
+.gray-section {
+ 
+  color: $black;
+}
+
+.gray-section .gray-section__card {
+  background: #ffffff;
+  border: 1px solid #e3e6ea;
+  border-radius: 16px;
+ 
+  padding: 32px 36px;
+}
+
+.gray-section .gray-section__inner { padding: 0; }
+
+.gray-section__eyebrow {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: $black;
+  background: rgba(255,255,255,0.7);
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  padding: 6px 10px;
+  margin-bottom: 14px;
+}
+
+.gray-section__title {
+  margin: 0 0 12px 0;
+  font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+  line-height: 1.25;
+  font-weight: 700;
+  color: $black;
+}
+
+.gray-section__lead {
+  max-width: 900px;
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.gray-section__box {
+  margin-top: 14px;
+  background: #eef2f6; /* soft gray */
+  border: 1px solid #d7dbe0;
+  border-radius: 12px;
+  padding: 18px 20px;
+  color: $black;
+}
+
+.gray-section__box h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.gray-section__box p {
+  margin: 0;
+  opacity: 0.9;
+}
