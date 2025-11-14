@@ -1,7 +1,7 @@
 ---
 ---
 
-/*!------------------------------------------------------------------
+/*------------------------------------------------------------------
 [MAIN STYLESHEET]
 
 PROJECT:	Dizer-Portfolio template
@@ -12,34 +12,33 @@ VERSION:	1.0
 [TABLE OF CONTENTS]
 -------------------------------------------------------------------*/
 
-@import 'variables.scss';
+@charset "utf-8";
 
-@import 'typography.scss';
-
-@import 'mixins.scss';
-
-@import 'buttons.scss';
-
-@import 'common.scss';
-@import 'templates/menu.scss';
-@import 'templates/slider.scss';
-@import 'templates/service.scss';
-@import 'templates/about.scss';
-@import 'templates/portfolio.scss';
-@import 'templates/counter.scss';
-@import 'templates/skill.scss';
-@import 'templates/testimonial.scss';
-@import 'templates/team.scss';
-@import 'templates/latest-blog.scss';
-@import 'templates/contact.scss';
-@import 'templates/pricing.scss';
-@import 'templates/blog.scss';
-@import 'templates/blog-single.scss';
-
-@import 'templates/footer.scss';
+@import "variables";
+@import "typography";
+@import "mixins";
+@import "buttons";
+@import "common";
+@import "templates/menu";
+@import "templates/slider";
+@import "templates/service";
+@import "templates/about";
+@import "templates/portfolio";
+@import "templates/counter";
+@import "templates/skill";
+@import "templates/testimonial";
+@import "templates/team";
+@import "templates/latest-blog";
+@import "templates/contact";
+@import "templates/pricing";
+@import "templates/blog";
+@import "templates/blog-single";
+@import "templates/footer";
+@import "templates/gray-section";
+@import "templates/cta-section";
 
 /* Custom CSS */
-
+ 
  
 #main-nav {
     background: #fff;
@@ -47,23 +46,11 @@ VERSION:	1.0
 .pt-150 {
     padding-top: 150px;
 }
- 
-
-
-.section-title {
-	    font-size: 70px;
-    line-height: 1em;
-    letter-spacing: 0.2px;
-
-			@include mobile-xs {
-			   font-size: 30px;
-			}
-
-			@include mobile {
-			   font-size: 40px;
-			}
-
-			@include tablet {
-			   font-size: 50px;
-			}
-		}
+ .section-title {
+   font-size: 70px;
+   line-height: 1em;
+   letter-spacing: 0.2px;
+   @include mobile-xs { font-size: 30px; }
+   @include mobile { font-size: 40px; }
+   @include tablet { font-size: 50px; }
+ }
