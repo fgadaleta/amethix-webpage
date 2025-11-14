@@ -55,8 +55,7 @@ layout: default
 			</div>
 			<div class="col-md-6 col-lg-4">
 				<div class="about-imgX rounded-boxX Xmb-3">
-					<div class="cover">
-				</div>
+					 
 			<p>
 			<div class="footer-widget mb-5 mb-lg-0">
 				<div class="footer-widget mb-5 mb-lg-0">
@@ -159,9 +158,9 @@ layout: default
 		</div>
 		<div class="row">
 			{% for portfolio in site.portfolios limit:"4" %}
-			<div class="col-lg-3">
+			<div class="col-lg-3   col-sm-6 mb-4">
 				<div class="portfolio-block border-0 ">
-					<img src="{{portfolio.thumbnail}}" class="img-fluid" alt="{{portfolio.title}}" />
+					<img src="{{portfolio.thumbnail}}" class="img-fluid w-100" alt="{{portfolio.title}}" />
 					<a class="card-img-overlay" href="{{portfolio.url}}">
 						<h5 class="card-title text-white mb-0">{{portfolio.title}}</h5>
 						<p class="card-text text-white text-uppercase text-sm">{{portfolio.category}}</p>
