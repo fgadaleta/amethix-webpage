@@ -1,6 +1,4 @@
-<nav class="navbar navbar-expand-lg 
-fixed-top 
-main-nav" id="main-nav">
+<nav class="navbar navbar-expand-lg main-nav" id="main-nav">
 	<div class="container">
 		<a class="navbar-brand" href="{{site.url}}">
 			<img src="{{site.logo_dark | relative_url}}" alt="{{site.title}}" class="img-fluid">
@@ -16,4 +14,48 @@ main-nav" id="main-nav">
 		</div>
 	</div>
 </nav>
+
+<style>
+/* Sticky navbar animation (subtle slide + fade) */
+@keyframes stickySlide {
+  from { transform: translateY(-10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.main-nav { transition: box-shadow 200ms ease; }
+.main-nav.fixed-top { box-shadow: 0 8px 20px rgba(0,0,0,0.12); }
+.main-nav.sticky-animate { animation: stickySlide 250ms ease-out; }
+</style>
+
+<script>
+(function(){
+  var nav = document.getElementById('main-nav');
+  if (!nav) return;
+  var isFixed = false;
+
+  function applySticky(){
+    var shouldFix = window.scrollY >= 100;
+    if (shouldFix && !isFixed) {
+      nav.classList.add('fixed-top');
+      nav.classList.add('sticky-animate');
+      // Prevent content jump by offsetting body
+      document.body.style.paddingTop = nav.offsetHeight + 'px';
+      // Remove animation class after it plays
+      var handler = function(){
+        nav.classList.remove('sticky-animate');
+        nav.removeEventListener('animationend', handler);
+      };
+      nav.addEventListener('animationend', handler);
+      isFixed = true;
+    } else if (!shouldFix && isFixed) {
+      nav.classList.remove('fixed-top');
+      document.body.style.paddingTop = '0px';
+      isFixed = false;
+    }
+  }
+
+  // Initialize and bind
+  window.addEventListener('scroll', applySticky, { passive: true });
+  window.addEventListener('load', applySticky);
+})();
+</script>
 
