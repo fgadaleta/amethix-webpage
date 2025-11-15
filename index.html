@@ -4,24 +4,21 @@ layout: default
 
 {% include hero_area_2.html %}
 
-{% include overview_2.html %}
-
-{% include carousel.html height="50" unit="%" duration="15" number="1" %}
-
-
-
-{% include services_3.html %}
-
 {% assign bf = site.data.homepage_2.boxed_features %}
 {% if bf and bf.enable %}
 {% include boxed_features.html %}
 {% endif %}
 
+{% include overview_2.html %}
+
+{% include carousel.html height="50" unit="%" duration="15" number="1" %}
+
+{% include services_3.html %}
+
 {% assign bcta = site.data.homepage_2.boxed_cta %}
 {% if bcta and bcta.enable %}
 {% include boxed_cta.html %}
 {% endif %}
-
 
 {% include why_amethix.html %}
 

@@ -73,6 +73,14 @@ carousels:
         label: "Read more"
         link: "/portfolios/supply-chain"
 
+    - image : "/assets/images/portfolio/intrepid-platform.png"
+      name : "Robot fleet management"
+      content : "Coordinating and monitoring large fleets of autonomous robots requires real-time data integration, fault-tolerant communication, and intelligent task allocation. <br />With advanced AI and robotics infrastructure, organizations can streamline operations, optimize mission planning, and ensure resilient performance across distributed robotic systems, whether in warehouses, factories, or outdoor environments."
+      cta:
+        label: "Read more"
+        link: "/capabilities/robotics"
+
+
 
 ################## About ###########################
 about:
@@ -246,7 +254,7 @@ team:
 boxed_features:
   enable: true
   eyebrow: "The AI Gap Everyone's Ignoring"
-  title: "They’re Selling AI Dreams. We Deliver AI Systems That Actually Work."
+  title: "They’re Selling AI Dreams.<br /> We Deliver AI Systems That Actually Work."
   lead: "You need AI systems that process real-time data, make critical decisions under pressure, and never go down."
   boxes:
     - heading: "What They Promise:"
@@ -264,5 +272,5 @@ boxed_cta:
     link: "/contact.html"
   secondary_button:
     label: "Download: Why AI Projects Fail in Production"
-    link: "/assets/docs/why-ai-projects-fail.pdf"
+    link: "/assets/docs/AI BRIEF NOV25.pdf"
   note: "No sales pitch. Just a conversation with engineers who’ve been there."
