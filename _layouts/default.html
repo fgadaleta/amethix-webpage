@@ -14,11 +14,11 @@
                <div class="col-lg-9">
                <h1 class="text-xl">{{ page.title }} </h1>
                <h5 class="">{{ page.description }} </h5>
-             
+
             </div>
             </div>
          </div>
-       
+
    </section>
    {% endif %}
 
@@ -63,10 +63,12 @@
       </div>
       </section>
    {% endif %}
-      
+
       {{content}}
    </main>
    {% include footer.html %}
+
+   {% include cookie-consent.html %}
 
 </body>
 
