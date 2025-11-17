@@ -48,21 +48,27 @@
       </div>
       </section>
 
-    {% elsif page.header_video %}
-      <section class="section-main section margin-bottom">
-         <div class="container">
-            <div class="row">
-               <video width="100%" onloadeddata="this.play();" playsinline loop muted style="background-color: white;" preload>
-                  <source src={{ page.header_video }} type="video/mp4">
-                  Your browser does not support the video tag or the file format of this video.
-                </video>
+ {% elsif page.header_video %}
+<section class="section-main section margin-bottom video-section">
+  <div class="container">
+    <div class="row">
+      <video
+        width="100%"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        style="background-color: white; display:block; width:100%; height:auto;"
+      >
+        <source src="{{ page.header_video }}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</section>
+{% endif %}
 
-         <!-- <video width="100%" src={{ page.header_video }} autoplay="" loop="" playsinline="">
-         </video> -->
-         </div>
-      </div>
-      </section>
-   {% endif %}
 
       {{content}}
    </main>

@@ -26,45 +26,7 @@
     return false;
   }
 
-  // var element = document.getElementById("appear");
-  // animate element when it is in view
-  // function animate() {
-    // console.log("into animate");
-    // is element in view?
-    // if (inView(element)) {
-    //   // console.log("element in view");
-    //   // console.log(element);
-    //   // element is in view, add class to element
-    //   //element.classList.add("typing-demo");
-    //   // element.classList.add("animate-typing");
-    // }
-  // }
-
-  // get the element to animate
-  // console.log("found element from script");
-  // listen for scroll event and call animate function
-  // document.addEventListener("scroll", animate);
-
-/*  function navBar() {
-    if ($(window).scrollTop() > 70) {
-      // $('.main-nav').addClass('nav-top');
-      $('.main-nav').hide();
-    } else {
-      // $('.main-nav').removeClass('nav-top');
-      $('.main-nav').show();
-    }
-  }
-
-  navBar();
-
-  */
-
-
-  // navigation fixed top
-  win.on('scroll', function () {
-    navBar();
-  });
-
+ 
 
   $(".toggler").click(function () {
     $(".full-nav").toggleClass("show");
