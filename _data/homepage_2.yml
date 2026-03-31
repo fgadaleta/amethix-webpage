@@ -263,6 +263,18 @@ boxed_features:
       content: "Production-grade AI that handles messy real-world data, extreme conditions, and mission-critical decisions."
 
 ###################### Boxed CTA (Optional) ###########################
+# boxed_cta:
+#   enable: true
+#   title: "Ready to Work With Engineers Who Understand What's at Stake?"
+#   lead: "Schedule a technical consultation. Tell us about your mission-critical requirements. Let's build software that actually works when it matters most."
+#   primary_button:
+#     label: "Schedule Your Consultation"
+#     link: "/contact.html"
+#   secondary_button:
+#     label: "Download: Why AI Projects Fail in Production"
+#     link: "/assets/docs/AI BRIEF NOV25.pdf"
+#   note: "No sales pitch. Just a conversation with engineers who’ve been there."
+
 boxed_cta:
   enable: true
   title: "Ready to Work With Engineers Who Understand What's at Stake?"
@@ -271,6 +283,6 @@ boxed_cta:
     label: "Schedule Your Consultation"
     link: "/contact.html"
   secondary_button:
-    label: "Download: Why AI Projects Fail in Production"
-    link: "/assets/docs/AI BRIEF NOV25.pdf"
+    label: "Download: Enterprise Agentic AI"
+    link: "/assets/docs/AI BRIEF APR26.pdf"
   note: "No sales pitch. Just a conversation with engineers who’ve been there."
