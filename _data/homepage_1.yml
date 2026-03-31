@@ -14,15 +14,15 @@ hero_area:
 services:
 - title : "Research"
   icon : "ti-ruler-pencil"
-  content : "We analyse your request and study potential solutions"
+  content : "We dig deep into your challenge and identify the most viable solutions"
 
 - title : "Design"
   icon : "ti-announcement"
-  content : "Our researchers and engineers develop a prototype and validate feasibility"
+  content : "We prototype, stress-test, and validate before a single line of production code is written"
 
 - title : "Deploy"
   icon : "ti-palette"
-  content : "We integrate our solution with your business workflow"
+  content : "We ship production-ready systems that integrate seamlessly with your existing infrastructure"
 
 
 ########################### Testimonial ###########################
