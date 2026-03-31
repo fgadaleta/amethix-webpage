@@ -28,29 +28,6 @@ hero:
 ---
 
 
-<section class="contact-hero-container-0706">
-	<div class="contact-hero-main-0706">
-
-		<div class="container mt-5">
-			<div class="row">
-				{% for contact in page.hero.contacts %}
-				<a href="{{ contact.url }}" title="{{ contact.title }}" class="col card hover-up" target="blank">
-					<i class="big {{ contact.icon }}"></i>
-					<h2>{{ contact.title }}</h2>
-					<p style="font-size: 1.1em;">
-						{{ contact.description }}
-					</p>
-					<span>
-						{{ contact.action }}
-						<i class="ti-arrow-right"></i>
-					</span>
-				</a>
-				{% endfor %}
-			</div>
-		</div>
-	</div>
-</section>
-
 <section class="contact-form-wrap section">
 	<div class="container">
 		<!-- <h3 class="text-center">Get in touch with us</h3> -->
@@ -65,27 +42,6 @@ hero:
 			</div>
 		</div> -->
 		<!-- Map ENd -->
-
-		<div class="row justify-content-center">
-			<div class="col-lg-6 col-md-3 col-sm-3">
-				<section>
-					<h5>Secure communication</h5>
-					<p>For secure live communications with our team, <br />
-						join the official <a href="https://keybase.io/team/amethix">Amethix Keybase Channel</a>
-					</p>
-				</section>
-			</div>
-
-			<div class="col-lg-6 col-md-3 col-sm-3">
-				<section>
-					<h5>General communication</h5>
-					<p>For general enquiries, project consulting and partnerships, <br />
-						please email <a href="mailto:hello@amethix.com">hello@amethix.com</a>  </p>
-					</section>
-
-			</div>
-
-		</div>
 
 		<div class="row justify-content-center">
 			<!-- <div class="col-lg-10 mt-4"> -->
@@ -121,6 +77,52 @@ hero:
 				<iframe src="https://harmonizely.amethix.com?view=compact" style="width:100%; height:350px;" frameborder="0" scrolling="yes"></iframe>
 				</div>
 			-->
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="contact-hero-container-0706">
+	<div class="contact-hero-main-0706">
+
+		<div class="container mt-5">
+			<div class="row">
+				{% for contact in page.hero.contacts %}
+				<a href="{{ contact.url }}" title="{{ contact.title }}" class="col card hover-up" target="blank">
+					<i class="big {{ contact.icon }}"></i>
+					<h2>{{ contact.title }}</h2>
+					<p style="font-size: 1.1em;">
+						{{ contact.description }}
+					</p>
+					<span>
+						{{ contact.action }}
+						<i class="ti-arrow-right"></i>
+					</span>
+				</a>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-6 col-md-3 col-sm-3">
+				<section>
+					<h5>Secure communication</h5>
+					<p>For secure live communications with our team, <br />
+						join the official <a href="https://matrix.to/#/!YlxuTiWRTKscJeIuNP:matrix.org?via=matrix.org">Amethix Matrix Server</a>
+					</p>
+				</section>
+			</div>
+
+			<div class="col-lg-6 col-md-3 col-sm-3">
+				<section>
+					<h5>General communication</h5>
+					<p>For general enquiries, project consulting and partnerships, <br />
+						please email <a href="mailto:hello@amethix.com">hello@amethix.com</a>  </p>
+				</section>
 			</div>
 		</div>
 	</div>
