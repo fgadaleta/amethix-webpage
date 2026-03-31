@@ -20,5 +20,5 @@ sectors_description: [
     "IReNe operates on zero-trust principles, decentralizing control and reducing reliance on trust within the system, ensuring that all components are verified independently to maintain secure and resilient operations."
 ]
 testimonial_author: ""
-testimonial_quote: "IReNe is transformed our network security architecture, providing unparalleled resilience against attacks and system failures. The flexibility of its root of trust and decentralized design gives us the confidence to operate in high-risk environments."
+testimonial_quote: "IReNe transformed our network security architecture, providing unparalleled resilience against attacks and system failures. The flexibility of its root of trust and decentralized design gives us the confidence to operate in high-risk environments."
 ---

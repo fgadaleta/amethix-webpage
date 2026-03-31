@@ -14,6 +14,6 @@ problem_solution: "Amethix has taken on the challenge to provide GoBrands with t
 project_summary: "Amethix is taking the lead in providing GoBrands with cutting-edge tools and methodologies to revolutionize their demand forecasting capabilities. By leveraging advanced mathematical models that integrate heterogeneous data sources, Amethix is equipping GoBrands with powerful insights that will transform their business. With Amethix's innovative solutions, GoBrands can unlock the potential of their data and make more informed decisions about inventory management, capacity planning, and logistics, ultimately leading to increased customer satisfaction, faster delivery times, and improved profitability. It's time to take your demand forecasting to the next level with Amethix."
 project_teaser: "supply chain analytics for food delivery"
 testimonial_author: "Blake Harbert - Operational Forecasting GoBrands Inc."
-testimonial_quote: "Working with Amethix has been a great experience thank to their sharp design and promptness. Predictions stayed accurate under the drastic changes due to Covid-19 in many geographic locations"
+testimonial_quote: "Working with Amethix has been a great experience thanks to their sharp design and promptness. Predictions stayed accurate under the drastic changes due to Covid-19 in many geographic locations"
 ---
 
