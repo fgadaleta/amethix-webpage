@@ -16,14 +16,28 @@
 </nav>
 
 <style>
-/* Sticky navbar animation (subtle slide + fade) */
+/* Sticky navbar animation */
 @keyframes stickySlide {
   from { transform: translateY(-10px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  to   { transform: translateY(0);     opacity: 1; }
 }
-.main-nav { transition: box-shadow 200ms ease; }
-.main-nav.fixed-top { box-shadow: 0 8px 20px rgba(0,0,0,0.12); }
+.main-nav { transition: background 300ms ease, box-shadow 300ms ease; }
 .main-nav.sticky-animate { animation: stickySlide 250ms ease-out; }
+
+/* Nav accent line at bottom on hover */
+#main-nav .navbar-nav .nav-link::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background: linear-gradient(90deg, #7c3aed, #06b6d4);
+  transition: width 0.25s ease;
+  margin-top: 2px;
+}
+#main-nav .navbar-nav .nav-link:hover::after,
+#main-nav .navbar-nav .active > .nav-link::after {
+  width: 100%;
+}
 </style>
 
 <script>

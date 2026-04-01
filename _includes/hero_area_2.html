@@ -1,65 +1,79 @@
-<!-- Slider Start -->
-<section class="page-title  overlay-staticX" style="
-  url({% if page.header_image %}{{page.header_image}} {% else %} {{site.cover_image}} {% endif %}) 0 0 no-repeat fixed;
-  opacity: 1;
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  max-height: 976px;">
+<!-- Hero Start -->
+<section class="page-title" style="overflow: hidden; position: relative; background: #060612;">
 
-  <div class="container1 hero-video-section relative z-10 min-height1">
+  <div class="hero-video-section" style="position: relative;">
 
-    
+    <video
+      class="hero-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      style="width:100%; height:auto; display:block;"
+    >
+      <source src="assets/videos/amethix-intro-video-footage.mp4" type="video/mp4">
+    </video>
 
-<video
-  class="hero-video"
-  autoplay
-  muted
-  loop
-  playsinline
-  preload="auto"
-  style="background-color: white; width:100%; height:auto; display:block;"
->
-  <source src="assets/videos/amethix-intro-video-footage.mp4" type="video/mp4">
-  Your browser does not support the video tag or the file format of this video.
-</video>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const v = document.querySelector(".hero-video");
-  if (!v) return;
-
-  v.muted = true;
-  const playAttempt = v.play();
-
-  if (playAttempt !== undefined) {
-    playAttempt.catch(() => {
-      const tryPlay = () => {
-        v.play();
-        window.removeEventListener("touchstart", tryPlay);
-      };
-      window.addEventListener("touchstart", tryPlay);
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const v = document.querySelector(".hero-video");
+      if (!v) return;
+      v.muted = true;
+      const playAttempt = v.play();
+      if (playAttempt !== undefined) {
+        playAttempt.catch(() => {
+          const tryPlay = () => { v.play(); window.removeEventListener("touchstart", tryPlay); };
+          window.addEventListener("touchstart", tryPlay);
+        });
+      }
     });
-  }
-});
-</script>
-
+    </script>
 
     <div class="video-overlay-text">
-      <h1 class="overlay-main">Software That Doesn't Fail <br> When Failure Costs Lives</h1>
-     
+      <p class="hero-eyebrow">Mission-Critical AI Systems</p>
+      <h1 class="overlay-main">Software That Doesn't Fail<br>When Failure Costs Lives</h1>
+      <p class="hero-sub">Defense &bull; Critical Infrastructure &bull; Advanced AI</p>
+      <div class="hero-cta-group">
+        <a href="/capabilities" class="primary-rounded-btn">Explore Capabilities <i class="ti-arrow-right"></i></a>
+        <a href="/contact" class="secondary-rounded-btn" style="margin-left: 20px;">Talk to us <i class="ti-arrow-right"></i></a>
+      </div>
     </div>
 
-      <div class="col-lg-12 text-centerX header-top-padding1">
-        <!-- <h2 class="text-xl typewrite typehead" data-text="Software That Doesn't Fail<br /> When Failure Costs Lives" data-delay="40"></h2> -->
-
-        <!-- <h1 class="text-xl ">Empowering organizations. Maximizing impact. Letting your data speak. </h1> -->
-        <!-- <h4 class="mb-4 mt-3" style="max-width: 650px; margin: 1rem auto; padding-top: 1rem;">{{page.description}}</h4> -->
-        <!-- <h5 class="">{{page.description}}</h5> -->
-      </div>
-    <!-- </div> -->
   </div>
- 
+
 </section>
+
+<style>
+.hero-eyebrow {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(167, 139, 250, 0.85);
+  margin-bottom: 20px;
+  background: none;
+  -webkit-text-fill-color: rgba(167, 139, 250, 0.85);
+}
+.hero-sub {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(148, 163, 184, 0.7);
+  margin-top: 18px;
+  background: none;
+  -webkit-text-fill-color: rgba(148, 163, 184, 0.7);
+}
+.hero-cta-group {
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+</style>
+<!-- Hero End -->
 
  
 
