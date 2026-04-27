@@ -1,4 +1,11 @@
 <head>
+  <!-- Anti-flash: apply saved theme before first paint -->
+  <script>
+    (function(){
+      var t = localStorage.getItem('amethix-theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
   <meta charset="utf-8">
   <title>{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}</title>
 

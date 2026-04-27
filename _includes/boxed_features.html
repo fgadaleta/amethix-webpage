@@ -2,18 +2,21 @@
 <section class="gray-section section pt-5">
   <div class="container">
     <div class="gray-section__card mt-5">
-      <div class="gray-section__inner">
       <p class="gray-section__eyebrow">{{ bf.eyebrow }}</p>
-      <h1 class="gray-section__title">{{ bf.title }}</h1>
-      <p class="gray-section__lead">{{ bf.lead }}</p>
-
-      {% for box in bf.boxes %}
-      <div class="gray-section__box">
-        <h3>{{ box.heading }}</h3>
-        <p>{{ box.content }}</p>
-      </div>
-      {% endfor %}
+      <div class="gray-section__split">
+        <h1 class="gray-section__title">{{ bf.title }}</h1>
+        <div>
+          <p class="gray-section__lead">{{ bf.lead }}</p>
+          <div class="gray-section__boxes">
+            {% for box in bf.boxes %}
+            <div class="gray-section__box reveal">
+              <h3>{{ box.heading }}</h3>
+              <p>{{ box.content }}</p>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
       </div>
     </div>
   </div>
- </section>
+</section>

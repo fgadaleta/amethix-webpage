@@ -121,8 +121,27 @@
 {% endfor %}
 <!-- Main Script -->
 <script src="/assets/js/typewriter.js"></script>
-<!-- <script src="{{ '/assets/js/script.js' | relative_url }}"></script> -->
 <script src="/assets/js/script.js"></script>
+
+<!-- Scroll reveal -->
+<script>
+(function(){
+  if (!('IntersectionObserver' in window)) return;
+  var observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){
+        e.target.classList.add('revealed');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.card, .get-started-card, .gray-section__box, .counter-content').forEach(function(el, i){
+    el.classList.add('reveal');
+    el.style.transitionDelay = (i % 4) * 90 + 'ms';
+    observer.observe(el);
+  });
+})();
+</script>
 
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
