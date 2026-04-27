@@ -1,3 +1,6 @@
+include:
+  - .well-known
+
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://amethix.com"
 title: "Machine Learning and Artificial Intelligence | Amethix"
